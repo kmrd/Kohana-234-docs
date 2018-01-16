@@ -1,0 +1,313 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+    core:event    [Kohana User Guide]
+</title><meta name="generator" content="DokuWiki Release 2008-05-05"><meta name="robots" content="index,follow"><meta name="date" content="2008-09-29T17:39:31-0500"><meta name="keywords" content="core,event"><link rel="search" type="application/opensearchdescription+xml" href="..\lib\exe\opensearch.html" title="Kohana User Guide"><link rel="start" href="/"><link rel="contents" href="event-1.html?do=index" title="Index"><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="..\feed.html"><link rel="alternate" type="application/rss+xml" title="Current Namespace" href="..\feed-3.html?mode=list&amp;ns=core"><link rel="alternate" type="text/html" title="Plain HTML" href="..\_export\xhtml\core\event.html"><link rel="alternate" type="text/plain" title="Wiki Markup" href="..\_export\raw\core\event.html"><link rel="stylesheet" media="all" type="text/css" href="..\_css\all.css"><link rel="stylesheet" media="screen" type="text/css" href="..\_css\kohana.css"><link rel="stylesheet" media="print" type="text/css" href="..\_css\print.css"><script type="text/javascript" charset="utf-8" src="..\_js\script.js"></script><link rel="shortcut icon" href="..\lib\tpl\kohana\images\favicon.html"><link rel="stylesheet" type="text/css" href="..\_css\my.css"></head><body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="..\contents.html"><img src="..\_img\kohana.png" alt="Kohana"></a>
+<!-- End Logo -->
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul><li class="top active"><a href="..\contents.html">Contents</a></li>
+
+
+<li class="top"><a href="..\contents.html">General<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\general\configuration.html" title="Configuration">Configuration</a></li>
+				<li><a href="..\general\controllers.html" title="Controllers">Controllers</a></li>
+				<li><a href="..\general\errorhandling.html" title="Error Handling">Error Handling</a></li>
+				<li><a href="..\general\events.html" title="Events">Events</a></li>
+				<li><a href="..\general\filesystem.html" title="Filesystem">Filesystem</a></li>
+				<li><a href="..\general\helpers.html" title="Helpers">Helpers</a></li>
+				<li><a href="..\general\hooks.html" title="Hooks">Hooks</a></li>
+				<li><a href="..\general\i18n.html" title="Internationalization">Internationalization</a></li>
+				<li><a href="..\general\libraries.html" title="Libraries">Libraries</a></li>
+				<li><a href="..\general\loading.html" title="Loading">Loading</a></li>
+				<li><a href="..\general\logging.html" title="Logging">Logging</a></li>
+				<li><a href="..\general\models.html" title="Models">Models</a></li>
+				<li><a href="..\general\modules.html" title="Modules">Modules</a></li>
+				<li><a href="..\general\routing.html" title="Routing">Routing</a></li>
+				<li><a href="..\general\urls.html" title="URLs">URLs</a></li>
+				<li><a href="..\general\views.html" title="Views">Views</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Core<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="benchmark.html" title="Benchmark">Benchmark</a></li>
+				<li><a href="config.html" title="Config">Config</a></li>
+				<li><a href="event.html" title="Event">Event</a></li>
+				<li><a href="kohana.html" title="Kohana">Kohana</a></li>
+				<li><a href="log.html" title="Log">Log</a></li>
+				<li><a href="utf8.html" title="Unicode">Unicode</a></li>
+				<li><a href="view.html" title="View">View</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Libraries<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\libraries\cache.html" title="Cache">Cache</a></li>
+				<li><a href="..\libraries\calendar.html" title="Calendar">Calendar</a></li>
+				<li><a href="..\libraries\captcha.html" title="Captcha">Captcha</a></li>
+				<li><a href="..\libraries\database.html" title="Database">Database</a></li>
+				<li><a href="..\libraries\encrypt.html" title="Encrypt">Encrypt</a></li>
+				<li><a href="..\libraries\image.html" title="Image">Image</a></li>
+				<li><a href="..\libraries\input.html" title="Input">Input</a></li>
+				<li><a href="..\libraries\orm.html" title="ORM">ORM</a></li>
+				<li><a href="..\libraries\pagination.html" title="Pagination">Pagination</a></li>
+				<li><a href="..\libraries\profiler.html" title="Profiler">Profiler</a></li>
+				<li><a href="..\libraries\session.html" title="Session">Session</a></li>
+				<li><a href="..\libraries\uri.html" title="URI">URI</a></li>
+				<li><a href="..\libraries\validation.html" title="Validation">Validation</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Helpers<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\helpers\arr.html" title="Array">Array</a></li>
+				<li><a href="..\helpers\cookie.html" title="Cookie">Cookie</a></li>
+				<li><a href="..\helpers\date.html" title="Date">Date</a></li>
+				<li><a href="..\helpers\download.html" title="Download">Download</a></li>
+				<li><a href="..\helpers\email.html" title="Email">Email</a></li>
+				<li><a href="..\helpers\expires.html" title="Expires">Expires</a></li>
+				<li><a href="..\helpers\feed.html" title="Feed">Feed</a></li>
+				<li><a href="..\helpers\file.html" title="File">File</a></li>
+				<li><a href="..\helpers\form.html" title="Form">Form</a></li>
+				<li><a href="..\helpers\format.html" title="Format">Format</a></li>
+				<li><a href="..\helpers\html.html" title="HTML">HTML</a></li>
+				<li><a href="..\helpers\inflector.html" title="Inflector">Inflector</a></li>
+				<li><a href="..\helpers\num.html" title="Num">Num</a></li>
+				<li><a href="..\helpers\remote.html" title="Remote">Remote</a></li>
+				<li><a href="..\helpers\request.html" title="Request">Request</a></li>
+				<li><a href="..\helpers\security.html" title="Security">Security</a></li>
+				<li><a href="..\helpers\text.html" title="Text">Text</a></li>
+				<li><a href="..\helpers\upload.html" title="Upload">Upload</a></li>
+				<li><a href="..\helpers\url.html" title="URL">URL</a></li>
+				<li><a href="..\helpers\valid.html" title="Valid">Valid</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+</ul></div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<!-- TOC START -->
+<!-- TOC END -->
+<table class="inline"><tr class="row0"><th class="col0">Status</th><td class="col1">Draft</td>
+	</tr><tr class="row1"><th class="col0">Todo</th><td class="col1">Proof read</td>
+	</tr></table><h1><a name="event_class" id="event_class">Event Class</a></h1>
+<div class="level1">
+
+<p>
+
+For an overview for a programming overview of events, please see <a href="http://en.wikipedia.org/wiki/Event_handler" class="interwiki iw_wp" title="http://en.wikipedia.org/wiki/Event_handler">Event_handler</a> and <a href="http://en.wikipedia.org/wiki/Event_loop" class="interwiki iw_wp" title="http://en.wikipedia.org/wiki/Event_loop">Event_loop</a>. Kohana stores events in queues, as opposed to stacks. This simply means that, by default, new events will be processed <strong>after</strong> existing events.
+</p>
+
+</div>
+
+<h2><a name="what_is_an_event" id="what_is_an_event">What is an Event?</a></h2>
+<div class="level2">
+
+<p>
+
+Kohana events consist of a unique name and a <a href="http://php.net/manual/en/language.pseudo-types.php#language.types.callback" class="urlextern" title="http://php.net/manual/en/language.pseudo-types.php#language.types.callback" rel="nofollow">callback</a>. By default, there are several <a href="..\general\events.html" class="wikilink1" title="general:events">events defined by Kohana</a>. Names are completely freeform, but the convention is to use a <code>prefix.name</code> to make event names more unique. All pre-defined events are prefixed as <code>system.name</code>, eg: <code>system.post_controller</code>.
+</p>
+
+</div>
+
+<h2><a name="methods" id="methods">Methods</a></h2>
+<div class="level2">
+
+<p>
+
+All Event methods are <a href="http://php.net/manual/en/language.oop5.static.php" class="urlextern" title="http://php.net/manual/en/language.oop5.static.php" rel="nofollow">static</a>, and Event should never be instanced.
+</p>
+
+</div>
+
+<h3><a name="add" id="add">add</a></h3>
+<div class="level3">
+
+<p>
+
+Used to add a new <a href="http://php.net/manual/en/language.pseudo-types.php#language.types.callback" class="urlextern" title="http://php.net/manual/en/language.pseudo-types.php#language.types.callback" rel="nofollow">callback</a> to an event. If the event does not already exist, it will be created.
+</p>
+<pre class="code php"><span class="co1">// Calls the function "foo" after the controller method is executed</span>
+Event<span class="sy0">::</span><span class="me2">add</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="sy0">,</span> <span class="st0">'foo'</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<span class="co1">// Calls the static method "Foo::bar" after the controller method is executed</span>
+Event<span class="sy0">::</span><span class="me2">add</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'foo'</span><span class="sy0">,</span> <span class="st0">'bar'</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<span class="co1">// Calls the "bar" method in the "$foo" object when the output is rendered</span>
+Event<span class="sy0">::</span><span class="me2">add</span><span class="br0">(</span><span class="st0">'system.display'</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="re1">$foo</span><span class="sy0">,</span> <span class="st0">'bar'</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+You can also create entirely new events this way:
+</p>
+<pre class="code php"><span class="co1">// Creates a custom user.login event</span>
+Event<span class="sy0">::</span><span class="me2">add</span><span class="br0">(</span><span class="st0">'user.login'</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="re1">$user</span><span class="sy0">,</span> <span class="st0">'login'</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<h3><a name="add_before" id="add_before">add_before</a></h3>
+<div class="level3">
+
+<p>
+
+Used to add a callback immediately before another callback in an event.
+</p>
+<pre class="code php"><span class="co1">// Add the function "faa" to be executed before "foo"</span>
+Event<span class="sy0">::</span><span class="me2">add_before</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="sy0">,</span> <span class="st0">'foo'</span><span class="sy0">,</span> <span class="st0">'faa'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+If the event you are inserting before does not exist, <code>add_before</code> will functional exactly the same as <code>add</code>.
+</p>
+
+</div>
+
+<h3><a name="add_after" id="add_after">add_after</a></h3>
+<div class="level3">
+
+<p>
+
+Used to add a callback immediately after another callback in an event.
+</p>
+<pre class="code php"><span class="co1">// Add the function "fzz" to be after "foo"</span>
+Event<span class="sy0">::</span><span class="me2">add_after</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="sy0">,</span> <span class="st0">'foo'</span><span class="sy0">,</span> <span class="st0">'fzz'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+If the event you are inserting after does not exist, <code>add_after</code> will functional exactly the same as <code>add</code>.
+</p>
+
+</div>
+
+<h3><a name="replace" id="replace">replace</a></h3>
+<div class="level3">
+
+<p>
+
+Used to replace a callback with another callback in an event.
+</p>
+<pre class="code php"><span class="co1">// Replace the "foo" function with the "oof" function</span>
+Event<span class="sy0">::</span><span class="me2">replace</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="sy0">,</span> <span class="st0">'foo'</span><span class="sy0">,</span> <span class="st0">'oof'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+If the event you are replacing does not exist, no event will be added.
+</p>
+
+</div>
+
+<h3><a name="get" id="get">get</a></h3>
+<div class="level3">
+
+<p>
+
+Returns of the callbacks as a simple array.
+</p>
+<pre class="code php"><span class="co1">// Returns of the callbacks for system.post_controller</span>
+<span class="re1">$events</span> <span class="sy0">=</span> Event<span class="sy0">::</span><span class="me2">get</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<span class="co1">// Loop through each event and call it</span>
+<span class="kw1">foreach</span> <span class="br0">(</span><span class="re1">$events</span> <span class="kw1">as</span> <span class="re1">$event</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="re1">$return_value</span> <span class="sy0">=</span> <a href="http://www.php.net/call_user_func"><span class="kw3">call_user_func</span></a><span class="br0">(</span><span class="re1">$event</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+If no events exist, and empty array will be returned. It is recommended to use <a href="http://php.net/empty" class="urlextern" title="http://php.net/empty" rel="nofollow">empty</a> if you need to validate that events exist.
+</p>
+
+</div>
+
+<h3><a name="clear" id="clear">clear</a></h3>
+<div class="level3">
+
+<p>
+
+Clear one or all callbacks from an event.
+</p>
+<pre class="code php"><span class="co1">// Clears the "oof" function from system.post_controller</span>
+Event<span class="sy0">::</span><span class="me2">clear</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="sy0">,</span> <span class="st0">'oof'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+If this method is called without a second argument, it will clear the entire queue for the given event.
+</p>
+
+</div>
+
+<h3><a name="run" id="run">run</a></h3>
+<div class="level3">
+
+<p>
+
+Execute all of the callbacks attached to an event.
+</p>
+<pre class="code php"><span class="co1">// Run the system.post_controller event</span>
+Event<span class="sy0">::</span><span class="me2">run</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<h3><a name="has_run" id="has_run">has_run</a></h3>
+<div class="level3">
+
+<p>
+
+Checks if an event has already been run. This can is useful to make an event run only once.
+</p>
+<pre class="code php"><span class="co1">// Test if the event has already run</span>
+<span class="kw1">if</span> <span class="br0">(</span>Event<span class="sy0">::</span><span class="me2">has_run</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="br0">)</span><span class="br0">)</span>
+<span class="br0">{</span>
+	<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">'post_controller has been run.'</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="co1">// Run the post controller event if it has not already been run</span>
+Event<span class="sy0">::</span><span class="me2">has_run</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="br0">)</span> or Event<span class="sy0">::</span><span class="me2">run</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<h2><a name="data" id="data">Data</a></h2>
+<div class="level2">
+
+<p>
+
+<code>Event::$data</code> is a special variable that can be set when using <a href="#run" title="core:event ↵" class="wikilink1">Event::run</a>. The data is assigned by reference, and can be manipulated by all of the callbacks.
+</p>
+<pre class="code php"><span class="co1">// Debug the data</span>
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span><span class="re1">$data</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<span class="co1">// Run the post_controller event with data</span>
+Event<span class="sy0">::</span><span class="me2">run</span><span class="br0">(</span><span class="st0">'system.post_controller'</span><span class="sy0">,</span> <span class="re1">$data</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<span class="co1">// Display the changed data</span>
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span><span class="re1">$data</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+Event data is cleared immediately after all of the callbacks are run, and can only be accessed during callback execution.
+</p>
+
+<p>
+</p><p style="text-align:center">« <a href="benchmark.html" class="wikilink1" title="core:benchmark">Benchmark</a> : Previous | Next : <a href="kohana.html" class="wikilink1" title="core:kohana">Kohana</a> »</p>
+
+
+
+</div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+			core/event.txt · Last modified: 2008/09/29 17:39 by delapouite			 
+		</div>
+	</div>
+
+	</div>
+
+<div id="footer"><strong>©2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+
+<div class="no"><img src="/lib/exe/indexer.php?id=core%3Aevent&amp;1229410943" width="1" height="1" alt=""></div>
+</body></html>

@@ -1,0 +1,759 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+    helpers:html    [Kohana User Guide]
+</title><meta name="generator" content="DokuWiki Release 2008-05-05"><meta name="robots" content="index,follow"><meta name="date" content="2008-11-10T15:07:42-0600"><meta name="keywords" content="helpers,html"><link rel="search" type="application/opensearchdescription+xml" href="..\lib\exe\opensearch.html" title="Kohana User Guide"><link rel="start" href="/"><link rel="contents" href="html-1.html?do=index" title="Index"><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="..\feed.html"><link rel="alternate" type="application/rss+xml" title="Current Namespace" href="..\feed-5.html?mode=list&amp;ns=helpers"><link rel="alternate" type="text/html" title="Plain HTML" href="..\_export\xhtml\helpers\html.html"><link rel="alternate" type="text/plain" title="Wiki Markup" href="..\_export\raw\helpers\html.html"><link rel="stylesheet" media="all" type="text/css" href="..\_css\all.css"><link rel="stylesheet" media="screen" type="text/css" href="..\_css\kohana.css"><link rel="stylesheet" media="print" type="text/css" href="..\_css\print.css"><script type="text/javascript" charset="utf-8" src="..\_js\script.js"></script><link rel="shortcut icon" href="..\lib\tpl\kohana\images\favicon.html"><link rel="stylesheet" type="text/css" href="..\_css\my.css"></head><body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="..\contents.html"><img src="..\_img\kohana.png" alt="Kohana"></a>
+<!-- End Logo -->
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul><li class="top active"><a href="..\contents.html">Contents</a></li>
+
+
+<li class="top"><a href="..\contents.html">General<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\general\configuration.html" title="Configuration">Configuration</a></li>
+				<li><a href="..\general\controllers.html" title="Controllers">Controllers</a></li>
+				<li><a href="..\general\errorhandling.html" title="Error Handling">Error Handling</a></li>
+				<li><a href="..\general\events.html" title="Events">Events</a></li>
+				<li><a href="..\general\filesystem.html" title="Filesystem">Filesystem</a></li>
+				<li><a href="..\general\helpers.html" title="Helpers">Helpers</a></li>
+				<li><a href="..\general\hooks.html" title="Hooks">Hooks</a></li>
+				<li><a href="..\general\i18n.html" title="Internationalization">Internationalization</a></li>
+				<li><a href="..\general\libraries.html" title="Libraries">Libraries</a></li>
+				<li><a href="..\general\loading.html" title="Loading">Loading</a></li>
+				<li><a href="..\general\logging.html" title="Logging">Logging</a></li>
+				<li><a href="..\general\models.html" title="Models">Models</a></li>
+				<li><a href="..\general\modules.html" title="Modules">Modules</a></li>
+				<li><a href="..\general\routing.html" title="Routing">Routing</a></li>
+				<li><a href="..\general\urls.html" title="URLs">URLs</a></li>
+				<li><a href="..\general\views.html" title="Views">Views</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Core<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\core\benchmark.html" title="Benchmark">Benchmark</a></li>
+				<li><a href="..\core\config.html" title="Config">Config</a></li>
+				<li><a href="..\core\event.html" title="Event">Event</a></li>
+				<li><a href="..\core\kohana.html" title="Kohana">Kohana</a></li>
+				<li><a href="..\core\log.html" title="Log">Log</a></li>
+				<li><a href="..\core\utf8.html" title="Unicode">Unicode</a></li>
+				<li><a href="..\core\view.html" title="View">View</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Libraries<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\libraries\cache.html" title="Cache">Cache</a></li>
+				<li><a href="..\libraries\calendar.html" title="Calendar">Calendar</a></li>
+				<li><a href="..\libraries\captcha.html" title="Captcha">Captcha</a></li>
+				<li><a href="..\libraries\database.html" title="Database">Database</a></li>
+				<li><a href="..\libraries\encrypt.html" title="Encrypt">Encrypt</a></li>
+				<li><a href="..\libraries\image.html" title="Image">Image</a></li>
+				<li><a href="..\libraries\input.html" title="Input">Input</a></li>
+				<li><a href="..\libraries\orm.html" title="ORM">ORM</a></li>
+				<li><a href="..\libraries\pagination.html" title="Pagination">Pagination</a></li>
+				<li><a href="..\libraries\profiler.html" title="Profiler">Profiler</a></li>
+				<li><a href="..\libraries\session.html" title="Session">Session</a></li>
+				<li><a href="..\libraries\uri.html" title="URI">URI</a></li>
+				<li><a href="..\libraries\validation.html" title="Validation">Validation</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Helpers<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="arr.html" title="Array">Array</a></li>
+				<li><a href="cookie.html" title="Cookie">Cookie</a></li>
+				<li><a href="date.html" title="Date">Date</a></li>
+				<li><a href="download.html" title="Download">Download</a></li>
+				<li><a href="email.html" title="Email">Email</a></li>
+				<li><a href="expires.html" title="Expires">Expires</a></li>
+				<li><a href="feed.html" title="Feed">Feed</a></li>
+				<li><a href="file.html" title="File">File</a></li>
+				<li><a href="form.html" title="Form">Form</a></li>
+				<li><a href="format.html" title="Format">Format</a></li>
+				<li><a href="html.html" title="HTML">HTML</a></li>
+				<li><a href="inflector.html" title="Inflector">Inflector</a></li>
+				<li><a href="num.html" title="Num">Num</a></li>
+				<li><a href="remote.html" title="Remote">Remote</a></li>
+				<li><a href="request.html" title="Request">Request</a></li>
+				<li><a href="security.html" title="Security">Security</a></li>
+				<li><a href="text.html" title="Text">Text</a></li>
+				<li><a href="upload.html" title="Upload">Upload</a></li>
+				<li><a href="url.html" title="URL">URL</a></li>
+				<li><a href="valid.html" title="Valid">Valid</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+</ul></div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<!-- TOC START -->
+<!-- TOC END -->
+<table class="inline"><tr class="row0"><th class="col0">Status</th><td class="col1">Draft</td>
+	</tr><tr class="row1"><th class="col0">Todo</th><td class="col1">Add breadcrumb entry (2.1) and Proof read</td>
+	</tr></table><h1><a name="html_helper" id="html_helper">HTML Helper</a></h1>
+<div class="level1">
+
+<p>
+The <acronym title="HyperText Markup Language">HTML</acronym> helper assists in calling various elements such as stylesheet, javascript, image links and anchor links into position.
+</p>
+
+</div>
+
+<h2><a name="methods" id="methods">Methods</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a name="specialchars" id="specialchars">specialchars()</a></h3>
+<div class="level3">
+
+<p>
+'specialchars' is similar to <acronym title="Hypertext Preprocessor">PHP</acronym>'s <a href="http://php.net/htmlspecialchars" class="urlextern" title="http://php.net/htmlspecialchars" rel="nofollow">htmlspecialchars()</a> function. However, there are some small differences:
+</p>
+<ul><li class="level1"><div class="li"> It will automatically use the UTF-8 character set in conversion (instead of <acronym title="International Organization for Standardization">ISO</acronym>-8859-1).</div>
+</li>
+<li class="level1"><div class="li"> It will automatically translate both single and double quotes to <acronym title="HyperText Markup Language">HTML</acronym> entities (instead of only double quotes).</div>
+</li>
+<li class="level1"><div class="li"> It provides built-in fallback functionality for not double encoding existing <acronym title="HyperText Markup Language">HTML</acronym> entities (for <acronym title="Hypertext Preprocessor">PHP</acronym> versions older than 5.2.3).</div>
+</li>
+</ul><p>
+
+The two arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [string] The string you want to encode</div>
+</li>
+<li class="level1"><div class="li"> [boolean] Do you want to encode existing <acronym title="HyperText Markup Language">HTML</acronym> entities? – TRUE by default</div>
+</li>
+</ul><p>
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="re1">$string</span> <span class="sy0">=</span> <span class="st0">'&lt;p&gt;"I<span class="es0">\'</span>m hungry"&amp;mdash;Cookie Monster said.&lt;/p&gt;'</span><span class="sy0">;</span>
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">specialchars</span><span class="br0">(</span><span class="re1">$string</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in the following <acronym title="HyperText Markup Language">HTML</acronym>:
+
+</p>
+<pre class="code html4strict"><span class="sc1">&amp;lt;</span>p<span class="sc1">&amp;gt;</span><span class="sc1">&amp;quot;</span>I<span class="sc1">&amp;#039;</span>m hungry<span class="sc1">&amp;quot;</span><span class="sc1">&amp;amp;</span>mdash;Cookie Monster said.<span class="sc1">&amp;lt;</span>/p<span class="sc1">&amp;gt;</span></pre>
+<p>
+When setting the second parameter to FALSE, existing <acronym title="HyperText Markup Language">HTML</acronym> entities are preserved. Look closely at <code>&amp;mdash;</code>.
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">specialchars</span><span class="br0">(</span><span class="re1">$string</span><span class="sy0">,</span> <span class="kw2">FALSE</span><span class="br0">)</span><span class="sy0">;</span></pre><pre class="code html4strict"><span class="sc1">&amp;lt;</span>p<span class="sc1">&amp;gt;</span><span class="sc1">&amp;quot;</span>I<span class="sc1">&amp;#39;</span>m hungry<span class="sc1">&amp;quot;</span><span class="sc1">&amp;mdash;</span>Cookie Monster said.<span class="sc1">&amp;lt;</span>/p<span class="sc1">&amp;gt;</span></pre>
+</div>
+
+<h3><a name="anchor" id="anchor">anchor()</a></h3>
+<div class="level3">
+
+<p>
+
+'anchor' creates a <acronym title="HyperText Markup Language">HTML</acronym> anchor (&lt;a href=””&gt;&lt;/a&gt;), linking an internal page or external site automatically
+The four arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [string] An internal or external page that you would like to link to</div>
+</li>
+<li class="level1"><div class="li"> [string] The title you would like to have show up as the hyperlink</div>
+</li>
+<li class="level1"><div class="li"> [array] Attributes to add to your anchor</div>
+</li>
+<li class="level1"><div class="li"> [string] The protocol your link will use: 'ftp', 'irc', etc. – This is only necessary if it's an internal page with a non-absolute link for the first argument and you need to change the protocol from 'http'</div>
+</li>
+</ul><p>
+
+<strong>Example 1:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">anchor</span><span class="br0">(</span><span class="st0">'home/news'</span><span class="sy0">,</span> <span class="st0">'Go to our news section!'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/a.html"><span class="kw2">&lt;a</span></a> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"http://localhost/home/news"</span><span class="kw2">&gt;</span></span>Go to our news section!<span class="sc2"><span class="kw2">&lt;/a&gt;</span></span></pre>
+<p>
+<strong>Example 2:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">anchor</span><span class="br0">(</span><span class="st0">'irc://irc.freenode.net/kohana'</span><span class="sy0">,</span> <span class="st0">'Join us on IRC!'</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'style'</span><span class="sy0">=&gt;</span><span class="st0">'font-size: 20px;'</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/a.html"><span class="kw2">&lt;a</span></a> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"irc://irc.freenode.net/kohana"</span> <span class="kw3">style</span><span class="sy0">=</span><span class="st0">"font-size: 20px;"</span><span class="kw2">&gt;</span></span>Join us on IRC!<span class="sc2"><span class="kw2">&lt;/a&gt;</span></span></pre>
+</div>
+
+<h3><a name="file_anchor" id="file_anchor">file_anchor()</a></h3>
+<div class="level3">
+
+<p>
+
+Similar to 'anchor', 'file_anchor' creates a <acronym title="HyperText Markup Language">HTML</acronym> anchor (&lt;a href=””&gt;&lt;/a&gt;) linking to non-Kohana resources. Therefore, it will always prefix the site's <acronym title="Uniform Resource Locator">URL</acronym> to the path of your file
+The four arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [string] An internal file that you would like to link to</div>
+</li>
+<li class="level1"><div class="li"> [string] The title you would like to have show up as the hyperlink</div>
+</li>
+<li class="level1"><div class="li"> [array] Attributes to add to your anchor</div>
+</li>
+<li class="level1"><div class="li"> [string] The protocol your link will use: 'ftp', 'irc', etc. – This is only necessary if you need to change the protocol from 'http'</div>
+</li>
+</ul><p>
+
+<strong>Example 1:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">file_anchor</span><span class="br0">(</span><span class="st0">'media/files/2007-12-magazine.pdf'</span><span class="sy0">,</span> <span class="st0">'Check out our latest magazine!'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/a.html"><span class="kw2">&lt;a</span></a> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"http://localhost/media/files/2007-12-magazine.pdf"</span><span class="kw2">&gt;</span></span>Check out our latest magazine!<span class="sc2"><span class="kw2">&lt;/a&gt;</span></span></pre>
+<p>
+
+<strong>Example 2:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">file_anchor</span><span class="br0">(</span><span class="st0">'pub/index.html'</span><span class="sy0">,</span> <span class="st0">'The Public Linux Archive'</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'id'</span><span class="sy0">=&gt;</span><span class="st0">'id432'</span><span class="br0">)</span><span class="sy0">,</span> <span class="st0">'ftp'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/a.html"><span class="kw2">&lt;a</span></a> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"ftp://localhost/pub/index.html"</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">"id432"</span><span class="kw2">&gt;</span></span>The Public Linux Archive<span class="sc2"><span class="kw2">&lt;/a&gt;</span></span></pre>
+</div>
+
+<h3><a name="panchor" id="panchor">panchor()</a></h3>
+<div class="level3">
+
+<p>
+
+Similar to 'anchor', but accepts the protocol attribute first instead of last
+The four arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [string] The protocol your link will use: 'ftp', 'irc', etc. This is only necessary if it's an internal page with a non-absolute link for the first argument and you need to change the protocol from 'http'</div>
+</li>
+<li class="level1"><div class="li"> [string] An internal or external page that you would like to link to</div>
+</li>
+<li class="level1"><div class="li"> [string] The title you would like to have show up as the hyperlink</div>
+</li>
+<li class="level1"><div class="li"> [array] Attributes to add to your anchor</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">panchor</span><span class="br0">(</span><span class="st0">'irc'</span><span class="sy0">,</span> <span class="st0">'/kohana'</span><span class="sy0">,</span> <span class="st0">'Join us on our custom IRC!'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/a.html"><span class="kw2">&lt;a</span></a> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"irc://localhost/kohana"</span><span class="kw2">&gt;</span></span>Join us on our custom IRC!<span class="sc2"><span class="kw2">&lt;/a&gt;</span></span></pre>
+</div>
+
+<h3><a name="anchor_array" id="anchor_array">anchor_array()</a></h3>
+<div class="level3">
+
+<p>
+<code>anchor_array($array)</code> create an array of anchors from an array of link/title pairs. It takes:
+
+</p>
+<ul><li class="level1"><div class="li"> [array] link/title pairs</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span>html<span class="sy0">::</span><span class="me2">anchor_array</span><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'home/news'</span> <span class="sy0">=&gt;</span> <span class="st0">'Go to our news section!'</span><span class="sy0">,</span> <span class="st0">'home/about'</span> <span class="sy0">=&gt;</span> <span class="st0">'Go to the about page'</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result as:
+</p>
+<pre class="code php"><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">)</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+<span class="br0">(</span>
+    <span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="sy0">&lt;</span>a href<span class="sy0">=</span><span class="st0">"/kohana/index.php/home/news"</span><span class="sy0">&gt;</span>Go to our news section<span class="sy0">!&lt;/</span>a<span class="sy0">&gt;</span>
+    <span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="sy0">&lt;</span>a href<span class="sy0">=</span><span class="st0">"/kohana/index.php/home/about"</span><span class="sy0">&gt;</span>Go to the about page<span class="sy0">&lt;/</span>a<span class="sy0">&gt;</span>
+<span class="br0">)</span></pre>
+</div>
+
+<h3><a name="email" id="email">email()</a></h3>
+<div class="level3">
+
+<p>
+
+'email($email)' generates an obfuscated version of an email address. It escapes all characters of the e-mail address into <acronym title="HyperText Markup Language">HTML</acronym>, hex or raw randomly to help prevent spam and e-mail harvesting. It takes:
+
+</p>
+<ul><li class="level1"><div class="li"> [string] E-mail address</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span>html<span class="sy0">::</span><span class="me2">email</span><span class="br0">(</span><span class="st0">'<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="057160767145687c616a68646c6b2b666a68">[email&#160;protected]</a>'</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It could result as:
+
+</p>
+<pre class="code html4strict">(string) t<span class="sc1">&amp;#101;</span><span class="sc1">&amp;#x73;</span><span class="sc1">&amp;#116;</span><span class="sc1">&amp;#x40;</span>m<span class="sc1">&amp;#121;</span><span class="sc1">&amp;#x64;</span>o<span class="sc1">&amp;#109;</span><span class="sc1">&amp;#x61;</span><span class="sc1">&amp;#105;</span>n<span class="sc1">&amp;#46;</span><span class="sc1">&amp;#x63;</span>o<span class="sc1">&amp;#109;</span></pre>
+</div>
+
+<h3><a name="mailto" id="mailto">mailto()</a></h3>
+<div class="level3">
+
+<p>
+
+'mailto' prints a &lt;a href=“mailto:”&gt;&lt;/a&gt; tag but escapes all characters of the e-mail with the above method.
+</p>
+
+<p>
+The three arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [string] E-mail address</div>
+</li>
+<li class="level1"><div class="li"> [string] The title you would like to have show up as the hyperlink</div>
+</li>
+<li class="level1"><div class="li"> [string or array] Attributes to add to your anchor</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">mailto</span><span class="br0">(</span><span class="st0">'<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f767179705f7a677e726f737a317c7072">[email&#160;protected]</a>'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/a.html"><span class="kw2">&lt;a</span></a> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#058;i&amp;#x6e;fo&amp;#x40;&amp;#101;&amp;#x78;&amp;#x61;mp&amp;#108;e&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109;"</span><span class="kw2">&gt;</span></span>i<span class="sc1">&amp;#x6e;</span>fo<span class="sc1">&amp;#x40;</span><span class="sc1">&amp;#101;</span><span class="sc1">&amp;#x78;</span><span class="sc1">&amp;#x61;</span>mp<span class="sc1">&amp;#108;</span>e<span class="sc1">&amp;#x2e;</span><span class="sc1">&amp;#x63;</span><span class="sc1">&amp;#x6f;</span><span class="sc1">&amp;#109;</span><span class="sc2"><span class="kw2">&lt;/a&gt;</span></span></pre>
+</div>
+
+<h3><a name="meta" id="meta">meta()</a></h3>
+<div class="level3">
+
+<p>
+
+'meta($tag, $value = NULL)' creates a meta tag.
+</p>
+
+<p>
+The two arguments are:
+</p>
+<ul><li class="level1"><div class="li"> <strong>[string|array]</strong> tag name, or an array of tags</div>
+</li>
+<li class="level1"><div class="li"> <strong>[string]</strong> tag “content” value - default NULL</div>
+</li>
+<li class="level1"><div class="li"> returns <strong>[string]</strong> the meta tag(s)</div>
+</li>
+</ul><p>
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">meta</span><span class="br0">(</span><span class="st0">'generator'</span><span class="sy0">,</span> <span class="st0">'Kohana 2.2'</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">meta</span><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'generator'</span> <span class="sy0">=&gt;</span> <span class="st0">'Kohana 2.2'</span><span class="sy0">,</span> <span class="st0">'robots'</span> <span class="sy0">=&gt;</span> <span class="st0">'noindex,nofollow'</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/meta.html"><span class="kw2">&lt;meta</span></a> <span class="kw3">name</span><span class="sy0">=</span><span class="st0">"generator"</span> <span class="kw3">content</span><span class="sy0">=</span><span class="st0">"Kohana 2.2"</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span>
+ 
+<span class="sc2"><a href="http://december.com/html/4/element/meta.html"><span class="kw2">&lt;meta</span></a> <span class="kw3">name</span><span class="sy0">=</span><span class="st0">"generator"</span> <span class="kw3">content</span><span class="sy0">=</span><span class="st0">"Kohana 2.2"</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span>
+<span class="sc2"><a href="http://december.com/html/4/element/meta.html"><span class="kw2">&lt;meta</span></a> <span class="kw3">name</span><span class="sy0">=</span><span class="st0">"robots"</span> <span class="kw3">content</span><span class="sy0">=</span><span class="st0">"noindex,nofollow"</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span></pre>
+</div>
+
+<h3><a name="stylesheet" id="stylesheet">stylesheet()</a></h3>
+<div class="level3">
+
+<p>
+
+'stylesheet' calls <acronym title="Cascading Style Sheets">CSS</acronym> files internally and will suffix .css if it is not already present
+The three arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [string or array] Either a string with the file's location or an array of files</div>
+</li>
+<li class="level1"><div class="li"> [string or array] Media type such as 'screen', 'print' or 'aural'</div>
+</li>
+<li class="level1"><div class="li"> [boolean] Set to TRUE if you want to have the index.php file included in the link – This makes the difference between processing the request through Kohana (usually a media controller) or simply calling the file with an absolute path</div>
+</li>
+</ul><p>
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">stylesheet</span><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a>
+<span class="br0">(</span>
+    <span class="st0">'media/css/default'</span><span class="sy0">,</span>
+    <span class="st0">'media/css/menu'</span>
+<span class="br0">)</span><span class="sy0">,</span>
+<a href="http://www.php.net/array"><span class="kw3">array</span></a>
+<span class="br0">(</span>
+    <span class="st0">'screen'</span><span class="sy0">,</span>
+    <span class="st0">'print'</span>
+<span class="br0">)</span><span class="sy0">,</span> <span class="kw2">FALSE</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/link.html"><span class="kw2">&lt;link</span></a> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">"stylesheet"</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"http://localhost/media/css/default.css"</span> <span class="kw3">media</span><span class="sy0">=</span><span class="st0">"screen"</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span>
+<span class="sc2"><a href="http://december.com/html/4/element/link.html"><span class="kw2">&lt;link</span></a> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">"stylesheet"</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"http://localhost/media/css/menu.css"</span> <span class="kw3">media</span><span class="sy0">=</span><span class="st0">"print"</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span></pre>
+
+<div class="box red">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+  <div class="xbox">
+<p class="box_title"><strong>Important</strong></p>
+<div class="box_content"><p>
+Don't forget to add a final TRUE parameter if your Kohana frameworks still need “index.php” in the <acronym title="Uniform Resource Locator">URL</acronym> (this will be the case until you modify this setting as explained in the tutorial from Christophe <a href="..\contents.htmltutorials/video/working_with_media_files.html" class="urlextern" title="http://kohanaphp.com/tutorials/video/working_with_media_files.html" rel="nofollow">http://kohanaphp.com/tutorials/video/working_with_media_files.html</a>).
+</p></div>
+  </div>
+  <b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+
+
+</div>
+
+<h3><a name="link" id="link">link()</a></h3>
+<div class="level3">
+
+<p>
+
+'link' calls files such as feeds internally. Will render the &lt;link&gt; tag. Linking to stylesheets also uses the &lt;link&gt; tag but the html::stylesheet() helper can be used for those
+Arguments
+</p>
+<ul><li class="level1"><div class="li"> [string or array] Either a string with the file's location or an array of files</div>
+</li>
+<li class="level1"><div class="li"> [string or array] Either a string or array with values for the 'rel' attribute (e.g. stylesheet, alternate)</div>
+</li>
+<li class="level1"><div class="li"> [string or array] Either a string or array with values for the 'type' attribute (application/rss+xml etc.)</div>
+</li>
+<li class="level1"><div class="li"> [boolean] set to TRUE to specify the suffix of the file, defaults to FALSE</div>
+</li>
+<li class="level1"><div class="li"> [string or array] Either a string or array with values for the 'media' attribute (print, screen etc.)</div>
+</li>
+<li class="level1"><div class="li"> [boolean] Set to TRUE if you want to have the index.php file included in the link – This makes the difference between processing the request through Kohana (usually a media controller) or simply calling the file with an absolute path</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><a href="http://www.php.net/link"><span class="kw3">link</span></a><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a>
+<span class="br0">(</span>
+    <span class="st0">'welcome/home/rss'</span><span class="sy0">,</span>
+    <span class="st0">'welcome/home/atom'</span>
+<span class="br0">)</span><span class="sy0">,</span>
+<span class="st0">'alternate'</span><span class="sy0">,</span>
+<a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'application/rss+xml'</span><span class="sy0">,</span><span class="st0">'application/atom+xml'</span><span class="br0">)</span>
+<span class="sy0">,</span> <span class="kw2">FALSE</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/link.html"><span class="kw2">&lt;link</span></a> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">"alternate"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"application/rss+xml"</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"http://localhost/welcome/home/rss"</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span>
+<span class="sc2"><a href="http://december.com/html/4/element/link.html"><span class="kw2">&lt;link</span></a> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">"alternate"</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"application/atom+xml"</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"http://localhost/welcome/home/atom"</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span></pre>
+
+<div class="box red">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+  <div class="xbox">
+<p class="box_title"><strong>Important</strong></p>
+<div class="box_content"><p>
+Don't forget to add a final TRUE parameter if your Kohana frameworks still need “index.php” in the <acronym title="Uniform Resource Locator">URL</acronym> (this will be the case until you modify this setting as explained in the tutorial from Christophe <a href="..\contents.htmltutorials/video/working_with_media_files.html" class="urlextern" title="http://kohanaphp.com/tutorials/video/working_with_media_files.html" rel="nofollow">http://kohanaphp.com/tutorials/video/working_with_media_files.html</a>).
+</p></div>
+  </div>
+  <b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+
+
+</div>
+
+<h3><a name="script" id="script">script()</a></h3>
+<div class="level3">
+
+<p>
+
+'script' calls JavaScript files internally and will suffix .js if not present in your file call
+There are two arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [string or array] Either a string with the file's location or an array of files</div>
+</li>
+<li class="level1"><div class="li"> [boolean] Set to TRUE if you want to have the index.php file included in the link – This makes the difference between processing the request through Kohana (usually a media controller) or simply calling the file with an absolute path</div>
+</li>
+</ul><p>
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">script</span><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a>
+<span class="br0">(</span>
+    <span class="st0">'media/js/login'</span><span class="sy0">,</span>
+    <span class="st0">'media/js/iefixes.js'</span>
+<span class="br0">)</span><span class="sy0">,</span> <span class="kw2">FALSE</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/script.html"><span class="kw2">&lt;script</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"http://localhost/media/js/login.js"</span><span class="kw2">&gt;</span></span><span class="sc2"><span class="kw2">&lt;/script&gt;</span></span>
+<span class="sc2"><a href="http://december.com/html/4/element/script.html"><span class="kw2">&lt;script</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">"text/javascript"</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"http://localhost/media/js/iefixes.js"</span><span class="kw2">&gt;</span></span><span class="sc2"><span class="kw2">&lt;/script&gt;</span></span></pre>
+
+<div class="box red">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+  <div class="xbox">
+<p class="box_title"><strong>Important</strong></p>
+<div class="box_content"><p>
+Don't forget to add a final TRUE parameter if your Kohana frameworks still need “index.php” in the <acronym title="Uniform Resource Locator">URL</acronym> (this will be the case until you modify this setting as explained in the tutorial from Christophe <a href="..\contents.htmltutorials/video/working_with_media_files.html" class="urlextern" title="http://kohanaphp.com/tutorials/video/working_with_media_files.html" rel="nofollow">http://kohanaphp.com/tutorials/video/working_with_media_files.html</a>).
+</p></div>
+  </div>
+  <b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+
+
+</div>
+
+<h3><a name="image" id="image">image()</a></h3>
+<div class="level3">
+
+<p>
+
+'image' creates a 'img' <acronym title="HyperText Markup Language">HTML</acronym> tag.
+</p>
+
+<p>
+There are three arguments:
+</p>
+<ul><li class="level1"><div class="li"> [string or array] A string to specify the image 'src' attribute or an array of attributes</div>
+</li>
+<li class="level1"><div class="li"> [string or array] A string to specify the 'alt' attribute or an array of attributes</div>
+</li>
+<li class="level1"><div class="li"> [boolean] Set to TRUE if you want to have '/index.php/' included in the link (to use views to serve images using Kohana)</div>
+</li>
+</ul><p>
+
+<strong>Example 1:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">image</span><span class="br0">(</span><span class="st0">'media/images/thumbs/01.png'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/img.html"><span class="kw2">&lt;img</span></a> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"http://localhost/media/images/thumbs/01.png"</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span></pre><pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">image</span><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'src'</span> <span class="sy0">=&gt;</span> <span class="st0">'media/images/thumbs/01.png'</span><span class="sy0">,</span> <span class="st0">'width'</span> <span class="sy0">=&gt;</span> <span class="st0">'100'</span><span class="sy0">,</span> <span class="st0">'height'</span> <span class="sy0">=&gt;</span> <span class="nu0">100</span><span class="br0">)</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'alt'</span> <span class="sy0">=&gt;</span> <span class="st0">'Thumbnail'</span><span class="sy0">,</span> <span class="st0">'class'</span> <span class="sy0">=&gt;</span> <span class="st0">'noborder'</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre><pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/img.html"><span class="kw2">&lt;img</span></a> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"http://localhost/media/images/thumbs/01.png"</span> <span class="kw3">width</span><span class="sy0">=</span><span class="st0">"100"</span> <span class="kw3">height</span><span class="sy0">=</span><span class="st0">"100"</span> <span class="kw3">alt</span><span class="sy0">=</span><span class="st0">"Thumbnail"</span> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">"noborder"</span><span class="sy0">/</span><span class="kw2">&gt;</span></span></pre>
+<p>
+<strong>Example 2 (with html::anchor and lightbox):</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">file_anchor</span><span class="br0">(</span><span class="st0">'media/images/01.png'</span><span class="sy0">,</span> html<span class="sy0">::</span><span class="me2">image</span><span class="br0">(</span><span class="st0">'media/images/thumbs/01.png'</span><span class="br0">)</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'rel'</span><span class="sy0">=&gt;</span><span class="st0">'lightbox'</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/a.html"><span class="kw2">&lt;a</span></a> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"http://localhost/media/images/01.png"</span> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">"lightbox"</span><span class="kw2">&gt;</span></span><span class="sc2"><a href="http://december.com/html/4/element/img.html"><span class="kw2">&lt;img</span></a> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">"http://localhost/media/images/thumbs/01.png"</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span><span class="sc2"><span class="kw2">&lt;/a&gt;</span></span></pre>
+
+<div class="box red">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+  <div class="xbox">
+<p class="box_title"><strong>Important</strong></p>
+<div class="box_content"><p>
+Don't forget to add a final TRUE parameter if your Kohana frameworks still need “index.php” in the <acronym title="Uniform Resource Locator">URL</acronym> (this will be the case until you modify this setting as explained in the tutorial from Christophe <a href="..\contents.htmltutorials/video/working_with_media_files.html" class="urlextern" title="http://kohanaphp.com/tutorials/video/working_with_media_files.html" rel="nofollow">http://kohanaphp.com/tutorials/video/working_with_media_files.html</a>).
+</p></div>
+  </div>
+  <b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+
+
+
+<div class="box red">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+  <div class="xbox">
+<p class="box_title"><strong>Version 2.1</strong></p>
+<div class="box_content"><p>
+Prior to version 2.2 there were only two arguments for this function:
+</p>
+<ul><li class="level1"><div class="li"> [string or array] A string to specify the image 'src' attribute or an array of attributes</div>
+</li>
+<li class="level1"><div class="li"> [boolean] Set to TRUE if you want to have '/index.php/' included in the link (to use views to serve images using Kohana)</div>
+</li>
+</ul></div>
+  </div>
+  <b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+
+
+</div>
+
+<h3><a name="attributes" id="attributes">attributes()</a></h3>
+<div class="level3">
+
+<p>
+
+'attributes' parses attributes for a <acronym title="HyperText Markup Language">HTML</acronym> tag from an array
+There are two arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [array] An array of attributes you'd like to add to a <acronym title="HyperText Markup Language">HTML</acronym> tag</div>
+</li>
+</ul><p>
+
+<strong>Example 1:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">attributes</span><span class="br0">(</span>
+	<a href="http://www.php.net/array"><span class="kw3">array</span></a>
+	<span class="br0">(</span>
+		<span class="st0">'style'</span> <span class="sy0">=&gt;</span> <span class="st0">'font-size: 20px; border-bottom: 1px solid #000;'</span><span class="sy0">,</span>
+		<span class="st0">'rel'</span> <span class="sy0">=&gt;</span> <span class="st0">'lightbox'</span><span class="sy0">,</span>
+		<span class="st0">'class'</span> <span class="sy0">=&gt;</span> <span class="st0">'image'</span>
+	<span class="br0">)</span>
+<span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict">style="font-size: 20px; border-bottom: 1px solid #000;" rel="lightbox" class="image"</pre>
+<p>
+<strong>Example 2 (with html::anchor):</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> html<span class="sy0">::</span><span class="me2">file_anchor</span><span class="br0">(</span><span class="st0">'home/images/01.png'</span><span class="sy0">,</span> <span class="st0">'See my picture!'</span><span class="sy0">,</span>
+html<span class="sy0">::</span><span class="me2">attributes</span><span class="br0">(</span>
+	<a href="http://www.php.net/array"><span class="kw3">array</span></a>
+	<span class="br0">(</span>
+		<span class="st0">'style'</span> <span class="sy0">=&gt;</span> <span class="st0">'font-size: 20px; border-bottom: 4px solid #000;'</span><span class="sy0">,</span>
+		<span class="st0">'rel'</span> <span class="sy0">=&gt;</span> <span class="st0">'lightbox'</span><span class="sy0">,</span>
+		<span class="st0">'class'</span> <span class="sy0">=&gt;</span> <span class="st0">'image'</span>
+	<span class="br0">)</span>
+<span class="br0">)</span>
+<span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict"><span class="sc2"><a href="http://december.com/html/4/element/a.html"><span class="kw2">&lt;a</span></a> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">"http://localhost/home/images/01.png"</span>  <span class="kw3">style</span><span class="sy0">=</span><span class="st0">"font-size: 20px; border-bottom: 4px solid #000;"</span> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">"lightbox"</span> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">"image"</span><span class="kw2">&gt;</span></span>See my picture!<span class="sc2"><span class="kw2">&lt;/a&gt;</span></span></pre>
+</div>
+
+<h3><a name="breadcrumb" id="breadcrumb">breadcrumb()</a></h3>
+<div class="level3">
+
+<p>
+
+The function returns an array of links for each segment.
+Arguments:
+</p>
+<ul><li class="level1"><div class="li"> [array] segments to use as breadcrumbs, defaults to using Router::$segments</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php">  <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span>html<span class="sy0">::</span><span class="me2">breadcrumb</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+
+will produce the following output:
+
+</p>
+<pre class="code php"> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+ <span class="br0">(</span>
+    <span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="sy0">&lt;</span>a href<span class="sy0">=</span><span class="st0">"http://localhost/ajax"</span><span class="sy0">&gt;</span>Ajax<span class="sy0">&lt;/</span>a<span class="sy0">&gt;</span>
+    <span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="sy0">&lt;</span>a href<span class="sy0">=</span><span class="st0">"http://localhost/ajax/welcome"</span><span class="sy0">&gt;</span>Welcome<span class="sy0">&lt;/</span>a<span class="sy0">&gt;</span>
+    <span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="sy0">&lt;</span>a href<span class="sy0">=</span><span class="st0">"http://localhost/welcome/text"</span><span class="sy0">&gt;</span>Text<span class="sy0">&lt;/</span>a<span class="sy0">&gt;</span>
+ <span class="br0">)</span></pre>
+<p>
+<strong>Creating Breadcrumbs</strong>
+</p>
+
+<p>
+Creating breadcrumbs is easy; use the following code as an example:
+</p>
+<pre class="code php"><span class="kw2">public</span> <span class="kw2">function</span> get_breadcrumbs<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+	<a href="http://www.php.net/global"><span class="kw3">global</span></a> <span class="re1">$breadcrumbs</span><span class="sy0">;</span>
+ 
+	<span class="re1">$get_breadcrumbs</span> <span class="sy0">=</span> html<span class="sy0">::</span><span class="me2">breadcrumb</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="kw1">while</span> <span class="br0">(</span><a href="http://www.php.net/current"><span class="kw3">current</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span><span class="br0">)</span>
+	<span class="br0">{</span>
+		<span class="re1">$breadcrumbs</span> <span class="sy0">.=</span> <a href="http://www.php.net/current"><span class="kw3">current</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+		<span class="co1">// Check if we have reached the last crumb</span>
+		<span class="kw1">if</span> <span class="br0">(</span><a href="http://www.php.net/key"><span class="kw3">key</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span> <span class="sy0">&lt;</span> <span class="br0">(</span><a href="http://www.php.net/count"><span class="kw3">count</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span><span class="nu0">-1</span><span class="br0">)</span><span class="br0">)</span>
+		<span class="br0">{</span>
+			<span class="co1">// If we haven't, add a breadcrumb separator</span>
+			<span class="re1">$breadcrumbs</span> <span class="sy0">.=</span> <span class="st0">' / '</span><span class="sy0">;</span>
+		<span class="br0">}</span>
+		<a href="http://www.php.net/next"><span class="kw3">next</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="br0">}</span>
+		<span class="kw1">return</span> <span class="re1">$breadcrumbs</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+A function like this could be included in your 'MY_Controller' library and made available to every page. Displaying the breadcrumb (ie. from a view) is as easy as:
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">get_breadcrumbs</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+This function will display each breadcrumb as a hyper-link. However, we may want the hyper-link removed from the last link (as we are currently on that page) and have it bold instead. This can be achieved by using this code:
+</p>
+<pre class="code php"><span class="kw2">public</span> <span class="kw2">function</span> get_breadcrumbs<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+	<a href="http://www.php.net/global"><span class="kw3">global</span></a> <span class="re1">$breadcrumbs</span><span class="sy0">;</span>
+ 
+	<span class="re1">$get_breadcrumbs</span> <span class="sy0">=</span> html<span class="sy0">::</span><span class="me2">breadcrumb</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="kw1">while</span><span class="br0">(</span><a href="http://www.php.net/current"><span class="kw3">current</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span><span class="br0">)</span>
+	<span class="br0">{</span>
+		<span class="co1">// Check if we have reached the last crumb</span>
+		<span class="kw1">if</span><span class="br0">(</span><a href="http://www.php.net/key"><span class="kw3">key</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span> <span class="sy0">&lt;</span> <span class="br0">(</span><a href="http://www.php.net/count"><span class="kw3">count</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span><span class="nu0">-1</span><span class="br0">)</span><span class="br0">)</span>
+		<span class="br0">{</span>
+			<span class="co1">// If we haven't, add a breadcrumb separator</span>
+			<span class="re1">$breadcrumbs</span> <span class="sy0">.=</span> <a href="http://www.php.net/current"><span class="kw3">current</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span><span class="sy0">.</span><span class="st0">' / '</span><span class="sy0">;</span>
+		<span class="br0">}</span>
+		<span class="kw1">else</span>
+		<span class="br0">{</span>
+			<span class="co1">// If we have, remove the anchor from the breadcrumb and make it bold</span>
+			<span class="re1">$breadcrumbs</span> <span class="sy0">.=</span> <a href="http://www.php.net/strip_tags"><span class="kw3">strip_tags</span></a><span class="br0">(</span><span class="st0">"&lt;strong&gt;"</span><span class="sy0">.</span><a href="http://www.php.net/current"><span class="kw3">current</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span><span class="sy0">.</span><span class="st0">"&lt;/strong&gt;"</span><span class="sy0">,</span> <span class="st0">"&lt;strong&gt;"</span><span class="br0">)</span><span class="sy0">;</span>
+		<span class="br0">}</span>
+		<a href="http://www.php.net/next"><span class="kw3">next</span></a><span class="br0">(</span><span class="re1">$get_breadcrumbs</span><span class="br0">)</span><span class="sy0">;</span>
+	<span class="br0">}</span>
+		<span class="kw1">return</span> <span class="re1">$breadcrumbs</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+
+<div class="box">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+  <div class="xbox">
+<div class="box_content"><p>
+<strong>Note:</strong> For simplification, the above code includes html (&lt;strong&gt; tags) in a library file. When implementing code like this it is best to follow conventional guidelines, such as creating &lt;spans&gt; and using css for styling.
+</p></div>
+  </div>
+  <b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+
+
+</div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+			helpers/html.txt · Last modified: 2008/11/10 15:07 by crhayes			 
+		</div>
+	</div>
+
+	</div>
+
+<div id="footer"><strong>©2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+
+<div class="no"><img src="/lib/exe/indexer.php?id=helpers%3Ahtml&amp;1229411027" width="1" height="1" alt=""></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script></body></html>

@@ -1,0 +1,561 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+    helpers:arr    [Kohana User Guide]
+</title><meta name="generator" content="DokuWiki Release 2008-05-05"><meta name="robots" content="index,follow"><meta name="date" content="2008-11-13T13:06:01-0600"><meta name="keywords" content="helpers,arr"><link rel="search" type="application/opensearchdescription+xml" href="..\lib\exe\opensearch.html" title="Kohana User Guide"><link rel="start" href="/"><link rel="contents" href="arr-1.html?do=index" title="Index"><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="..\feed.html"><link rel="alternate" type="application/rss+xml" title="Current Namespace" href="..\feed-5.html?mode=list&amp;ns=helpers"><link rel="alternate" type="text/html" title="Plain HTML" href="..\_export\xhtml\helpers\arr.html"><link rel="alternate" type="text/plain" title="Wiki Markup" href="..\_export\raw\helpers\arr.html"><link rel="stylesheet" media="all" type="text/css" href="..\_css\all.css"><link rel="stylesheet" media="screen" type="text/css" href="..\_css\kohana.css"><link rel="stylesheet" media="print" type="text/css" href="..\_css\print.css"><script type="text/javascript" charset="utf-8" src="..\_js\script.js"></script><link rel="shortcut icon" href="..\lib\tpl\kohana\images\favicon.html"><link rel="stylesheet" type="text/css" href="..\_css\my.css"></head><body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="..\contents.html"><img src="..\_img\kohana.png" alt="Kohana"></a>
+<!-- End Logo -->
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul><li class="top active"><a href="..\contents.html">Contents</a></li>
+
+
+<li class="top"><a href="..\contents.html">General<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\general\configuration.html" title="Configuration">Configuration</a></li>
+				<li><a href="..\general\controllers.html" title="Controllers">Controllers</a></li>
+				<li><a href="..\general\errorhandling.html" title="Error Handling">Error Handling</a></li>
+				<li><a href="..\general\events.html" title="Events">Events</a></li>
+				<li><a href="..\general\filesystem.html" title="Filesystem">Filesystem</a></li>
+				<li><a href="..\general\helpers.html" title="Helpers">Helpers</a></li>
+				<li><a href="..\general\hooks.html" title="Hooks">Hooks</a></li>
+				<li><a href="..\general\i18n.html" title="Internationalization">Internationalization</a></li>
+				<li><a href="..\general\libraries.html" title="Libraries">Libraries</a></li>
+				<li><a href="..\general\loading.html" title="Loading">Loading</a></li>
+				<li><a href="..\general\logging.html" title="Logging">Logging</a></li>
+				<li><a href="..\general\models.html" title="Models">Models</a></li>
+				<li><a href="..\general\modules.html" title="Modules">Modules</a></li>
+				<li><a href="..\general\routing.html" title="Routing">Routing</a></li>
+				<li><a href="..\general\urls.html" title="URLs">URLs</a></li>
+				<li><a href="..\general\views.html" title="Views">Views</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Core<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\core\benchmark.html" title="Benchmark">Benchmark</a></li>
+				<li><a href="..\core\config.html" title="Config">Config</a></li>
+				<li><a href="..\core\event.html" title="Event">Event</a></li>
+				<li><a href="..\core\kohana.html" title="Kohana">Kohana</a></li>
+				<li><a href="..\core\log.html" title="Log">Log</a></li>
+				<li><a href="..\core\utf8.html" title="Unicode">Unicode</a></li>
+				<li><a href="..\core\view.html" title="View">View</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Libraries<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\libraries\cache.html" title="Cache">Cache</a></li>
+				<li><a href="..\libraries\calendar.html" title="Calendar">Calendar</a></li>
+				<li><a href="..\libraries\captcha.html" title="Captcha">Captcha</a></li>
+				<li><a href="..\libraries\database.html" title="Database">Database</a></li>
+				<li><a href="..\libraries\encrypt.html" title="Encrypt">Encrypt</a></li>
+				<li><a href="..\libraries\image.html" title="Image">Image</a></li>
+				<li><a href="..\libraries\input.html" title="Input">Input</a></li>
+				<li><a href="..\libraries\orm.html" title="ORM">ORM</a></li>
+				<li><a href="..\libraries\pagination.html" title="Pagination">Pagination</a></li>
+				<li><a href="..\libraries\profiler.html" title="Profiler">Profiler</a></li>
+				<li><a href="..\libraries\session.html" title="Session">Session</a></li>
+				<li><a href="..\libraries\uri.html" title="URI">URI</a></li>
+				<li><a href="..\libraries\validation.html" title="Validation">Validation</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Helpers<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="arr.html" title="Array">Array</a></li>
+				<li><a href="cookie.html" title="Cookie">Cookie</a></li>
+				<li><a href="date.html" title="Date">Date</a></li>
+				<li><a href="download.html" title="Download">Download</a></li>
+				<li><a href="email.html" title="Email">Email</a></li>
+				<li><a href="expires.html" title="Expires">Expires</a></li>
+				<li><a href="feed.html" title="Feed">Feed</a></li>
+				<li><a href="file.html" title="File">File</a></li>
+				<li><a href="form.html" title="Form">Form</a></li>
+				<li><a href="format.html" title="Format">Format</a></li>
+				<li><a href="html.html" title="HTML">HTML</a></li>
+				<li><a href="inflector.html" title="Inflector">Inflector</a></li>
+				<li><a href="num.html" title="Num">Num</a></li>
+				<li><a href="remote.html" title="Remote">Remote</a></li>
+				<li><a href="request.html" title="Request">Request</a></li>
+				<li><a href="security.html" title="Security">Security</a></li>
+				<li><a href="text.html" title="Text">Text</a></li>
+				<li><a href="upload.html" title="Upload">Upload</a></li>
+				<li><a href="url.html" title="URL">URL</a></li>
+				<li><a href="valid.html" title="Valid">Valid</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+</ul></div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<!-- TOC START -->
+<!-- TOC END -->
+<table class="inline"><tr class="row0"><th class="col0">Status</th><td class="col1">Draft</td>
+	</tr><tr class="row1"><th class="col0">Todo</th><td class="col1">Fill ending methods - verify unshift_assoc example </td>
+	</tr></table><h1><a name="array_helper" id="array_helper">Array Helper</a></h1>
+<div class="level1">
+
+<p>
+
+The Array helper assists in transforming arrays. 
+<span style="color:red;">Warning, in order to use it, class name is 'arr' instead of 'array'.</span>
+</p>
+
+</div>
+
+<h2><a name="methods" id="methods">Methods</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a name="rotate" id="rotate">rotate()</a></h3>
+<div class="level3">
+
+<p>
+'rotate' rotates an array (two-dimensional) matrix clockwise.
+Example, turns a 2×3 array into a 3×2 array.
+</p>
+
+<p>
+The two arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [array] The array you want to rotate</div>
+</li>
+<li class="level1"><div class="li"> [boolean] Do you want to keep the same keys in the rotated array? – TRUE by default</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="co1">// Please note that the print() statements are for display only</span>
+<span class="re1">$optical_discs</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a>
+			<span class="br0">(</span>
+				<span class="st0">'CD'</span>  <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'700'</span><span class="sy0">,</span> <span class="st0">'780'</span><span class="br0">)</span><span class="sy0">,</span>
+				<span class="st0">'DVD'</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'4700'</span><span class="sy0">,</span><span class="st0">'650'</span><span class="br0">)</span><span class="sy0">,</span>
+				<span class="st0">'BD'</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'25000'</span><span class="sy0">,</span><span class="st0">'405'</span><span class="br0">)</span>
+			<span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/print"><span class="kw3">print</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span><span class="re1">$optical_discs</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="re1">$optical_discs</span> <span class="sy0">=</span> arr<span class="sy0">::</span><span class="me2">rotate</span><span class="br0">(</span><span class="re1">$optical_discs</span><span class="sy0">,</span> <span class="kw2">FALSE</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/print"><span class="kw3">print</span></a> <span class="br0">(</span><span class="st0">'&lt;br /&gt;&lt;br /&gt;'</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/print"><span class="kw3">print</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span><span class="re1">$optical_discs</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict">Array
+(
+    [CD] =&gt; Array
+        (
+            [0] =&gt; 700
+            [1] =&gt; 780
+        )
+ 
+    [DVD] =&gt; Array
+        (
+            [0] =&gt; 4700
+            [1] =&gt; 650
+        )
+ 
+    [BD] =&gt; Array
+        (
+            [0] =&gt; 25000
+            [1] =&gt; 405
+        )
+ 
+)
+ 
+ 
+Array
+(
+    [0] =&gt; Array
+        (
+            [CD] =&gt; 700
+            [DVD] =&gt; 4700
+            [BD] =&gt; 25000
+        )
+ 
+    [1] =&gt; Array
+        (
+            [CD] =&gt; 780
+            [DVD] =&gt; 650
+            [BD] =&gt; 405
+        )
+ 
+)</pre>
+</div>
+
+<h3><a name="remove" id="remove">remove()</a></h3>
+<div class="level3">
+
+<p>
+'remove' removes a key from an array and returns it.
+</p>
+
+<p>
+The two arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [string] The key you want removed from an array</div>
+</li>
+<li class="level1"><div class="li"> [array] The array you want the key to be removed from</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="co1">// Please note that the print() statements are for display only</span>
+<span class="re1">$optical_discs</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a>
+			<span class="br0">(</span>
+				<span class="st0">'CD'</span>  <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'700'</span><span class="sy0">,</span> <span class="st0">'780'</span><span class="br0">)</span><span class="sy0">,</span>
+				<span class="st0">'DVD'</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'4700'</span><span class="sy0">,</span><span class="st0">'650'</span><span class="br0">)</span><span class="sy0">,</span>
+				<span class="st0">'BD'</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'25000'</span><span class="sy0">,</span><span class="st0">'405'</span><span class="br0">)</span>
+			<span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/print"><span class="kw3">print</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span><span class="re1">$optical_discs</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="re1">$cd</span> <span class="sy0">=</span> arr<span class="sy0">::</span><span class="me2">remove</span><span class="br0">(</span><span class="st0">'CD'</span><span class="sy0">,</span> <span class="re1">$optical_discs</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/print"><span class="kw3">print</span></a> <span class="br0">(</span><span class="st0">'&lt;br /&gt;'</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/print"><span class="kw3">print</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span><span class="re1">$cd</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/print"><span class="kw3">print</span></a> <span class="br0">(</span><span class="st0">'&lt;br /&gt;'</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/print"><span class="kw3">print</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span><span class="re1">$optical_discs</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict">Array
+(
+    [CD] =&gt; Array
+        (
+            [0] =&gt; 700
+            [1] =&gt; 780
+        )
+ 
+    [DVD] =&gt; Array
+        (
+            [0] =&gt; 4700
+            [1] =&gt; 650
+        )
+ 
+    [BD] =&gt; Array
+        (
+            [0] =&gt; 25000
+            [1] =&gt; 405
+        )
+ 
+)
+ 
+ 
+Array
+(
+    [0] =&gt; 700
+    [1] =&gt; 780
+)
+ 
+ 
+Array
+(
+    [DVD] =&gt; Array
+        (
+            [0] =&gt; 4700
+            [1] =&gt; 650
+        )
+ 
+    [BD] =&gt; Array
+        (
+            [0] =&gt; 25000
+            [1] =&gt; 405
+        )
+ 
+)</pre>
+</div>
+
+<h3><a name="extract" id="extract">extract()</a></h3>
+<div class="level3">
+
+<p>
+'extract' extract ones or more keys from an array. Keys that do not exist in the search array will be NULL in the extracted data.
+</p>
+
+<p>
+
+The two arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [array] The array you want the key to be extracted from</div>
+</li>
+<li class="level1"><div class="li"> [string] The key you want extracted from an array</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"> <span class="re1">$optical_discs</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a>
+			<span class="br0">(</span>
+				<span class="st0">'CD'</span>  <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'700'</span><span class="sy0">,</span> <span class="st0">'780'</span><span class="br0">)</span><span class="sy0">,</span>
+				<span class="st0">'DVD'</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'4700'</span><span class="sy0">,</span><span class="st0">'650'</span><span class="br0">)</span><span class="sy0">,</span>
+				<span class="st0">'BD'</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'25000'</span><span class="sy0">,</span><span class="st0">'405'</span><span class="br0">)</span>
+			<span class="br0">)</span><span class="sy0">;</span>
+<span class="re1">$optical_discs</span> <span class="sy0">=</span> arr<span class="sy0">::</span><a href="http://www.php.net/extract"><span class="kw3">extract</span></a><span class="br0">(</span><span class="re1">$optical_discs</span><span class="sy0">,</span> <span class="st0">'DVD'</span><span class="sy0">,</span> <span class="st0">'Bluray'</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span><span class="re1">$optical_discs</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+
+<strong>Output:</strong>
+
+</p>
+<pre class="code php"><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">)</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+<span class="br0">(</span>
+    <span class="br0">[</span>DVD<span class="br0">]</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+        <span class="br0">(</span>
+            <span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">4700</span>
+            <span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">650</span>
+        <span class="br0">)</span>
+ 
+    <span class="br0">[</span>Bluray<span class="br0">]</span> <span class="sy0">=&gt;</span>  <span class="co1">//NULL</span>
+<span class="br0">)</span></pre>
+</div>
+
+<h3><a name="binary_search" id="binary_search">binary_search()</a></h3>
+<div class="level3">
+
+<p>
+
+'binary_search' performs a basic binary search on an array. By default, it returns the key of the array value it finds.
+The four arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [mixed] The value you want to find.</div>
+</li>
+<li class="level1"><div class="li"> [array] The sorted array you want to search in</div>
+</li>
+<li class="level1"><div class="li"> [boolean] Return the nearest value, or simply return FALSE (the default)</div>
+</li>
+<li class="level1"><div class="li"> [boolean] Sort the array before searching</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="re1">$my_array</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'10'</span><span class="sy0">,</span> <span class="st0">'20'</span><span class="sy0">,</span> <span class="st0">'30'</span><span class="sy0">,</span> <span class="st0">'50'</span><span class="sy0">,</span> <span class="st0">'80'</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> arr<span class="sy0">::</span><span class="me2">binary_search</span><span class="br0">(</span><span class="st0">'50'</span><span class="sy0">,</span> <span class="re1">$my_array</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// 3</span>
+ 
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> arr<span class="sy0">::</span><span class="me2">binary_search</span><span class="br0">(</span><span class="st0">'45'</span><span class="sy0">,</span> <span class="re1">$my_array</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// FALSE (not found)</span>
+ 
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> arr<span class="sy0">::</span><span class="me2">binary_search</span><span class="br0">(</span><span class="st0">'45'</span><span class="sy0">,</span> <span class="re1">$my_array</span><span class="sy0">,</span> <span class="kw2">TRUE</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// 3</span>
+ 
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> arr<span class="sy0">::</span><span class="me2">binary_search</span><span class="br0">(</span><span class="st0">'35'</span><span class="sy0">,</span> <span class="re1">$my_array</span><span class="sy0">,</span> <span class="kw2">TRUE</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// 2</span></pre>
+</div>
+
+<h3><a name="range" id="range">range()</a></h3>
+<div class="level3">
+
+<p>
+'range' fills an array with a range of numbers.
+</p>
+
+<p>
+The two arguments are:
+</p>
+<ul><li class="level1"><div class="li"> [integer] Stepping</div>
+</li>
+<li class="level1"><div class="li"> [integer] Ending Number</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span>arr<span class="sy0">::</span><a href="http://www.php.net/range"><span class="kw3">range</span></a><span class="br0">(</span><span class="nu0">17</span><span class="sy0">,</span> <span class="nu0">150</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+<strong>Output:</strong>
+
+</p>
+<pre class="code php"><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">)</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+<span class="br0">(</span>
+    <span class="br0">[</span><span class="nu0">17</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">17</span>
+    <span class="br0">[</span><span class="nu0">34</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">34</span>
+    <span class="br0">[</span><span class="nu0">51</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">51</span>
+    <span class="br0">[</span><span class="nu0">68</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">68</span>
+    <span class="br0">[</span><span class="nu0">85</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">85</span>
+    <span class="br0">[</span><span class="nu0">102</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">102</span>
+    <span class="br0">[</span><span class="nu0">119</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">119</span>
+    <span class="br0">[</span><span class="nu0">136</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">136</span>
+<span class="br0">)</span></pre>
+</div>
+
+<h3><a name="merge" id="merge">merge()</a></h3>
+<div class="level3">
+
+<p>
+
+Emulates array_merge_recursive, but appends numeric keys and replaces associative keys, instead of appending all keys. It takes:
+
+</p>
+<ul><li class="level1"><div class="li"> <strong>[array]</strong> any number of arrays</div>
+</li>
+<li class="level1"><div class="li"> returns <strong>[array]</strong> the merged array</div>
+</li>
+</ul><p>
+
+<strong> Example: </strong>
+</p>
+<pre class="code php"><a href="http://www.php.net/echo"><span class="kw3">echo</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span>arr<span class="sy0">::</span><span class="me2">merge</span><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'a'</span><span class="sy0">,</span> <span class="st0">'b'</span><span class="br0">)</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'c'</span><span class="sy0">,</span> <span class="st0">'d'</span><span class="br0">)</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'e'</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'f'</span><span class="sy0">,</span> <span class="st0">'g'</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result as:
+</p>
+<pre class="code php"><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">)</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+<span class="br0">(</span>
+    <span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy0">=&gt;</span> a
+    <span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=&gt;</span> b
+    <span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy0">=&gt;</span> c
+    <span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy0">=&gt;</span> d
+    <span class="br0">[</span>e<span class="br0">]</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+        <span class="br0">(</span>
+            <span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy0">=&gt;</span> f
+            <span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=&gt;</span> g
+        <span class="br0">)</span>
+ 
+<span class="br0">)</span></pre>
+</div>
+
+<h3><a name="overwrite" id="overwrite">overwrite()</a></h3>
+<div class="level3">
+
+<p>
+'overwrite' overwrites an array with values from input array(s). Note that non-existing keys will not be appended. It takes:
+
+</p>
+<ul><li class="level1"><div class="li"> [array] key array</div>
+</li>
+<li class="level1"><div class="li"> [array] input array(s) that will overwrite key array values</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="re1">$array1</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'fruit1'</span> <span class="sy0">=&gt;</span> <span class="st0">'apple'</span><span class="sy0">,</span> <span class="st0">'fruit2'</span> <span class="sy0">=&gt;</span> <span class="st0">'mango'</span><span class="sy0">,</span> <span class="st0">'fruit3'</span> <span class="sy0">=&gt;</span> <span class="st0">'pineapple'</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="re1">$array2</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'fruit1'</span> <span class="sy0">=&gt;</span> <span class="st0">'strawberry'</span><span class="sy0">,</span> <span class="st0">'fruit4'</span> <span class="sy0">=&gt;</span> <span class="st0">'coconut'</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/print"><span class="kw3">print</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span>arr<span class="sy0">::</span><span class="me2">overwrite</span><span class="br0">(</span><span class="re1">$array1</span><span class="sy0">,</span> <span class="re1">$array2</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+<strong>Output:</strong>
+
+</p>
+<pre class="code php"><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">)</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+<span class="br0">(</span>
+    <span class="br0">[</span>fruit1<span class="br0">]</span> <span class="sy0">=&gt;</span> strawberry
+    <span class="br0">[</span>fruit2<span class="br0">]</span> <span class="sy0">=&gt;</span> mango
+    <span class="br0">[</span>fruit3<span class="br0">]</span> <span class="sy0">=&gt;</span> pineapple
+<span class="br0">)</span></pre>
+</div>
+
+<h3><a name="map_recursive" id="map_recursive">map_recursive()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>map_recursive($callback, array $array)</code> has been created because <acronym title="Hypertext Preprocessor">PHP</acronym> does not have this function, and array_walk_recursive creates references in arrays and is not truly recursive. It takes:
+
+</p>
+<ul><li class="level1"><div class="li"> <strong>[array]</strong> <code>$callback</code> a valid callback to apply to each member of the array</div>
+</li>
+<li class="level1"><div class="li"> <strong>[array]</strong> <code>$array</code> array to map to</div>
+</li>
+<li class="level1"><div class="li"> returns <strong>[array]</strong> the mapped array</div>
+</li>
+</ul><p>
+
+<strong> Example : </strong>
+</p>
+<pre class="code php"><span class="kw2">public</span> <span class="kw2">function</span> add<span class="br0">(</span><span class="re1">$value</span><span class="br0">)</span><span class="br0">{</span>
+    <span class="kw1">return</span> <span class="re1">$value</span> <span class="sy0">+</span> <span class="nu0">1</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span>arr<span class="sy0">::</span><span class="me2">map_recursive</span><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="re1">$this</span><span class="sy0">,</span> <span class="st0">'add'</span><span class="br0">)</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'a'</span> <span class="sy0">=&gt;</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="st0">'b'</span> <span class="sy0">=&gt;</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="st0">'c'</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="nu0">3</span><span class="sy0">,</span> <span class="nu0">4</span><span class="br0">)</span><span class="sy0">,</span> <span class="st0">'d'</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'e'</span> <span class="sy0">=&gt;</span> <span class="nu0">5</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+It will result as:
+</p>
+<pre class="code php"><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">)</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+<span class="br0">(</span>
+    <span class="br0">[</span>a<span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">2</span>
+    <span class="br0">[</span>b<span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">3</span>
+    <span class="br0">[</span>c<span class="br0">]</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+        <span class="br0">(</span>
+            <span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">4</span>
+            <span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">5</span>
+        <span class="br0">)</span>
+ 
+    <span class="br0">[</span>d<span class="br0">]</span> <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+        <span class="br0">(</span>
+            <span class="br0">[</span>e<span class="br0">]</span> <span class="sy0">=&gt;</span> <span class="nu0">6</span>
+        <span class="br0">)</span>
+<span class="br0">)</span></pre>
+</div>
+
+<h3><a name="unshift_assoc" id="unshift_assoc">unshift_assoc()</a></h3>
+<div class="level3">
+
+<p>
+<code>unshift_assoc</code> has been created because <acronym title="Hypertext Preprocessor">PHP</acronym> does not have this function. It just unshift an association in an associative array. It takes:
+
+</p>
+<ul><li class="level1"><div class="li"> [array] array to unshift</div>
+</li>
+<li class="level1"><div class="li"> [string] key to unshift</div>
+</li>
+<li class="level1"><div class="li"> [mixed] value to unshift</div>
+</li>
+</ul><p>
+
+<strong>Example</strong>
+
+</p>
+<pre class="code php"><span class="re1">$fruits</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'fruit1'</span> <span class="sy0">=&gt;</span> <span class="st0">'apple'</span><span class="sy0">,</span> <span class="st0">'fruit2'</span> <span class="sy0">=&gt;</span> <span class="st0">'mango'</span><span class="sy0">,</span> <span class="st0">'fruit3'</span> <span class="sy0">=&gt;</span> <span class="st0">'pineapple'</span><span class="br0">)</span><span class="sy0">;</span>
+arr<span class="sy0">::</span><span class="me2">unshift_assoc</span><span class="br0">(</span><span class="re1">$fruits</span><span class="sy0">,</span> <span class="st0">'fruit1'</span><span class="sy0">,</span> <span class="st0">'strawberry'</span><span class="br0">)</span><span class="sy0">;</span>
+<a href="http://www.php.net/print"><span class="kw3">print</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span><span class="re1">$fruits</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+<strong>Output</strong>
+
+</p>
+<pre class="code php"><span class="br0">(</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">)</span> <a href="http://www.php.net/array"><span class="kw3">Array</span></a>
+<span class="br0">(</span>
+    <span class="br0">[</span>fruit1<span class="br0">]</span> <span class="sy0">=&gt;</span> strawberry
+    <span class="br0">[</span>fruit2<span class="br0">]</span> <span class="sy0">=&gt;</span> mango
+    <span class="br0">[</span>fruit3<span class="br0">]</span> <span class="sy0">=&gt;</span> pineapple
+<span class="br0">)</span></pre>
+</div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+			helpers/arr.txt · Last modified: 2008/11/13 13:06 by peruginni			 
+		</div>
+	</div>
+
+	</div>
+
+<div id="footer"><strong>©2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+
+<div class="no"><img src="/lib/exe/indexer.php?id=helpers%3Aarr&amp;1229410993" width="1" height="1" alt=""></div>
+</body></html>

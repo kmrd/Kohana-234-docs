@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class url_Core</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class url_Core</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">URL helper class.</p>
+<p class="description"><p>$Id: url.php 3700 2008-11-22 20:35:48Z Shadowhand $</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Kohana Team</li>
+				<li><span class="field">copyright:</span> (c) 2007-2008 Kohana Team</li>
+				<li><span class="field">license:</span> <a href="http://kohanaphp.com/license.html">http://kohanaphp.com/license.html</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_url.php.html">/url.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#base" title="details" class="method-name">base</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$index</span> = <span class="var-default">FALSE</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$protocol</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#current" title="details" class="method-name">current</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$qs</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#file" title="details" class="method-name">file</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$index</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#merge" title="details" class="method-name">merge</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$arguments</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">void</span>
+										<a href="#redirect" title="details" class="method-name">redirect</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uri</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span> = <span class="var-default">'302'</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#site" title="details" class="method-name">site</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$uri</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$protocol</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#title" title="details" class="method-name">title</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$separator</span> = <span class="var-default">'-'</span>])
+									</div>
+								
+																																																												</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodbase" id="base"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method base</span> (line <span class="line-number">35</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Base URL, with or without the index page.</p>
+<p class="description"><p>If protocol (and core.site_protocol) and core.site_domain are both empty,  then</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			base
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$index</span> = <span class="var-default">FALSE</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$protocol</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$index</span><span class="var-description">: include the index page</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$protocol</span><span class="var-description">: non-default protocol</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcurrent" id="current"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method current</span> (line <span class="line-number">20</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Fetches the current URI.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			current
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$qs</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$qs</span><span class="var-description">: include the query string</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfile" id="file"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method file</span> (line <span class="line-number">122</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the URL to a file. Absolute filenames and relative filenames  are allowed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			file
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$index</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: filename</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$index</span><span class="var-description">: include the index page</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmerge" id="merge"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method merge</span> (line <span class="line-number">140</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Merges an array of arguments with the current URI and query string to  overload, instead of replace, the current query string.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			merge
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$arguments</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$arguments</span><span class="var-description">: associative array of arguments</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodredirect" id="redirect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method redirect</span> (line <span class="line-number">186</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sends a page redirect header and runs the system.redirect Event.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">void</span>
+		<span class="method-name">
+			redirect
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uri</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span> = <span class="var-default">'302'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$uri</span><span class="var-description">: string site URI or URL to redirect to, or array of strings if method is 300</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$method</span><span class="var-description">: HTTP method of redirect</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsite" id="site"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method site</span> (line <span class="line-number">90</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Fetches an absolute site URL based on a URI segment.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			site
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$uri</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$protocol</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$uri</span><span class="var-description">: site URI to convert</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$protocol</span><span class="var-description">: non-default protocol</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodtitle" id="title"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method title</span> (line <span class="line-number">162</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Convert a phrase to a URL-safe title.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			title
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$separator</span> = <span class="var-default">'-'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: phrase to convert</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$separator</span><span class="var-description">: word separator (- or _)</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 16 Dec 2008 16:40:05 +0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

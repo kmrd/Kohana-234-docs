@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Validation_Core</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Validation_Core</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-consts">Constants</a>
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validation library.</p>
+<p class="description"><p>$Id: Validation.php 3761 2008-12-10 04:26:02Z Shadowhand $</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Kohana Team</li>
+				<li><span class="field">copyright:</span> (c) 2007-2008 Kohana Team</li>
+				<li><span class="field">license:</span> <a href="http://kohanaphp.com/license.html">http://kohanaphp.com/license.html</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Validation.php.html">/Validation.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre>ArrayObject
+   |
+   --Validation_Core</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-consts">Constants</a>
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$array_fields" title="details" class="var-name">$array_fields</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$callbacks" title="details" class="var-name">$callbacks</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$empty_rules" title="details" class="var-name">$empty_rules</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$errors" title="details" class="var-name">$errors</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$messages" title="details" class="var-name">$messages</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$post_filters" title="details" class="var-name">$post_filters</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$pre_filters" title="details" class="var-name">$pre_filters</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$rules" title="details" class="var-name">$rules</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$submitted" title="details" class="var-name">$submitted</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-consts">Constants</a>
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																				<div class="method-definition">
+					static 						<span class="method-result">object</span>
+										<a href="#factory" title="details" class="method-name">factory</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$array</span>)
+									</div>
+																																																																																																
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$array</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#add_callbacks" title="details" class="method-name">add_callbacks</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type">callbacks</span>&nbsp;<span class="var-name">$callbacks</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#add_error" title="details" class="method-name">add_error</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#add_rules" title="details" class="method-name">add_rules</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type">callback</span>&nbsp;<span class="var-name">$rules</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#allow_empty_rules" title="details" class="method-name">allow_empty_rules</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$rules</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#as_array" title="details" class="method-name">as_array</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#callback" title="details" class="method-name">callback</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$callback</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#chars" title="details" class="method-name">chars</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$chars</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">Validation</span>
+										<a href="#copy" title="details" class="method-name">copy</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$array</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#depends_on" title="details" class="method-name">depends_on</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$fields</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#errors" title="details" class="method-name">errors</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$file</span> = <span class="var-default">NULL</span>])
+									</div>
+																								<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#field_names" title="details" class="method-name">field_names</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#length" title="details" class="method-name">length</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$str</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$length</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#matches" title="details" class="method-name">matches</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$str</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$inputs</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|object</span>
+										<a href="#message" title="details" class="method-name">message</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#post_filter" title="details" class="method-name">post_filter</a>
+											(<span class="var-type">callback</span>&nbsp;<span class="var-name">$filter</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#pre_filter" title="details" class="method-name">pre_filter</a>
+											(<span class="var-type">callback</span>&nbsp;<span class="var-name">$filter</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#required" title="details" class="method-name">required</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#safe_array" title="details" class="method-name">safe_array</a>
+											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#submitted" title="details" class="method-name">submitted</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#validate" title="details" class="method-name">validate</a>
+											([<span class="var-type">object Validation</span>&nbsp;<span class="var-name">$object</span> = <span class="var-default">NULL</span>], [<span class="var-type">object name</span>&nbsp;<span class="var-name">$field_name</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__clone" title="details" class="method-name">__clone</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-consts">Constants</a>
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$array_fields" id="$array_fields"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$array_fields</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">30</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$callbacks" id="$callbacks"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$callbacks</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">20</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$empty_rules" id="$empty_rules"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$empty_rules</span>
+			 = <span class="var-default">array('required', 'matches')</span>			(line <span class="line-number">23</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$errors" id="$errors"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$errors</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">26</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$messages" id="$messages"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$messages</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">27</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$post_filters" id="$post_filters"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$post_filters</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">16</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$pre_filters" id="$pre_filters"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$pre_filters</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">15</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$rules" id="$rules"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$rules</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">19</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$submitted" id="$submitted"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$submitted</span>
+						(line <span class="line-number">33</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																			<a href="#sec-consts">Constants</a>
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodfactory" id="factory"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method factory</span> (line <span class="line-number">41</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates a new Validation instance.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">object</span>
+		<span class="method-name">
+			factory
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$array</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$array</span><span class="var-description">: array to use for validation</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">53</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the unique &quot;any field&quot; key and creates an ArrayObject from the  passed array.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$array</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$array</span><span class="var-description">: array to validate</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt>ArrayObject::constructor __construct ( $array )</dt>
+					</dl>
+			
+	</div>
+<a name="methodadd_callbacks" id="add_callbacks"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_callbacks</span> (line <span class="line-number">390</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add callbacks to a field. Callbacks must accept the Validation object  and the input name. Callback returns are not processed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			add_callbacks
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type">callbacks</span>&nbsp;<span class="var-name">$callbacks</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$field</span><span class="var-description">: field name</span>			</li>
+					<li>
+				<span class="var-type">callbacks</span>
+				<span class="var-name">$callbacks</span><span class="var-description">: callbacks (unlimited number)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_error" id="add_error"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_error</span> (line <span class="line-number">641</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add an error to an input.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			add_error
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$field</span><span class="var-description">: input name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: unique error name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_rules" id="add_rules"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_rules</span> (line <span class="line-number">335</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add rules to a field. Validation rules may only return TRUE or FALSE and  can not manipulate the value of a field.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			add_rules
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type">callback</span>&nbsp;<span class="var-name">$rules</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$field</span><span class="var-description">: field name</span>			</li>
+					<li>
+				<span class="var-type">callback</span>
+				<span class="var-name">$rules</span><span class="var-description">: rules (one or more arguments)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodallow_empty_rules" id="allow_empty_rules"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">allow_empty_rules</span> (line <span class="line-number">188</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add additional rules that will forced, even for empty fields. All arguments  passed will be appended to the list.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			allow_empty_rules
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$rules</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$rules</span><span class="var-description">: rule name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodas_array" id="as_array"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">as_array</span> (line <span class="line-number">130</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the array values of the current object.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			as_array
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcallback" id="callback"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">callback</span> (line <span class="line-number">204</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Converts a filter, rule, or callback into a fully-qualified callback array.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			callback
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$callback</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$callback</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodchars" id="chars"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">chars</span> (line <span class="line-number">821</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Rule: chars. Generates an error if the field contains characters outside of the list.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			chars
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$chars</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: field value</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$chars</span><span class="var-description">: allowed characters</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcopy" id="copy"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">copy</span> (line <span class="line-number">79</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a copy of the current validation rules and change the array.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Validation</span>
+		<span class="method-name">
+			copy
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$array</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$array</span><span class="var-description">: new array to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddepends_on" id="depends_on"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">depends_on</span> (line <span class="line-number">803</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Rule: depends_on. Generates an error if the field does not depend on one  or more other fields.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			depends_on
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$fields</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$field</span><span class="var-description">: field name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$fields</span><span class="var-description">: field names to check dependency</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoderrors" id="errors"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">errors</span> (line <span class="line-number">694</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the errors array.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			errors
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$file</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$file</span><span class="var-description">: load errors from a lang file</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfield_names" id="field_names"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">field_names</span> (line <span class="line-number">108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an array of all the field names that have filters, rules, or callbacks.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			field_names
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlength" id="length"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">length</span> (line <span class="line-number">770</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Rule: length. Generates an error if the field is too long or too short.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			length
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$str</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$length</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$str</span><span class="var-description">: input value</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$length</span><span class="var-description">: minimum, maximum, or exact length to match</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmatches" id="matches"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">matches</span> (line <span class="line-number">752</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Rule: matches. Generates an error if the field does not match one or more  other fields.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			matches
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$str</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$inputs</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$str</span><span class="var-description">: input value</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$inputs</span><span class="var-description">: input names to match against</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmessage" id="message"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">message</span> (line <span class="line-number">656</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets or returns the message for an input.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|object</span>
+		<span class="method-name">
+			message
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$input</span><span class="var-description">: input key</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$message</span><span class="var-description">: message to set</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpost_filter" id="post_filter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">post_filter</span> (line <span class="line-number">300</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add a post-filter to one or more inputs. Post-filters are applied after  rules and callbacks have been executed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			post_filter
+		</span>
+					(<span class="var-type">callback</span>&nbsp;<span class="var-name">$filter</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">callback</span>
+				<span class="var-name">$filter</span><span class="var-description">: filter</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$field</span><span class="var-description">: fields to apply filter to, use TRUE for all fields</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpre_filter" id="pre_filter"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">pre_filter</span> (line <span class="line-number">265</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add a pre-filter to one or more inputs. Pre-filters are applied before  rules or callbacks are executed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			pre_filter
+		</span>
+					(<span class="var-type">callback</span>&nbsp;<span class="var-name">$filter</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">callback</span>
+				<span class="var-name">$filter</span><span class="var-description">: filter</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$field</span><span class="var-description">: fields to apply filter to, use TRUE for all fields</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrequired" id="required"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">required</span> (line <span class="line-number">726</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Rule: required. Generates an error if the field has an empty value.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			required
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$str</span><span class="var-description">: input value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsafe_array" id="safe_array"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">safe_array</span> (line <span class="line-number">142</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the ArrayObject values, removing all inputs without rules.</p>
+<p class="description"><p>To choose specific inputs, list the field name as arguments.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			safe_array
+		</span>
+					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">0</span><span class="var-description">: return only fields with filters, rules, and callbacks</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsubmitted" id="submitted"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">submitted</span> (line <span class="line-number">93</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Test if the data has been submitted.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			submitted
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodvalidate" id="validate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">validate</span> (line <span class="line-number">424</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate by processing pre-filters, rules, callbacks, and post-filters.</p>
+<p class="description"><p>All fields that have filters, rules, or callbacks will be initialized if  they are undefined. Validation will only be run if there is data already  in the array.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			validate
+		</span>
+					([<span class="var-type">object Validation</span>&nbsp;<span class="var-name">$object</span> = <span class="var-default">NULL</span>], [<span class="var-type">object name</span>&nbsp;<span class="var-name">$field_name</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object Validation</span>
+				<span class="var-name">$object</span><span class="var-description">: object, used only for recursion</span>			</li>
+					<li>
+				<span class="var-type">object name</span>
+				<span class="var-name">$field_name</span><span class="var-description">: of field for errors</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__clone" id="__clone"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">__clone</span> (line <span class="line-number">66</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Magic clone method, clears errors and messages.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__clone
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname">ArrayObject (Internal Class)</span></p>
+					<blockquote>
+													<span class="method-name">constructor __construct ( $array )</span><br>
+													<span class="method-name">append ( $value )</span><br>
+													<span class="method-name">asort (  )</span><br>
+													<span class="method-name">count (  )</span><br>
+													<span class="method-name">exchangeArray ( $array )</span><br>
+													<span class="method-name">getArrayCopy (  )</span><br>
+													<span class="method-name">getFlags (  )</span><br>
+													<span class="method-name">getIterator (  )</span><br>
+													<span class="method-name">getIteratorClass (  )</span><br>
+													<span class="method-name">ksort (  )</span><br>
+													<span class="method-name">natcasesort (  )</span><br>
+													<span class="method-name">natsort (  )</span><br>
+													<span class="method-name">offsetExists ( $index )</span><br>
+													<span class="method-name">offsetGet ( $index )</span><br>
+													<span class="method-name">offsetSet ( $index, $newval )</span><br>
+													<span class="method-name">offsetUnset ( $index )</span><br>
+													<span class="method-name">setFlags ( $flags )</span><br>
+													<span class="method-name">setIteratorClass ( $iteratorClass )</span><br>
+													<span class="method-name">uasort ( $cmp_function )</span><br>
+													<span class="method-name">uksort ( $cmp_function )</span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+										<h4>Inherited Constants</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname">ArrayObject (Internal Class)</span></p>
+					<blockquote>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">ARRAY_AS_PROPS = 2</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">STD_PROP_LIST = 1</span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 16 Dec 2008 16:40:29 +0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

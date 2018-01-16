@@ -1,0 +1,579 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+    helpers:valid    [Kohana User Guide]
+</title><meta name="generator" content="DokuWiki Release 2008-05-05"><meta name="robots" content="index,follow"><meta name="date" content="2008-08-27T09:23:13-0500"><meta name="keywords" content="helpers,valid"><link rel="search" type="application/opensearchdescription+xml" href="..\lib\exe\opensearch.html" title="Kohana User Guide"><link rel="start" href="/"><link rel="contents" href="valid-2.html?do=index" title="Index"><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="..\feed.html"><link rel="alternate" type="application/rss+xml" title="Current Namespace" href="..\feed-5.html?mode=list&amp;ns=helpers"><link rel="alternate" type="text/html" title="Plain HTML" href="..\_export\xhtml\helpers\valid.html"><link rel="alternate" type="text/plain" title="Wiki Markup" href="..\_export\raw\helpers\valid.html"><link rel="stylesheet" media="all" type="text/css" href="..\_css\all.css"><link rel="stylesheet" media="screen" type="text/css" href="..\_css\kohana.css"><link rel="stylesheet" media="print" type="text/css" href="..\_css\print.css"><script type="text/javascript" charset="utf-8" src="..\_js\script.js"></script><link rel="shortcut icon" href="..\lib\tpl\kohana\images\favicon.html"><link rel="stylesheet" type="text/css" href="..\_css\my.css"></head><body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="..\contents.html"><img src="..\_img\kohana.png" alt="Kohana"></a>
+<!-- End Logo -->
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul><li class="top active"><a href="..\contents.html">Contents</a></li>
+
+
+<li class="top"><a href="..\contents.html">General<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\general\configuration.html" title="Configuration">Configuration</a></li>
+				<li><a href="..\general\controllers.html" title="Controllers">Controllers</a></li>
+				<li><a href="..\general\errorhandling.html" title="Error Handling">Error Handling</a></li>
+				<li><a href="..\general\events.html" title="Events">Events</a></li>
+				<li><a href="..\general\filesystem.html" title="Filesystem">Filesystem</a></li>
+				<li><a href="..\general\helpers.html" title="Helpers">Helpers</a></li>
+				<li><a href="..\general\hooks.html" title="Hooks">Hooks</a></li>
+				<li><a href="..\general\i18n.html" title="Internationalization">Internationalization</a></li>
+				<li><a href="..\general\libraries.html" title="Libraries">Libraries</a></li>
+				<li><a href="..\general\loading.html" title="Loading">Loading</a></li>
+				<li><a href="..\general\logging.html" title="Logging">Logging</a></li>
+				<li><a href="..\general\models.html" title="Models">Models</a></li>
+				<li><a href="..\general\modules.html" title="Modules">Modules</a></li>
+				<li><a href="..\general\routing.html" title="Routing">Routing</a></li>
+				<li><a href="..\general\urls.html" title="URLs">URLs</a></li>
+				<li><a href="..\general\views.html" title="Views">Views</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Core<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\core\benchmark.html" title="Benchmark">Benchmark</a></li>
+				<li><a href="..\core\config.html" title="Config">Config</a></li>
+				<li><a href="..\core\event.html" title="Event">Event</a></li>
+				<li><a href="..\core\kohana.html" title="Kohana">Kohana</a></li>
+				<li><a href="..\core\log.html" title="Log">Log</a></li>
+				<li><a href="..\core\utf8.html" title="Unicode">Unicode</a></li>
+				<li><a href="..\core\view.html" title="View">View</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Libraries<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\libraries\cache.html" title="Cache">Cache</a></li>
+				<li><a href="..\libraries\calendar.html" title="Calendar">Calendar</a></li>
+				<li><a href="..\libraries\captcha.html" title="Captcha">Captcha</a></li>
+				<li><a href="..\libraries\database.html" title="Database">Database</a></li>
+				<li><a href="..\libraries\encrypt.html" title="Encrypt">Encrypt</a></li>
+				<li><a href="..\libraries\image.html" title="Image">Image</a></li>
+				<li><a href="..\libraries\input.html" title="Input">Input</a></li>
+				<li><a href="..\libraries\orm.html" title="ORM">ORM</a></li>
+				<li><a href="..\libraries\pagination.html" title="Pagination">Pagination</a></li>
+				<li><a href="..\libraries\profiler.html" title="Profiler">Profiler</a></li>
+				<li><a href="..\libraries\session.html" title="Session">Session</a></li>
+				<li><a href="..\libraries\uri.html" title="URI">URI</a></li>
+				<li><a href="..\libraries\validation.html" title="Validation">Validation</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Helpers<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="arr.html" title="Array">Array</a></li>
+				<li><a href="cookie.html" title="Cookie">Cookie</a></li>
+				<li><a href="date.html" title="Date">Date</a></li>
+				<li><a href="download.html" title="Download">Download</a></li>
+				<li><a href="email.html" title="Email">Email</a></li>
+				<li><a href="expires.html" title="Expires">Expires</a></li>
+				<li><a href="feed.html" title="Feed">Feed</a></li>
+				<li><a href="file.html" title="File">File</a></li>
+				<li><a href="form.html" title="Form">Form</a></li>
+				<li><a href="format.html" title="Format">Format</a></li>
+				<li><a href="html.html" title="HTML">HTML</a></li>
+				<li><a href="inflector.html" title="Inflector">Inflector</a></li>
+				<li><a href="num.html" title="Num">Num</a></li>
+				<li><a href="remote.html" title="Remote">Remote</a></li>
+				<li><a href="request.html" title="Request">Request</a></li>
+				<li><a href="security.html" title="Security">Security</a></li>
+				<li><a href="text.html" title="Text">Text</a></li>
+				<li><a href="upload.html" title="Upload">Upload</a></li>
+				<li><a href="url.html" title="URL">URL</a></li>
+				<li><a href="valid.html" title="Valid">Valid</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+</ul></div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<!-- TOC START -->
+<!-- TOC END -->
+<table class="inline"><tr class="row0"><th class="col0">Status</th><td class="col1">Draft</td>
+	</tr><tr class="row1"><th class="col0">Todo</th><td class="col1">check grammar, enhance explanations and layout</td>
+	</tr></table><h1><a name="valid_helper" id="valid_helper">Valid Helper</a></h1>
+<div class="level1">
+
+<p>
+Provides methods for validating inputs. It currently features validation for email-addresses, ip's, url's, digits/numbers and text. 
+</p>
+
+</div>
+
+<h2><a name="methods" id="methods">Methods</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a name="email" id="email">email()</a></h3>
+<div class="level3">
+
+<p>
+
+'email' checks whether an email address is valid. 
+It is more strict than the valid::email_rfc() method.  
+</p>
+<ul><li class="level1"><div class="li"> [string] Email address to validate</div>
+</li>
+</ul><pre class="code php">    <span class="re1">$email</span> <span class="sy0">=</span> <span class="st0">'<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0f6d6663634f686e7b6a7c216c6062">[email&#160;protected]</a>'</span><span class="sy0">;</span>
+    <span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">email</span><span class="br0">(</span><span class="re1">$email</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+         <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid email"</span><span class="sy0">;</span>
+    <span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+         <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid email"</span><span class="sy0">;</span>
+    <span class="br0">}</span></pre>
+<p>
+
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict">Valid email</pre>
+</div>
+
+<h3><a name="email_domain" id="email_domain">email_domain()</a></h3>
+<div class="level3">
+
+<p>
+
+'email_domain' validates the domain part of an email address by checking if the domain has a valid MX record.
+</p>
+<ul><li class="level1"><div class="li"> [string] Email address to validate</div>
+</li>
+</ul><pre class="code php">    <span class="re1">$email</span> <span class="sy0">=</span> <span class="st0">'<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c7a5aeabab87a0a6b3a2b4e9a4a8aa">[email&#160;protected]</a>'</span><span class="sy0">;</span>
+    <span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">email_domain</span><span class="br0">(</span><span class="re1">$email</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+         <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid email domain"</span><span class="sy0">;</span>
+    <span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+         <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid email domain"</span><span class="sy0">;</span>
+    <span class="br0">}</span></pre>
+<p>
+
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict">Valid email domain</pre>
+
+<div class="box red">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+  <div class="xbox">
+<div class="box_content"><p>
+This function uses <a href="http://www.php.net/checkdnsrr" class="urlextern" title="http://www.php.net/checkdnsrr" rel="nofollow">http://www.php.net/checkdnsrr</a> which is not implemented on Windows platforms. So if your Kohana installation is running in Windows this function will return true no matter if the domain is valid or not.
+A solution for this is to write your own checkdnsrr function. You can find an implementation here: <a href="http://www.php.net/manual/en/function.checkdnsrr.php#82701" class="urlextern" title="http://www.php.net/manual/en/function.checkdnsrr.php#82701" rel="nofollow">http://www.php.net/manual/en/function.checkdnsrr.php#82701</a>
+</p></div>
+  </div>
+  <b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+
+
+</div>
+
+<h3><a name="email_rfc" id="email_rfc">email_rfc()</a></h3>
+<div class="level3">
+
+<p>
+
+'email_rfc' validates an emailaddress based on the RFC specifications (<a href="http://www.w3.org/Protocols/rfc822/" class="urlextern" title="http://www.w3.org/Protocols/rfc822/" rel="nofollow">http://www.w3.org/Protocols/rfc822/</a>). 
+This validation is <strong>less</strong> strict than the valid::email() function. 
+</p>
+<ul><li class="level1"><div class="li"> [string] Email address to validate</div>
+</li>
+</ul><pre class="code php">    <span class="re1">$email</span> <span class="sy0">=</span> <span class="st0">'<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dfbdb6b3b39fb8beabbaacf1bcb0b2">[email&#160;protected]</a>'</span><span class="sy0">;</span>
+    <span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">email_rfc</span><span class="br0">(</span><span class="re1">$email</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+         <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid email"</span><span class="sy0">;</span>
+    <span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+         <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid email"</span><span class="sy0">;</span>
+    <span class="br0">}</span></pre>
+<p>
+
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid email</pre>
+</div>
+
+<h3><a name="url" id="url">url()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>url($url)</code> does some simple validation on an <acronym title="Uniform Resource Locator">URL</acronym> to find out it if it <em>could</em> be existing. 
+</p>
+<ul><li class="level1"><div class="li"> [string] <acronym title="Uniform Resource Locator">URL</acronym> to be validated</div>
+</li>
+</ul><pre class="code php">    <span class="re1">$url</span> <span class="sy0">=</span> <span class="st0">'http://www.kohanaphp.com'</span><span class="sy0">;</span>
+    <span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">url</span><span class="br0">(</span><span class="re1">$url</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+         <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid URL"</span><span class="sy0">;</span>
+    <span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+         <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid URL"</span><span class="sy0">;</span>
+    <span class="br0">}</span></pre>
+<p>
+
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid URL</pre>
+</div>
+
+<h3><a name="ip" id="ip">ip()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>ip($ip, $ipv6 = FALSE)</code> validates an IP-address to make sure it <em>could</em> exist, but does not guarantee it actually does. 
+</p>
+<ul><li class="level1"><div class="li"> [string] IP-address to be validated</div>
+</li>
+<li class="level1"><div class="li"> [bool]   allow IPv6 addresses (default FALSE)</div>
+</li>
+</ul><pre class="code php"><span class="re1">$ip</span><span class="sy0">=</span><span class="st0">"65.181.130.41"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">ip</span><span class="br0">(</span><span class="re1">$ip</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid IP"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid IP"</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="re1">$ip</span><span class="sy0">=</span><span class="st0">"123.456.678.912"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">ip</span><span class="br0">(</span><span class="re1">$ip</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid IP"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid IP"</span><span class="sy0">;</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid IP
+Invalid IP</pre>
+</div>
+
+<h3><a name="credit_card" id="credit_card">credit_card()</a></h3>
+<div class="level3">
+
+<p>
+
+'credit_card' checks if a credit card number is valid or not depending on the configuration defined on your credit_cards.php config file.
+</p>
+<ul><li class="level1"><div class="li"> [string] Card number to be validated</div>
+</li>
+<li class="level1"><div class="li"> [string|array] Card type, or an array of card types – default = NULL</div>
+</li>
+</ul><p>
+This method will check if the credit card number is valid taking into account the settings defined in the credits_cards.php config file. If nothing is passed as second parameter then the default type of the credits_cards.php config file will be used.
+
+</p>
+<pre class="code php"><span class="re1">$number</span> <span class="sy0">=</span> <span class="st0">"4992739871600"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">credit_card</span><span class="br0">(</span><span class="re1">$number</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid credit card number"</span><span class="sy0">;</span>
+<span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid credit card number"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid credit card number</pre>
+<p>
+This method allows to pass as second argument an array of credit_cards type (which you define in the credit_cards.php config file). If you do so, the number will be considered valid if it matches with the specifications of at least one of the types added in the array.
+</p>
+
+<p>
+Consider the following example:
+
+</p>
+<pre class="code php"><span class="re1">$number</span> <span class="sy0">=</span> <span class="st0">"4992739871600"</span><span class="sy0">;</span>
+<span class="re1">$types</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span>
+    <span class="st0">'default'</span><span class="sy0">,</span>
+    <span class="st0">'american express'</span>
+<span class="br0">)</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">credit_card</span><span class="br0">(</span><span class="re1">$number</span><span class="sy0">,</span> <span class="re1">$types</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid credit card number"</span><span class="sy0">;</span>
+<span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid credit card number"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid credit card number</pre>
+<p>
+
+Since the credit number passed as first argument matches at least the rules defined for the default type.
+</p>
+
+</div>
+
+<h3><a name="phone" id="phone">phone()</a></h3>
+<div class="level3">
+
+<p>
+
+'phone' checks whether a phone number is valid or not. It strips all the characters which are not a digit from the string at the moment of the validation.
+</p>
+<ul><li class="level1"><div class="li"> [string] The phone number to check</div>
+</li>
+<li class="level1"><div class="li"> [array] Optional array containing the allowed lengths – defaults = array(7,10,11)</div>
+</li>
+</ul><pre class="code php"><span class="re1">$phone</span> <span class="sy0">=</span> <span class="st0">'+54 123-456 789'</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">phone</span><span class="br0">(</span><span class="re1">$phone</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid phone number"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid phone number"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as:
+
+</p>
+<pre class="code html4strict">Valid phone number</pre>
+</div>
+
+<h3><a name="alpha" id="alpha">alpha()</a></h3>
+<div class="level3">
+
+<p>
+
+'alpha' checks whether a string consists of alphabetical characters only
+</p>
+<ul><li class="level1"><div class="li"> [string] String to be validated</div>
+</li>
+<li class="level1"><div class="li"> [boolean] If true UTF-8 mode will be used – default = FALSE</div>
+</li>
+</ul><pre class="code php"><span class="re1">$string</span><span class="sy0">=</span><span class="st0">"KohanaPHP is cool"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">alpha</span><span class="br0">(</span><span class="re1">$string</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid string"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid string"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Invalid string</pre><pre class="code php"><span class="re1">$string</span><span class="sy0">=</span><span class="st0">"KohanaPHPiscool"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">alpha</span><span class="br0">(</span><span class="re1">$string</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid string"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid string"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid string</pre>
+</div>
+
+<h3><a name="alpha_numeric" id="alpha_numeric">alpha_numeric()</a></h3>
+<div class="level3">
+
+<p>
+
+'alpha_numeric' checks whether a string consists of alphabetical characters and numbers only
+</p>
+<ul><li class="level1"><div class="li"> [string] String to be validated</div>
+</li>
+<li class="level1"><div class="li"> [boolean] If true UTF-8 mode will be used – default = FALSE</div>
+</li>
+</ul><pre class="code php"><span class="re1">$string</span><span class="sy0">=</span><span class="st0">"KohanaPHP Version 2 is cool"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">alpha_numeric</span><span class="br0">(</span><span class="re1">$string</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid string"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid string"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Invalid string</pre><pre class="code php"><span class="re1">$string</span><span class="sy0">=</span><span class="st0">"KohanaPHPVersion2iscool"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">alpha_numeric</span><span class="br0">(</span><span class="re1">$string</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid string"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid string"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid string</pre>
+</div>
+
+<h3><a name="alpha_dash" id="alpha_dash">alpha_dash()</a></h3>
+<div class="level3">
+
+<p>
+
+'alpha_dash' checks whether a string consists of alphabetical characters, numbers, underscores and dashes only
+</p>
+<ul><li class="level1"><div class="li"> [string] String to be validated</div>
+</li>
+<li class="level1"><div class="li"> [boolean] If true UTF-8 mode will be used – default = FALSE</div>
+</li>
+</ul><pre class="code php"><span class="re1">$string</span><span class="sy0">=</span><span class="st0">"KohanaPHP Version 2 is cool"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">alpha_dash</span><span class="br0">(</span><span class="re1">$string</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid string"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid string"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Invalid string</pre><pre class="code php"><span class="re1">$string</span><span class="sy0">=</span><span class="st0">"KohanaPHP_Version-2-is_cool"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">alpha_dash</span><span class="br0">(</span><span class="re1">$string</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid string"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid string"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid string</pre>
+</div>
+
+<h3><a name="digit" id="digit">digit()</a></h3>
+<div class="level3">
+
+<p>
+
+'digit' checks whether a string consists of digits only (no dots or dashes)
+</p>
+<ul><li class="level1"><div class="li"> [string] String to be validated</div>
+</li>
+<li class="level1"><div class="li"> [boolean] If true UTF-8 mode will be used – default = FALSE</div>
+</li>
+</ul><pre class="code php"><span class="re1">$digits</span> <span class="sy0">=</span> <span class="st0">"23424.32"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">digit</span><span class="br0">(</span><span class="re1">$digits</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Invalid</pre><pre class="code php"><span class="re1">$digits</span> <span class="sy0">=</span> <span class="st0">"2342432"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">digit</span><span class="br0">(</span><span class="re1">$digits</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid</pre>
+</div>
+
+<h3><a name="numeric" id="numeric">numeric()</a></h3>
+<div class="level3">
+
+<p>
+
+'numeric' checks whether a string is a valid number (negative and decimal numbers allowed)
+
+</p>
+<ul><li class="level1"><div class="li"> [string] the input string</div>
+</li>
+</ul><pre class="code php"><span class="re1">$number</span> <span class="sy0">=</span> <span class="st0">"-23424.32"</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">numeric</span><span class="br0">(</span><span class="re1">$number</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid</pre>
+</div>
+
+<h3><a name="standard_text" id="standard_text">standard_text()</a></h3>
+<div class="level3">
+
+<p>
+
+'standard_text' checks whether a string is a valid text. Letters, numbers, whitespace, dashes, periods, and underscores are allowed.
+</p>
+<ul><li class="level1"><div class="li"> [string] Text to be validated</div>
+</li>
+</ul><pre class="code php"><span class="re1">$text</span> <span class="sy0">=</span> <span class="st0">'this is not a valid text because of the : character'</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">standard_text</span><span class="br0">(</span><span class="re1">$text</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid standard text"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid standard text"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Invalid standard text</pre>
+</div>
+
+<h3><a name="decimal" id="decimal">decimal()</a></h3>
+<div class="level3">
+
+<p>
+
+'decimal' Checks if a string is a proper decimal format. The format array can be used to specify a decimal length, or a number and decimal length, eg:
+</p>
+<pre class="code"> * array(2) would force the number to have 2 decimal places, array(4,2)
+ * would force the number to have 4 digits and 2 decimal places.</pre>
+<ul><li class="level1"><div class="li"> [string] string to be validated</div>
+</li>
+<li class="level1"><div class="li"> [array] decimal format: array(y) or array(x,y) - default NULL</div>
+</li>
+</ul><pre class="code php"><span class="re1">$decimal</span> <span class="sy0">=</span> <span class="st0">'4.5'</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">decimal</span><span class="br0">(</span><span class="re1">$decimal</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid decimal"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid decimal"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+
+</p>
+<pre class="code html4strict">Valid decimal</pre><pre class="code php"><span class="re1">$decimal</span> <span class="sy0">=</span> <span class="st0">'4.5'</span><span class="sy0">;</span>
+<span class="re1">$format</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="nu0">2</span><span class="sy0">,</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw1">if</span><span class="br0">(</span>valid<span class="sy0">::</span><span class="me2">decimal</span><span class="br0">(</span><span class="re1">$decimal</span><span class="sy0">,</span><span class="re1">$format</span><span class="br0">)</span> <span class="sy0">==</span> <span class="kw2">true</span><span class="br0">)</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Valid decimal"</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="kw1">else</span><span class="br0">{</span>
+    <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="st0">"Invalid decimal"</span><span class="sy0">;</span>
+<span class="br0">}</span></pre>
+<p>
+
+It will result in <acronym title="HyperText Markup Language">HTML</acronym> as: 
+</p>
+<pre class="code html4strict">Invalid decimal</pre>
+</div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+			helpers/valid.txt · Last modified: 2008/08/27 09:23 by edam			 
+		</div>
+	</div>
+
+	</div>
+
+<div id="footer"><strong>©2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+
+<div class="no"><img src="/lib/exe/indexer.php?id=helpers%3Avalid&amp;1229411045" width="1" height="1" alt=""></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script></body></html>

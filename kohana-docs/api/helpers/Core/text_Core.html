@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class text_Core</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class text_Core</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Text helper class.</p>
+<p class="description"><p>$Id: text.php 3750 2008-12-03 15:20:32Z Shadowhand $</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Kohana Team</li>
+				<li><span class="field">copyright:</span> (c) 2007-2008 Kohana Team</li>
+				<li><span class="field">license:</span> <a href="http://kohanaphp.com/license.html">http://kohanaphp.com/license.html</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_text.php.html">/text.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#alternate" title="details" class="method-name">alternate</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#auto_link" title="details" class="method-name">auto_link</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#auto_link_emails" title="details" class="method-name">auto_link_emails</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#auto_link_urls" title="details" class="method-name">auto_link_urls</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#auto_p" title="details" class="method-name">auto_p</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#bytes" title="details" class="method-name">bytes</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$bytes</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$force_unit</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$format</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$si</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#censor" title="details" class="method-name">censor</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$badwords</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$replacement</span> = <span class="var-default">'#'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$replace_partial_words</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#limit_chars" title="details" class="method-name">limit_chars</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">100</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$end_char</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$preserve_words</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#limit_words" title="details" class="method-name">limit_words</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">100</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$end_char</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#random" title="details" class="method-name">random</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'alnum'</span>], [<span class="var-type">integer</span>&nbsp;<span class="var-name">$length</span> = <span class="var-default">8</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#reduce_slashes" title="details" class="method-name">reduce_slashes</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#similar" title="details" class="method-name">similar</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$words</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#widont" title="details" class="method-name">widont</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+								
+																																																																																																												</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodalternate" id="alternate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method alternate</span> (line <span class="line-number">77</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alternates between two or more strings.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			alternate
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">0</span><span class="var-description">: strings to alternate between</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodauto_link" id="auto_link"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method auto_link</span> (line <span class="line-number">243</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Converts text email addresses and anchors into links.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			auto_link
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$text</span><span class="var-description">: text to auto link</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodauto_link_emails" id="auto_link_emails"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method auto_link_emails</span> (line <span class="line-number">286</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Converts text email addresses into links.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			auto_link_emails
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$text</span><span class="var-description">: text to auto link</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodauto_link_urls" id="auto_link_urls"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method auto_link_urls</span> (line <span class="line-number">255</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Converts text anchors into links.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			auto_link_urls
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$text</span><span class="var-description">: text to auto link</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodauto_p" id="auto_p"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method auto_p</span> (line <span class="line-number">309</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Automatically applies &lt;p&gt; and <br /> markup to text. Basically nl2br() on steroids.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			auto_p
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: subject</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbytes" id="bytes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method bytes</span> (line <span class="line-number">363</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns human readable sizes.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> Based on original functions written by:</li>
+				<li><span class="field">see:</span> <a href="Quentin Zervaas: http://www.phpriot.com/d/code/strings/filesize-format/">Quentin Zervaas: http://www.phpriot.com/d/code/strings/filesize-format/</a></li>
+				<li><span class="field">see:</span> <a href="Aidan Lister: http://aidanlister.com/repos/v/function.size_readable.php">Aidan Lister: http://aidanlister.com/repos/v/function.size_readable.php</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			bytes
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$bytes</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$force_unit</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$format</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$si</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$bytes</span><span class="var-description">: size in bytes</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$force_unit</span><span class="var-description">: a definitive unit</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$format</span><span class="var-description">: the return string format</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$si</span><span class="var-description">: whether to use SI prefixes or IEC</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcensor" id="censor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method censor</span> (line <span class="line-number">186</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Replaces the given words with a string.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			censor
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$badwords</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$replacement</span> = <span class="var-default">'#'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$replace_partial_words</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: phrase to replace words in</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$badwords</span><span class="var-description">: words to replace</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$replacement</span><span class="var-description">: replacement string</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$replace_partial_words</span><span class="var-description">: replace words across word boundries (space, period, etc)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlimit_chars" id="limit_chars"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method limit_chars</span> (line <span class="line-number">49</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Limits a phrase to a given number of characters.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			limit_chars
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">100</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$end_char</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$preserve_words</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: phrase to limit characters of</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$limit</span><span class="var-description">: number of characters to limit to</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$end_char</span><span class="var-description">: end character or entity</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$preserve_words</span><span class="var-description">: enable or disable the preservation of words while limiting</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlimit_words" id="limit_words"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method limit_words</span> (line <span class="line-number">22</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Limits a phrase to a given number of words.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			limit_words
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">100</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$end_char</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: phrase to limit words of</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$limit</span><span class="var-description">: number of words to limit to</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$end_char</span><span class="var-description">: end character or entity</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrandom" id="random"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method random</span> (line <span class="line-number">105</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generates a random string of a given type and length.</p>
+	<ul class="tags">
+				<li><span class="field">tutorial:</span> nozero    digit characters, 1-9</li>
+				<li><span class="field">tutorial:</span> distinct  clearly distinct alpha-numeric characters</li>
+				<li><span class="field">tutorial:</span> alnum     alpha-numeric characters</li>
+				<li><span class="field">tutorial:</span> numeric   digit characters, 0-9</li>
+				<li><span class="field">tutorial:</span> hexdec    hexadecimal characters, 0-9 plus a-f</li>
+				<li><span class="field">tutorial:</span> alpha     alphabetical characters</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			random
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'alnum'</span>], [<span class="var-type">integer</span>&nbsp;<span class="var-name">$length</span> = <span class="var-default">8</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: a type of pool, or a string of characters to use as the pool</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$length</span><span class="var-description">: length of string to return</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodreduce_slashes" id="reduce_slashes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method reduce_slashes</span> (line <span class="line-number">172</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reduces multiple slashes in a string to single slashes.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			reduce_slashes
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: string to reduce slashes of</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsimilar" id="similar"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method similar</span> (line <span class="line-number">218</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Finds the text that is similar between a set of words.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			similar
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$words</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$words</span><span class="var-description">: words to find similar text of</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwidont" id="widont"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method widont</span> (line <span class="line-number">397</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Prevents widow words by inserting a non-breaking space between the last two words.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="http://www.shauninman.com/archive/2006/08/22/widont_wordpress_plugin">http://www.shauninman.com/archive/2006/08/22/widont_wordpress_plugin</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			widont
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: string to remove widows from</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 16 Dec 2008 16:40:05 +0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

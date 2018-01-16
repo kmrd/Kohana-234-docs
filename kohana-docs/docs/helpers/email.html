@@ -1,0 +1,197 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+    helpers:email    [Kohana User Guide]
+</title><meta name="generator" content="DokuWiki Release 2008-05-05"><meta name="robots" content="index,follow"><meta name="date" content="2008-09-19T03:38:01-0500"><meta name="keywords" content="helpers,email"><link rel="search" type="application/opensearchdescription+xml" href="..\lib\exe\opensearch.html" title="Kohana User Guide"><link rel="start" href="/"><link rel="contents" href="email-1.html?do=index" title="Index"><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="..\feed.html"><link rel="alternate" type="application/rss+xml" title="Current Namespace" href="..\feed-5.html?mode=list&amp;ns=helpers"><link rel="alternate" type="text/html" title="Plain HTML" href="..\_export\xhtml\helpers\email.html"><link rel="alternate" type="text/plain" title="Wiki Markup" href="..\_export\raw\helpers\email.html"><link rel="stylesheet" media="all" type="text/css" href="..\_css\all.css"><link rel="stylesheet" media="screen" type="text/css" href="..\_css\kohana.css"><link rel="stylesheet" media="print" type="text/css" href="..\_css\print.css"><script type="text/javascript" charset="utf-8" src="..\_js\script.js"></script><link rel="shortcut icon" href="..\lib\tpl\kohana\images\favicon.html"><link rel="stylesheet" type="text/css" href="..\_css\my.css"></head><body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="..\contents.html"><img src="..\_img\kohana.png" alt="Kohana"></a>
+<!-- End Logo -->
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul><li class="top active"><a href="..\contents.html">Contents</a></li>
+
+
+<li class="top"><a href="..\contents.html">General<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\general\configuration.html" title="Configuration">Configuration</a></li>
+				<li><a href="..\general\controllers.html" title="Controllers">Controllers</a></li>
+				<li><a href="..\general\errorhandling.html" title="Error Handling">Error Handling</a></li>
+				<li><a href="..\general\events.html" title="Events">Events</a></li>
+				<li><a href="..\general\filesystem.html" title="Filesystem">Filesystem</a></li>
+				<li><a href="..\general\helpers.html" title="Helpers">Helpers</a></li>
+				<li><a href="..\general\hooks.html" title="Hooks">Hooks</a></li>
+				<li><a href="..\general\i18n.html" title="Internationalization">Internationalization</a></li>
+				<li><a href="..\general\libraries.html" title="Libraries">Libraries</a></li>
+				<li><a href="..\general\loading.html" title="Loading">Loading</a></li>
+				<li><a href="..\general\logging.html" title="Logging">Logging</a></li>
+				<li><a href="..\general\models.html" title="Models">Models</a></li>
+				<li><a href="..\general\modules.html" title="Modules">Modules</a></li>
+				<li><a href="..\general\routing.html" title="Routing">Routing</a></li>
+				<li><a href="..\general\urls.html" title="URLs">URLs</a></li>
+				<li><a href="..\general\views.html" title="Views">Views</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Core<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\core\benchmark.html" title="Benchmark">Benchmark</a></li>
+				<li><a href="..\core\config.html" title="Config">Config</a></li>
+				<li><a href="..\core\event.html" title="Event">Event</a></li>
+				<li><a href="..\core\kohana.html" title="Kohana">Kohana</a></li>
+				<li><a href="..\core\log.html" title="Log">Log</a></li>
+				<li><a href="..\core\utf8.html" title="Unicode">Unicode</a></li>
+				<li><a href="..\core\view.html" title="View">View</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Libraries<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\libraries\cache.html" title="Cache">Cache</a></li>
+				<li><a href="..\libraries\calendar.html" title="Calendar">Calendar</a></li>
+				<li><a href="..\libraries\captcha.html" title="Captcha">Captcha</a></li>
+				<li><a href="..\libraries\database.html" title="Database">Database</a></li>
+				<li><a href="..\libraries\encrypt.html" title="Encrypt">Encrypt</a></li>
+				<li><a href="..\libraries\image.html" title="Image">Image</a></li>
+				<li><a href="..\libraries\input.html" title="Input">Input</a></li>
+				<li><a href="..\libraries\orm.html" title="ORM">ORM</a></li>
+				<li><a href="..\libraries\pagination.html" title="Pagination">Pagination</a></li>
+				<li><a href="..\libraries\profiler.html" title="Profiler">Profiler</a></li>
+				<li><a href="..\libraries\session.html" title="Session">Session</a></li>
+				<li><a href="..\libraries\uri.html" title="URI">URI</a></li>
+				<li><a href="..\libraries\validation.html" title="Validation">Validation</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Helpers<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="arr.html" title="Array">Array</a></li>
+				<li><a href="cookie.html" title="Cookie">Cookie</a></li>
+				<li><a href="date.html" title="Date">Date</a></li>
+				<li><a href="download.html" title="Download">Download</a></li>
+				<li><a href="email.html" title="Email">Email</a></li>
+				<li><a href="expires.html" title="Expires">Expires</a></li>
+				<li><a href="feed.html" title="Feed">Feed</a></li>
+				<li><a href="file.html" title="File">File</a></li>
+				<li><a href="form.html" title="Form">Form</a></li>
+				<li><a href="format.html" title="Format">Format</a></li>
+				<li><a href="html.html" title="HTML">HTML</a></li>
+				<li><a href="inflector.html" title="Inflector">Inflector</a></li>
+				<li><a href="num.html" title="Num">Num</a></li>
+				<li><a href="remote.html" title="Remote">Remote</a></li>
+				<li><a href="request.html" title="Request">Request</a></li>
+				<li><a href="security.html" title="Security">Security</a></li>
+				<li><a href="text.html" title="Text">Text</a></li>
+				<li><a href="upload.html" title="Upload">Upload</a></li>
+				<li><a href="url.html" title="URL">URL</a></li>
+				<li><a href="valid.html" title="Valid">Valid</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+</ul></div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<!-- TOC START -->
+<!-- TOC END -->
+<table class="inline"><tr class="row0"><th class="col0">Status</th><td class="col1">Draft</td>
+	</tr><tr class="row1"><th class="col0">Todo</th><td class="col1">fill in connect, fuller description, expand configuration</td>
+	</tr></table><h1><a name="email_helper" id="email_helper">Email Helper</a></h1>
+<div class="level1">
+
+<p>
+
+An Email helper to work with the Swift email library.
+</p>
+
+</div>
+
+<h2><a name="configuration" id="configuration">Configuration</a></h2>
+<div class="level2">
+
+<p>
+
+The swiftmailer configuration for this helper is found in <code>config/email.php</code>
+</p>
+
+<p>
+Inside the <code>config/email.php</code> file you can select the driver type which are <code>native, sendmail, smtp</code>
+</p>
+
+<p>
+<strong>Example:</strong> using smtp
+
+</p>
+<pre class="code php"><span class="re1">$config</span><span class="br0">[</span><span class="st0">'driver'</span><span class="br0">]</span> <span class="sy0">=</span> <span class="st0">'smtp'</span><span class="sy0">;</span>
+ 
+<span class="re1">$config</span><span class="br0">[</span><span class="st0">'options'</span><span class="br0">]</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'hostname'</span><span class="sy0">=&gt;</span><span class="st0">'yourhostname'</span><span class="sy0">,</span> <span class="st0">'username'</span><span class="sy0">=&gt;</span><span class="st0">'yourusername'</span><span class="sy0">,</span> <span class="st0">'password'</span><span class="sy0">=&gt;</span><span class="st0">'yourpassword'</span><span class="sy0">,</span> <span class="st0">'port'</span><span class="sy0">=&gt;</span><span class="st0">'25'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<h2><a name="methods" id="methods">Methods</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a name="connect" id="connect">connect()</a></h3>
+<div class="level3">
+
+</div>
+
+<h3><a name="send" id="send">send()</a></h3>
+<div class="level3">
+
+<p>
+
+'send' sends an e-mail using the specified information. 
+The parameters are:
+</p>
+<ul><li class="level1"><div class="li"> [string] address to send email to</div>
+</li>
+<li class="level1"><div class="li"> [string] address to send email from</div>
+</li>
+<li class="level1"><div class="li"> [string] subject of the email</div>
+</li>
+<li class="level1"><div class="li"> [string] body of the email</div>
+</li>
+<li class="level1"><div class="li"> [boolean] send email as <acronym title="HyperText Markup Language">HTML</acronym> (defaults to false)</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+</p>
+<pre class="code php"><span class="re1">$to</span>      <span class="sy0">=</span> <span class="st0">'<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2b5f446b4e534a465b474e05484446">[email&#160;protected]</a>'</span><span class="sy0">;</span>  <span class="co1">// Address can also be array('<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4c38230c29342d213c2029622f2321">[email&#160;protected]</a>', 'Name')</span>
+<span class="re1">$from</span>    <span class="sy0">=</span> <span class="st0">'<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3056425f5d705548515d405c551e535f5d">[email&#160;protected]</a>'</span><span class="sy0">;</span>
+<span class="re1">$subject</span> <span class="sy0">=</span> <span class="st0">'This is an example subject'</span><span class="sy0">;</span>
+<span class="re1">$message</span> <span class="sy0">=</span> <span class="st0">'This is an &lt;strong&gt;example&lt;/strong&gt; message'</span><span class="sy0">;</span>
+ 
+email<span class="sy0">::</span><span class="me2">send</span><span class="br0">(</span><span class="re1">$to</span><span class="sy0">,</span> <span class="re1">$from</span><span class="sy0">,</span> <span class="re1">$subject</span><span class="sy0">,</span> <span class="re1">$message</span><span class="sy0">,</span> <span class="kw2">TRUE</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+			helpers/email.txt · Last modified: 2008/09/19 03:38 by geert			 
+		</div>
+	</div>
+
+	</div>
+
+<div id="footer"><strong>©2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+
+<div class="no"><img src="/lib/exe/indexer.php?id=helpers%3Aemail&amp;1229411008" width="1" height="1" alt=""></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script></body></html>

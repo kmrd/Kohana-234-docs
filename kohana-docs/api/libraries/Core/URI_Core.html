@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class URI_Core</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class URI_Core</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">URI library.</p>
+<p class="description"><p>$Id: URI.php 3700 2008-11-22 20:35:48Z Shadowhand $</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Kohana Team</li>
+				<li><span class="field">copyright:</span> (c) 2007-2008 Kohana Team</li>
+				<li><span class="field">license:</span> <a href="http://kohanaphp.com/license.html">http://kohanaphp.com/license.html</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_URI.php.html">/URI.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre>Router
+   |
+   --URI_Core</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																				<div class="method-definition">
+					static 						<span class="method-result">object</span>
+										<a href="#instance" title="details" class="method-name">instance</a>
+										()
+									</div>
+																																																																																																								
+												<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#argument" title="details" class="method-name">argument</a>
+											([<span class="var-type">integer|string</span>&nbsp;<span class="var-name">$index</span> = <span class="var-default">1</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#argument_array" title="details" class="method-name">argument_array</a>
+											([<span class="var-type">integer</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$associative</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#build_array" title="details" class="method-name">build_array</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$array</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$associative</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#controller" title="details" class="method-name">controller</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$full</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#controller_path" title="details" class="method-name">controller_path</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$full</span> = <span class="var-default">TRUE</span>])
+									</div>
+																								<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#last_rsegment" title="details" class="method-name">last_rsegment</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#last_segment" title="details" class="method-name">last_segment</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#method" title="details" class="method-name">method</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$full</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#rsegment" title="details" class="method-name">rsegment</a>
+											([<span class="var-type">integer|string</span>&nbsp;<span class="var-name">$index</span> = <span class="var-default">1</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#rsegment_array" title="details" class="method-name">rsegment_array</a>
+											([<span class="var-type">integer</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$associative</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#segment" title="details" class="method-name">segment</a>
+											([<span class="var-type">integer|string</span>&nbsp;<span class="var-name">$index</span> = <span class="var-default">1</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#segment_array" title="details" class="method-name">segment_array</a>
+											([<span class="var-type">integer</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$associative</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#string" title="details" class="method-name">string</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#total_arguments" title="details" class="method-name">total_arguments</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#total_rsegments" title="details" class="method-name">total_rsegments</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#total_segments" title="details" class="method-name">total_segments</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#__toString" title="details" class="method-name">__toString</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodinstance" id="instance"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method instance</span> (line <span class="line-number">19</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns a singleton instance of URI.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">object</span>
+		<span class="method-name">
+			instance
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+
+<a name="methodargument" id="argument"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">argument</span> (line <span class="line-number">84</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve a specific URI argument.</p>
+<p class="description"><p>This is the part of the segments that does not indicate controller or method</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			argument
+		</span>
+					([<span class="var-type">integer|string</span>&nbsp;<span class="var-name">$index</span> = <span class="var-default">1</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer|string</span>
+				<span class="var-name">$index</span><span class="var-description">: argument number or label</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$default</span><span class="var-description">: default value returned if segment does not exist</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodargument_array" id="argument_array"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">argument_array</span> (line <span class="line-number">130</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an array containing all the URI arguments.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			argument_array
+		</span>
+					([<span class="var-type">integer</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$associative</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$offset</span><span class="var-description">: segment offset</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$associative</span><span class="var-description">: return an associative array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuild_array" id="build_array"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_array</span> (line <span class="line-number">144</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates a simple or associative array from an array and an offset.</p>
+<p class="description"><p>Used as a helper for (r)segment_array and argument_array.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			build_array
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$array</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$associative</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$array</span><span class="var-description">: array to rebuild</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$offset</span><span class="var-description">: offset to start from</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$associative</span><span class="var-description">: create an associative array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcontroller" id="controller"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">controller</span> (line <span class="line-number">263</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the current controller, as a web path.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			controller
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$full</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$full</span><span class="var-description">: return a full url, or only the controller specifically</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcontroller_path" id="controller_path"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">controller_path</span> (line <span class="line-number">252</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the path to the current controller (not including the actual  controller), as a web path.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			controller_path
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$full</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$full</span><span class="var-description">: return a full url, or only the path specifically</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlast_rsegment" id="last_rsegment"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">last_rsegment</span> (line <span class="line-number">237</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the last re-routed URI segment.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			last_rsegment
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$default</span><span class="var-description">: default value returned if segment does not exist</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlast_segment" id="last_segment"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">last_segment</span> (line <span class="line-number">223</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the last URI segment.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			last_segment
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$default</span><span class="var-description">: default value returned if segment does not exist</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmethod" id="method"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">method</span> (line <span class="line-number">274</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the current method, as a web path.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			method
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$full</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$full</span><span class="var-description">: return a full url, or only the method specifically</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrsegment" id="rsegment"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">rsegment</span> (line <span class="line-number">61</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve a specific routed URI segment.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			rsegment
+		</span>
+					([<span class="var-type">integer|string</span>&nbsp;<span class="var-name">$index</span> = <span class="var-default">1</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer|string</span>
+				<span class="var-name">$index</span><span class="var-description">: rsegment number or label</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$default</span><span class="var-description">: default value returned if segment does not exist</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrsegment_array" id="rsegment_array"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">rsegment_array</span> (line <span class="line-number">118</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an array containing all the re-routed URI segments.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			rsegment_array
+		</span>
+					([<span class="var-type">integer</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$associative</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$offset</span><span class="var-description">: rsegment offset</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$associative</span><span class="var-description">: return an associative array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsegment" id="segment"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">segment</span> (line <span class="line-number">39</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve a specific URI segment.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			segment
+		</span>
+					([<span class="var-type">integer|string</span>&nbsp;<span class="var-name">$index</span> = <span class="var-default">1</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer|string</span>
+				<span class="var-name">$index</span><span class="var-description">: segment number or label</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$default</span><span class="var-description">: default value returned if segment does not exist</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsegment_array" id="segment_array"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">segment_array</span> (line <span class="line-number">106</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an array containing all the URI segments.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			segment_array
+		</span>
+					([<span class="var-type">integer</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$associative</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$offset</span><span class="var-description">: segment offset</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$associative</span><span class="var-description">: return an associative array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstring" id="string"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">string</span> (line <span class="line-number">172</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the complete URI as a string.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			string
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodtotal_arguments" id="total_arguments"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">total_arguments</span> (line <span class="line-number">212</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the total number of URI arguments.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			total_arguments
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodtotal_rsegments" id="total_rsegments"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">total_rsegments</span> (line <span class="line-number">202</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the total number of re-routed URI segments.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			total_rsegments
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodtotal_segments" id="total_segments"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">total_segments</span> (line <span class="line-number">192</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the total number of URI segments.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			total_segments
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method__toString" id="__toString"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">__toString</span> (line <span class="line-number">182</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Magic method for converting an object to a string.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			__toString
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 16 Dec 2008 16:40:28 +0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

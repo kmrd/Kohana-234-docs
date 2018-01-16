@@ -1,0 +1,2400 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Database_Core</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Database_Core</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides database access in a platform agnostic way, using simple query building blocks.</p>
+<p class="description"><p>$Id: Database.php 3700 2008-11-22 20:35:48Z Shadowhand $</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Kohana Team</li>
+				<li><span class="field">copyright:</span> (c) 2007-2008 Kohana Team</li>
+				<li><span class="field">license:</span> <a href="http://kohanaphp.com/license.html">http://kohanaphp.com/license.html</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Database.php.html">/Database.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+												<div class="var-title">
+					static <span class="var-type">mixed</span>
+					<a href="#$benchmarks" title="details" class="var-name">$benchmarks</a>
+				</div>
+																																																																<div class="var-title">
+					static <span class="var-type">mixed</span>
+					<a href="#$instances" title="details" class="var-name">$instances</a>
+				</div>
+																																																																																																												<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$config" title="details" class="var-name">$config</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$distinct" title="details" class="var-name">$distinct</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$driver" title="details" class="var-name">$driver</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$from" title="details" class="var-name">$from</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$groupby" title="details" class="var-name">$groupby</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$having" title="details" class="var-name">$having</a>
+				</div>
+																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$join" title="details" class="var-name">$join</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$last_query" title="details" class="var-name">$last_query</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$limit" title="details" class="var-name">$limit</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$link" title="details" class="var-name">$link</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$offset" title="details" class="var-name">$offset</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$order" title="details" class="var-name">$order</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$orderby" title="details" class="var-name">$orderby</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$select" title="details" class="var-name">$select</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$set" title="details" class="var-name">$set</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$where" title="details" class="var-name">$where</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																				<div class="method-definition">
+					static 						<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#instance" title="details" class="method-name">&amp;instance</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">'default'</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$config</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#instance_name" title="details" class="method-name">instance_name</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$db</span>)
+									</div>
+																																																																																																																																																																																																																																																
+												<div class="method-definition">
+											<span class="method-result">Database_Core</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$config</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#clear_cache" title="details" class="method-name">clear_cache</a>
+											([<span class="var-type">string|TRUE</span>&nbsp;<span class="var-name">$sql</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#compile" title="details" class="method-name">compile</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#compile_binds" title="details" class="method-name">compile_binds</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$binds</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#count_records" title="details" class="method-name">count_records</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">FALSE</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$where</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+										<a href="#delete" title="details" class="method-name">delete</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$where</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#escape" title="details" class="method-name">escape</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#escape_column" title="details" class="method-name">escape_column</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#escape_str" title="details" class="method-name">escape_str</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#escape_table" title="details" class="method-name">escape_table</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#field_data" title="details" class="method-name">field_data</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#from" title="details" class="method-name">from</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+										<a href="#get" title="details" class="method-name">get</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#getwhere" title="details" class="method-name">getwhere</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$where</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#groupby" title="details" class="method-name">groupby</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$by</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#having" title="details" class="method-name">having</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$quote</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#in" title="details" class="method-name">in</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$not</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+										<a href="#insert" title="details" class="method-name">insert</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$set</span> = <span class="var-default">NULL</span>])
+									</div>
+																																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#join" title="details" class="method-name">join</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#last_query" title="details" class="method-name">last_query</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#like" title="details" class="method-name">like</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$auto</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#limit" title="details" class="method-name">limit</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$limit</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#list_fields" title="details" class="method-name">list_fields</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#list_tables" title="details" class="method-name">list_tables</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+										<a href="#merge" title="details" class="method-name">merge</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$set</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#notin" title="details" class="method-name">notin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$values</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#notlike" title="details" class="method-name">notlike</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$auto</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#notregex" title="details" class="method-name">notregex</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#offset" title="details" class="method-name">offset</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#orderby" title="details" class="method-name">orderby</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$orderby</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$direction</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#orhaving" title="details" class="method-name">orhaving</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$quote</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#orlike" title="details" class="method-name">orlike</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$auto</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#ornotlike" title="details" class="method-name">ornotlike</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$auto</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#ornotregex" title="details" class="method-name">ornotregex</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#orregex" title="details" class="method-name">orregex</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#orwhere" title="details" class="method-name">orwhere</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$quote</span> = <span class="var-default">TRUE</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+										<a href="#query" title="details" class="method-name">query</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#regex" title="details" class="method-name">regex</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#reset_select" title="details" class="method-name">reset_select</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#reset_write" title="details" class="method-name">reset_write</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#select" title="details" class="method-name">select</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span> = <span class="var-default">'*'</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#set" title="details" class="method-name">set</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#stmt_prepare" title="details" class="method-name">stmt_prepare</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#table_exists" title="details" class="method-name">table_exists</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#table_prefix" title="details" class="method-name">table_prefix</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+										<a href="#update" title="details" class="method-name">update</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$set</span> = <span class="var-default">NULL</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$where</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+										<a href="#where" title="details" class="method-name">where</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$quote</span> = <span class="var-default">TRUE</span>])
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$benchmarks" id="$benchmarks"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$benchmarks</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">18</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$instances" id="$instances"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$instances</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">15</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$config" id="$config"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$config</span>
+			 = <span class="var-default">array<br />	(<br />		'benchmark'     =&gt; TRUE,<br />		'persistent'    =&gt; FALSE,<br />		'connection'    =&gt; '',<br />		'character_set' =&gt; 'utf8',<br />		'table_prefix'  =&gt; '',<br />		'object'        =&gt; TRUE,<br />		'cache'         =&gt; FALSE,<br />		'escape'        =&gt; TRUE,<br />	)</span>			(line <span class="line-number">21</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$distinct" id="$distinct"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$distinct</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">47</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$driver" id="$driver"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$driver</span>
+						(line <span class="line-number">34</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$from" id="$from"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$from</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">40</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$groupby" id="$groupby"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$groupby</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">45</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$having" id="$having"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$having</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">46</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$join" id="$join"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$join</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">41</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$last_query" id="$last_query"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$last_query</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">50</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$limit" id="$limit"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$limit</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">48</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$link" id="$link"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$link</span>
+						(line <span class="line-number">35</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$offset" id="$offset"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$offset</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">49</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$order" id="$order"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$order</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$orderby" id="$orderby"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$orderby</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">43</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$select" id="$select"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$select</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">38</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$set" id="$set"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$set</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$where" id="$where"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$where</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">42</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodinstance" id="instance"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method instance</span> (line <span class="line-number">58</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns a singleton instance of Database.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			&amp;instance
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">'default'</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$config</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$name</span><span class="var-description">: configuration array or DSN</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$config</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinstance_name" id="instance_name"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method instance_name</span> (line <span class="line-number">75</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the name of a given database instance.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			instance_name
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$db</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">Database</span>
+				<span class="var-name">$db</span><span class="var-description">: instance of Database</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">85</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets up the database configuration, loads the Database_Driver.</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> Kohana_Database_Exception</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Database_Core</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$config</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$config</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodclear_cache" id="clear_cache"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">clear_cache</span> (line <span class="line-number">1228</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clears the query cache.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			clear_cache
+		</span>
+					([<span class="var-type">string|TRUE</span>&nbsp;<span class="var-name">$sql</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|TRUE</span>
+				<span class="var-name">$sql</span><span class="var-description">: clear cache by SQL statement or TRUE for last query</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcompile" id="compile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">compile</span> (line <span class="line-number">820</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compiles the select statement based on the other functions called and returns the query string.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> sql string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			compile
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$limit</span><span class="var-description">: limit clause</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$offset</span><span class="var-description">: offset clause</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcompile_binds" id="compile_binds"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">compile_binds</span> (line <span class="line-number">1120</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Combine a SQL statement with the bind values. Used for safe queries.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			compile_binds
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$binds</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sql</span><span class="var-description">: query to bind to the values</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$binds</span><span class="var-description">: array of values to bind to the query</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">connect</span> (line <span class="line-number">213</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Simple connect method to get the database queries up and running.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			connect
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcount_records" id="count_records"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">count_records</span> (line <span class="line-number">1037</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Count query records.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			count_records
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">FALSE</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$where</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$where</span><span class="var-description">: where clause</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddelete" id="delete"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete</span> (line <span class="line-number">992</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compiles a delete string and runs the query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Query result</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+		<span class="method-name">
+			delete
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$where</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$where</span><span class="var-description">: where clause</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodescape" id="escape"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">escape</span> (line <span class="line-number">1174</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Escapes a value for a query.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			escape
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span><span class="var-description">: value to escape</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodescape_column" id="escape_column"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">escape_column</span> (line <span class="line-number">1207</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Escapes a column name for a query.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			escape_column
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: string to escape</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodescape_str" id="escape_str"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">escape_str</span> (line <span class="line-number">1185</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Escapes a string for a query.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			escape_str
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: string to escape</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodescape_table" id="escape_table"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">escape_table</span> (line <span class="line-number">1196</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Escapes a table name for a query.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			escape_table
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: string to escape</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfield_data" id="field_data"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">field_data</span> (line <span class="line-number">1148</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the field data for a database table, along with the field's attributes.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			field_data
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfrom" id="from"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">from</span> (line <span class="line-number">322</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the from table(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			from
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sql</span><span class="var-description">: string or array of tables to select</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget" id="get"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get</span> (line <span class="line-number">754</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compiles the select statement based on the other functions called and runs the query.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+		<span class="method-name">
+			get
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$limit</span><span class="var-description">: limit clause</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$offset</span><span class="var-description">: offset clause</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetwhere" id="getwhere"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getwhere</span> (line <span class="line-number">786</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compiles the select statement based on the other functions called and runs the query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			getwhere
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$where</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$where</span><span class="var-description">: where clause</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$limit</span><span class="var-description">: limit clause</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$offset</span><span class="var-description">: offset clause</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgroupby" id="groupby"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">groupby</span> (line <span class="line-number">611</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Chooses the column to group by in a select query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			groupby
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$by</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$by</span><span class="var-description">: column name to group by</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhaving" id="having"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">having</span> (line <span class="line-number">639</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the having(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			having
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$quote</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$key</span><span class="var-description">: key name or array of key =&gt; value pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: value to match with key</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$quote</span><span class="var-description">: disable quoting of WHERE clause</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodin" id="in"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">in</span> (line <span class="line-number">882</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds an &quot;IN&quot; condition to the where clause</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			in
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$values</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$not</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$field</span><span class="var-description">: Name of the column being examined</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$values</span><span class="var-description">: An array or string to match against</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$not</span><span class="var-description">: Generate a NOT IN clause instead</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinsert" id="insert"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert</span> (line <span class="line-number">846</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compiles an insert string and runs the query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Query result</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+		<span class="method-name">
+			insert
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$set</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$set</span><span class="var-description">: array of key/value pairs to insert</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodjoin" id="join"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">join</span> (line <span class="line-number">356</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generates the JOIN portion of the query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			join
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$key</span><span class="var-description">: where key or array of key =&gt; value pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: where value</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: type of join</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlast_query" id="last_query"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">last_query</span> (line <span class="line-number">1025</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the last query run.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> SQL</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			last_query
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlike" id="like"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">like</span> (line <span class="line-number">450</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the like(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			like
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$auto</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$field</span><span class="var-description">: field name or array of field =&gt; match pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$match</span><span class="var-description">: like value to match with field</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$auto</span><span class="var-description">: automatically add starting and ending wildcards</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlimit" id="limit"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">limit</span> (line <span class="line-number">695</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the limit section of a query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			limit
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$limit</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$limit</span><span class="var-description">: number of rows to limit result to</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$offset</span><span class="var-description">: offset in result to start returning rows from</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlist_fields" id="list_fields"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">list_fields</span> (line <span class="line-number">1161</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the field data for a database table, along with the field's attributes.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			list_fields
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlist_tables" id="list_tables"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">list_tables</span> (line <span class="line-number">1093</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Lists all the tables in the current database.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			list_tables
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmerge" id="merge"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">merge</span> (line <span class="line-number">924</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compiles a merge string and runs the query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Query result</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+		<span class="method-name">
+			merge
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$set</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$set</span><span class="var-description">: array of key/value pairs to merge</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnotin" id="notin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">notin</span> (line <span class="line-number">912</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a &quot;NOT IN&quot; condition to the where clause</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			notin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$field</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$values</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$field</span><span class="var-description">: Name of the column being examined</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$values</span><span class="var-description">: An array or string to match against</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnotlike" id="notlike"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">notlike</span> (line <span class="line-number">492</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the not like(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			notlike
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$auto</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$field</span><span class="var-description">: field name or array of field =&gt; match pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$match</span><span class="var-description">: like value to match with field</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$auto</span><span class="var-description">: automatically add starting and ending wildcards</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnotregex" id="notregex"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">notregex</span> (line <span class="line-number">572</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the not regex(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			notregex
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$field</span><span class="var-description">: field name or array of field =&gt; match pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$match</span><span class="var-description">: regex value to match with field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodoffset" id="offset"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">offset</span> (line <span class="line-number">713</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the offset portion of a query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			offset
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$value</span><span class="var-description">: offset value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodorderby" id="orderby"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">orderby</span> (line <span class="line-number">666</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Chooses which column(s) to order the select query by.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			orderby
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$orderby</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$direction</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$orderby</span><span class="var-description">: column(s) to order on, can be an array, single column, or comma seperated list of columns</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$direction</span><span class="var-description">: direction of the order</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodorhaving" id="orhaving"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">orhaving</span> (line <span class="line-number">653</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the or having(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			orhaving
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$quote</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$key</span><span class="var-description">: key name or array of key =&gt; value pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: value to match with key</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$quote</span><span class="var-description">: disable quoting of WHERE clause</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodorlike" id="orlike"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">orlike</span> (line <span class="line-number">471</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the or like(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			orlike
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$auto</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$field</span><span class="var-description">: field name or array of field =&gt; match pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$match</span><span class="var-description">: like value to match with field</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$auto</span><span class="var-description">: automatically add starting and ending wildcards</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodornotlike" id="ornotlike"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ornotlike</span> (line <span class="line-number">512</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the or not like(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			ornotlike
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$auto</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$field</span><span class="var-description">: field name or array of field =&gt; match pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$match</span><span class="var-description">: like value to match with field</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$auto</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodornotregex" id="ornotregex"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ornotregex</span> (line <span class="line-number">592</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the or not regex(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			ornotregex
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$field</span><span class="var-description">: field name or array of field =&gt; match pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$match</span><span class="var-description">: regex value to match with field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodorregex" id="orregex"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">orregex</span> (line <span class="line-number">552</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the or like(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			orregex
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$field</span><span class="var-description">: field name or array of field =&gt; match pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$match</span><span class="var-description">: like value to match with field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodorwhere" id="orwhere"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">orwhere</span> (line <span class="line-number">428</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the or where(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			orwhere
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$quote</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$key</span><span class="var-description">: key name or array of key =&gt; value pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: value to match with key</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$quote</span><span class="var-description">: disable quoting of WHERE clause</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodquery" id="query"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">query</span> (line <span class="line-number">233</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Runs a query into the driver and returns the result.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+		<span class="method-name">
+			query
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sql</span><span class="var-description">: SQL query to execute</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodregex" id="regex"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">regex</span> (line <span class="line-number">532</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the like(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			regex
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$field</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$match</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$field</span><span class="var-description">: field name or array of field =&gt; match pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$match</span><span class="var-description">: like value to match with field</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodreset_select" id="reset_select"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">reset_select</span> (line <span class="line-number">1062</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Resets all private select variables.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			reset_select
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodreset_write" id="reset_write"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">reset_write</span> (line <span class="line-number">1081</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Resets all private insert and update variables.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			reset_write
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect" id="select"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select</span> (line <span class="line-number">276</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the column names for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			select
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span> = <span class="var-default">'*'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sql</span><span class="var-description">: string or array of column names to select</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset" id="set"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set</span> (line <span class="line-number">727</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Allows key/value pairs to be set for inserting or updating.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			set
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$key</span><span class="var-description">: key name or array of key =&gt; value pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: value to match with key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstmt_prepare" id="stmt_prepare"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">stmt_prepare</span> (line <span class="line-number">1252</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a prepared statement (experimental).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			stmt_prepare
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sql</span><span class="var-description">: SQL query</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodtable_exists" id="table_exists"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">table_exists</span> (line <span class="line-number">1108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">See if a table exists in the database.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			table_exists
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table_name</span><span class="var-description">: table name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodtable_prefix" id="table_prefix"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">table_prefix</span> (line <span class="line-number">1217</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns table prefix of current configuration.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			table_prefix
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodupdate" id="update"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">update</span> (line <span class="line-number">956</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compiles an update string and runs the query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Query result</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Result.html">Database_Result</a></span>
+		<span class="method-name">
+			update
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$set</span> = <span class="var-default">NULL</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$where</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$set</span><span class="var-description">: associative array of update values</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$where</span><span class="var-description">: where clause</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwhere" id="where"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">where</span> (line <span class="line-number">406</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Selects the where(s) for a database query.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> This Database object.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Core/Database_Core.html">Database_Core</a></span>
+		<span class="method-name">
+			where
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$quote</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$key</span><span class="var-description">: key name or array of key =&gt; value pairs</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: value to match with key</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$quote</span><span class="var-description">: disable quoting of WHERE clause</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 16 Dec 2008 16:40:19 +0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

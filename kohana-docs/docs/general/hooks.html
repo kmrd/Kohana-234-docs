@@ -1,0 +1,232 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+    general:hooks    [Kohana User Guide]
+</title><meta name="generator" content="DokuWiki Release 2008-05-05"><meta name="robots" content="index,follow"><meta name="date" content="2008-08-11T10:22:14-0500"><meta name="keywords" content="general,hooks"><link rel="search" type="application/opensearchdescription+xml" href="..\lib\exe\opensearch.html" title="Kohana User Guide"><link rel="start" href="/"><link rel="contents" href="hooks-1.html?do=index" title="Index"><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="..\feed.html"><link rel="alternate" type="application/rss+xml" title="Current Namespace" href="..\feed-2.html?mode=list&amp;ns=general"><link rel="alternate" type="text/html" title="Plain HTML" href="..\_export\xhtml\general\hooks.html"><link rel="alternate" type="text/plain" title="Wiki Markup" href="..\_export\raw\general\hooks.html"><link rel="stylesheet" media="all" type="text/css" href="..\_css\all.css"><link rel="stylesheet" media="screen" type="text/css" href="..\_css\kohana.css"><link rel="stylesheet" media="print" type="text/css" href="..\_css\print.css"><script type="text/javascript" charset="utf-8" src="..\_js\script.js"></script><link rel="shortcut icon" href="..\lib\tpl\kohana\images\favicon.html"><link rel="stylesheet" type="text/css" href="..\_css\my.css"></head><body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="..\contents.html"><img src="..\_img\kohana.png" alt="Kohana"></a>
+<!-- End Logo -->
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul><li class="top active"><a href="..\contents.html">Contents</a></li>
+
+
+<li class="top"><a href="..\contents.html">General<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="configuration.html" title="Configuration">Configuration</a></li>
+				<li><a href="controllers.html" title="Controllers">Controllers</a></li>
+				<li><a href="errorhandling.html" title="Error Handling">Error Handling</a></li>
+				<li><a href="events.html" title="Events">Events</a></li>
+				<li><a href="filesystem.html" title="Filesystem">Filesystem</a></li>
+				<li><a href="helpers.html" title="Helpers">Helpers</a></li>
+				<li><a href="hooks.html" title="Hooks">Hooks</a></li>
+				<li><a href="i18n.html" title="Internationalization">Internationalization</a></li>
+				<li><a href="libraries.html" title="Libraries">Libraries</a></li>
+				<li><a href="loading.html" title="Loading">Loading</a></li>
+				<li><a href="logging.html" title="Logging">Logging</a></li>
+				<li><a href="models.html" title="Models">Models</a></li>
+				<li><a href="modules.html" title="Modules">Modules</a></li>
+				<li><a href="routing.html" title="Routing">Routing</a></li>
+				<li><a href="urls.html" title="URLs">URLs</a></li>
+				<li><a href="views.html" title="Views">Views</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Core<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\core\benchmark.html" title="Benchmark">Benchmark</a></li>
+				<li><a href="..\core\config.html" title="Config">Config</a></li>
+				<li><a href="..\core\event.html" title="Event">Event</a></li>
+				<li><a href="..\core\kohana.html" title="Kohana">Kohana</a></li>
+				<li><a href="..\core\log.html" title="Log">Log</a></li>
+				<li><a href="..\core\utf8.html" title="Unicode">Unicode</a></li>
+				<li><a href="..\core\view.html" title="View">View</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Libraries<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\libraries\cache.html" title="Cache">Cache</a></li>
+				<li><a href="..\libraries\calendar.html" title="Calendar">Calendar</a></li>
+				<li><a href="..\libraries\captcha.html" title="Captcha">Captcha</a></li>
+				<li><a href="..\libraries\database.html" title="Database">Database</a></li>
+				<li><a href="..\libraries\encrypt.html" title="Encrypt">Encrypt</a></li>
+				<li><a href="..\libraries\image.html" title="Image">Image</a></li>
+				<li><a href="..\libraries\input.html" title="Input">Input</a></li>
+				<li><a href="..\libraries\orm.html" title="ORM">ORM</a></li>
+				<li><a href="..\libraries\pagination.html" title="Pagination">Pagination</a></li>
+				<li><a href="..\libraries\profiler.html" title="Profiler">Profiler</a></li>
+				<li><a href="..\libraries\session.html" title="Session">Session</a></li>
+				<li><a href="..\libraries\uri.html" title="URI">URI</a></li>
+				<li><a href="..\libraries\validation.html" title="Validation">Validation</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Helpers<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\helpers\arr.html" title="Array">Array</a></li>
+				<li><a href="..\helpers\cookie.html" title="Cookie">Cookie</a></li>
+				<li><a href="..\helpers\date.html" title="Date">Date</a></li>
+				<li><a href="..\helpers\download.html" title="Download">Download</a></li>
+				<li><a href="..\helpers\email.html" title="Email">Email</a></li>
+				<li><a href="..\helpers\expires.html" title="Expires">Expires</a></li>
+				<li><a href="..\helpers\feed.html" title="Feed">Feed</a></li>
+				<li><a href="..\helpers\file.html" title="File">File</a></li>
+				<li><a href="..\helpers\form.html" title="Form">Form</a></li>
+				<li><a href="..\helpers\format.html" title="Format">Format</a></li>
+				<li><a href="..\helpers\html.html" title="HTML">HTML</a></li>
+				<li><a href="..\helpers\inflector.html" title="Inflector">Inflector</a></li>
+				<li><a href="..\helpers\num.html" title="Num">Num</a></li>
+				<li><a href="..\helpers\remote.html" title="Remote">Remote</a></li>
+				<li><a href="..\helpers\request.html" title="Request">Request</a></li>
+				<li><a href="..\helpers\security.html" title="Security">Security</a></li>
+				<li><a href="..\helpers\text.html" title="Text">Text</a></li>
+				<li><a href="..\helpers\upload.html" title="Upload">Upload</a></li>
+				<li><a href="..\helpers\url.html" title="URL">URL</a></li>
+				<li><a href="..\helpers\valid.html" title="Valid">Valid</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+</ul></div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<!-- TOC START -->
+<!-- TOC END -->
+<table class="inline"><tr class="row0"><th class="col0">Status</th><td class="col1">Draft</td>
+	</tr><tr class="row1"><th class="col0">Todo</th><td class="col1">More examples, proof read</td>
+	</tr></table><h1><a name="hooks" id="hooks">Hooks</a></h1>
+<div class="level1">
+
+<p>
+Hooks are basically files included at the start of Kohana, to be more specific they are loaded in the Kohana::setup() method. At this time these files are loaded, so their methods can be used
+</p>
+<ul><li class="level1"><div class="li"> index.php</div>
+</li>
+<li class="level1"><div class="li"> core/Bootstrap.php</div>
+</li>
+<li class="level1"><div class="li"> core/Benchmark.php </div>
+</li>
+<li class="level1"><div class="li"> core/utf8.php </div>
+</li>
+<li class="level1"><div class="li"> core/Event.php </div>
+</li>
+<li class="level1"><div class="li"> core/Kohana.php </div>
+</li>
+</ul><p>
+
+No <strong>event</strong> has been started yet, the first to be started is <strong>system.ready</strong>
+</p>
+
+<p>
+Hook files should be put in <code>application/hooks</code> or similarly in a module folder.
+</p>
+
+</div>
+
+<h2><a name="configuring_hooks" id="configuring_hooks">Configuring hooks</a></h2>
+<div class="level2">
+
+<p>
+To configure hooks edit <code>'config.php</code> in your application/config directory.
+Look the option like this:
+</p>
+
+<p>
+<strong>File: config.php</strong>
+
+</p>
+<pre class="code php"><span class="re1">$config</span><span class="br0">[</span><span class="st0">'enable_hooks'</span><span class="br0">]</span> <span class="sy0">=</span> <span class="kw2">FALSE</span><span class="sy0">;</span></pre>
+<p>
+Set <code>$config['enable_hooks']</code> to <code>TRUE</code> and all files in the hooks directory (<code>application/hooks</code>) will be included and the code will be executed.
+</p>
+
+<p>
+Set <code>$config['enable_hooks']</code> to an array with filenames and those and only those files will be included.
+</p>
+
+<p>
+<strong>Example</strong> config.php
+
+</p>
+<pre class="code php"><span class="co1">//To include all files in application/hooks</span>
+<span class="re1">$config</span><span class="br0">[</span><span class="st0">'enable_hooks'</span><span class="br0">]</span> <span class="sy0">=</span> <span class="kw2">TRUE</span><span class="sy0">;</span>
+ 
+<span class="co1">//or to load page_cache.php</span>
+<span class="re1">$config</span><span class="br0">[</span><span class="st0">'enable_hooks'</span><span class="br0">]</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'page_cache'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<h2><a name="hooks_and_events" id="hooks_and_events">Hooks and events</a></h2>
+<div class="level2">
+
+<p>
+The power of hooks mainly comes from the <a href="..\core\event.html" class="wikilink1" title="core:event">Events</a> class. Hooks are loaded before any of the events are started so you can attach a hook to an event. For example you load the following file as a hook
+</p>
+
+<p>
+<strong>Example</strong> hooks/power.php
+
+</p>
+<pre class="code php"><span class="kw2">class</span> Power <span class="br0">{</span>
+ <span class="kw2">public</span> <span class="kw2">function</span> Kohana<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+   Event<span class="sy0">::</span><span class="re1">$data</span> <span class="sy0">=</span> Event<span class="sy0">::</span><span class="re1">$data</span><span class="sy0">.</span><span class="st0">'&lt;!-- Powered by Kohana--&gt;'</span><span class="sy0">;</span>
+ <span class="br0">}</span>
+ 
+<span class="br0">}</span>
+Event<span class="sy0">::</span><span class="me2">add</span><span class="br0">(</span><span class="st0">'system.display'</span><span class="sy0">,</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'Power'</span><span class="sy0">,</span> <span class="st0">'Kohana'</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+This will add a small notice to the bottom of each page (&lt;!– Powered by Kohana–&gt;). It utilizes the Event::$data to manipulate the final output. 
+</p>
+
+</div>
+
+<h2><a name="constants" id="constants">Constants</a></h2>
+<div class="level2">
+
+<p>
+When using hooks you might need to get under the hood of Kohana. When the hooks are loaded these constants are set in index.php
+
+</p>
+<ul><li class="level1"><div class="li"> EXT - contains the default file extension used for files in Kohana. Defaults to '.php'</div>
+</li>
+<li class="level1"><div class="li"> KOHANA - basename</div>
+</li>
+<li class="level1"><div class="li"> DOCROOT - dirname</div>
+</li>
+<li class="level1"><div class="li"> APPPATH - path to the application directory</div>
+</li>
+<li class="level1"><div class="li"> SYSPATH - path to the system directory</div>
+</li>
+<li class="level1"><div class="li"> MODPATH - path to the modules directory</div>
+</li>
+</ul></div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+			general/hooks.txt · Last modified: 2008/08/11 10:22 by zoxive			 
+		</div>
+	</div>
+
+	</div>
+
+<div id="footer"><strong>©2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+
+<div class="no"><img src="/lib/exe/indexer.php?id=general%3Ahooks&amp;1229410974" width="1" height="1" alt=""></div>
+</body></html>

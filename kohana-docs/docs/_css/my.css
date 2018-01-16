@@ -1,0 +1,16 @@
+body, #body {
+	font: 9pt Verdana;
+	line-height: 1.6;
+}
+#header {
+	background: transparent;
+}
+div.dokuwiki h1, div.dokuwiki h2 {
+	padding-bottom: 0;
+}
+pre, code, pre.code, div.dokuwiki pre, div.dokuwiki pre.code {
+	font: 9pt Consolas, Monaco, "Bitstream Vera Sans Mono", "Courier New", monospace;
+}
+#footer {
+	padding-bottom: 1em;
+}

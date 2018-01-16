@@ -1,0 +1,424 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+    libraries:image    [Kohana User Guide]
+</title><meta name="generator" content="DokuWiki Release 2008-05-05"><meta name="robots" content="index,follow"><meta name="date" content="2008-09-04T05:35:58-0500"><meta name="keywords" content="libraries,image"><link rel="search" type="application/opensearchdescription+xml" href="..\lib\exe\opensearch.html" title="Kohana User Guide"><link rel="start" href="/"><link rel="contents" href="image-1.html?do=index" title="Index"><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="..\feed.html"><link rel="alternate" type="application/rss+xml" title="Current Namespace" href="..\feed-4.html?mode=list&amp;ns=libraries"><link rel="alternate" type="text/html" title="Plain HTML" href="..\_export\xhtml\libraries\image.html"><link rel="alternate" type="text/plain" title="Wiki Markup" href="..\_export\raw\libraries\image.html"><link rel="stylesheet" media="all" type="text/css" href="..\_css\all.css"><link rel="stylesheet" media="screen" type="text/css" href="..\_css\kohana.css"><link rel="stylesheet" media="print" type="text/css" href="..\_css\print.css"><script type="text/javascript" charset="utf-8" src="..\_js\script.js"></script><link rel="shortcut icon" href="..\lib\tpl\kohana\images\favicon.html"><link rel="stylesheet" type="text/css" href="..\_css\my.css"></head><body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="..\contents.html"><img src="..\_img\kohana.png" alt="Kohana"></a>
+<!-- End Logo -->
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul><li class="top active"><a href="..\contents.html">Contents</a></li>
+
+
+<li class="top"><a href="..\contents.html">General<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\general\configuration.html" title="Configuration">Configuration</a></li>
+				<li><a href="..\general\controllers.html" title="Controllers">Controllers</a></li>
+				<li><a href="..\general\errorhandling.html" title="Error Handling">Error Handling</a></li>
+				<li><a href="..\general\events.html" title="Events">Events</a></li>
+				<li><a href="..\general\filesystem.html" title="Filesystem">Filesystem</a></li>
+				<li><a href="..\general\helpers.html" title="Helpers">Helpers</a></li>
+				<li><a href="..\general\hooks.html" title="Hooks">Hooks</a></li>
+				<li><a href="..\general\i18n.html" title="Internationalization">Internationalization</a></li>
+				<li><a href="..\general\libraries.html" title="Libraries">Libraries</a></li>
+				<li><a href="..\general\loading.html" title="Loading">Loading</a></li>
+				<li><a href="..\general\logging.html" title="Logging">Logging</a></li>
+				<li><a href="..\general\models.html" title="Models">Models</a></li>
+				<li><a href="..\general\modules.html" title="Modules">Modules</a></li>
+				<li><a href="..\general\routing.html" title="Routing">Routing</a></li>
+				<li><a href="..\general\urls.html" title="URLs">URLs</a></li>
+				<li><a href="..\general\views.html" title="Views">Views</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Core<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\core\benchmark.html" title="Benchmark">Benchmark</a></li>
+				<li><a href="..\core\config.html" title="Config">Config</a></li>
+				<li><a href="..\core\event.html" title="Event">Event</a></li>
+				<li><a href="..\core\kohana.html" title="Kohana">Kohana</a></li>
+				<li><a href="..\core\log.html" title="Log">Log</a></li>
+				<li><a href="..\core\utf8.html" title="Unicode">Unicode</a></li>
+				<li><a href="..\core\view.html" title="View">View</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Libraries<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="cache.html" title="Cache">Cache</a></li>
+				<li><a href="calendar.html" title="Calendar">Calendar</a></li>
+				<li><a href="captcha.html" title="Captcha">Captcha</a></li>
+				<li><a href="database.html" title="Database">Database</a></li>
+				<li><a href="encrypt.html" title="Encrypt">Encrypt</a></li>
+				<li><a href="image.html" title="Image">Image</a></li>
+				<li><a href="input.html" title="Input">Input</a></li>
+				<li><a href="orm.html" title="ORM">ORM</a></li>
+				<li><a href="pagination.html" title="Pagination">Pagination</a></li>
+				<li><a href="profiler.html" title="Profiler">Profiler</a></li>
+				<li><a href="session.html" title="Session">Session</a></li>
+				<li><a href="uri.html" title="URI">URI</a></li>
+				<li><a href="validation.html" title="Validation">Validation</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+<li class="top"><a href="..\contents.html">Helpers<!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul><li><a href="..\helpers\arr.html" title="Array">Array</a></li>
+				<li><a href="..\helpers\cookie.html" title="Cookie">Cookie</a></li>
+				<li><a href="..\helpers\date.html" title="Date">Date</a></li>
+				<li><a href="..\helpers\download.html" title="Download">Download</a></li>
+				<li><a href="..\helpers\email.html" title="Email">Email</a></li>
+				<li><a href="..\helpers\expires.html" title="Expires">Expires</a></li>
+				<li><a href="..\helpers\feed.html" title="Feed">Feed</a></li>
+				<li><a href="..\helpers\file.html" title="File">File</a></li>
+				<li><a href="..\helpers\form.html" title="Form">Form</a></li>
+				<li><a href="..\helpers\format.html" title="Format">Format</a></li>
+				<li><a href="..\helpers\html.html" title="HTML">HTML</a></li>
+				<li><a href="..\helpers\inflector.html" title="Inflector">Inflector</a></li>
+				<li><a href="..\helpers\num.html" title="Num">Num</a></li>
+				<li><a href="..\helpers\remote.html" title="Remote">Remote</a></li>
+				<li><a href="..\helpers\request.html" title="Request">Request</a></li>
+				<li><a href="..\helpers\security.html" title="Security">Security</a></li>
+				<li><a href="..\helpers\text.html" title="Text">Text</a></li>
+				<li><a href="..\helpers\upload.html" title="Upload">Upload</a></li>
+				<li><a href="..\helpers\url.html" title="URL">URL</a></li>
+				<li><a href="..\helpers\valid.html" title="Valid">Valid</a></li>
+			</ul><!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+
+
+</ul></div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<!-- TOC START -->
+<!-- TOC END -->
+<table class="inline"><tr class="row0"><th class="col0">Status</th><td class="col1">Final Draft</td>
+	</tr><tr class="row1"><th class="col0">Todo</th><td class="col1">Proofread</td>
+	</tr></table><h1><a name="image_library" id="image_library">Image Library</a></h1>
+<div class="level1">
+
+<p>
+
+Provides methods for the dynamic manipulation of images. Various image formats such as <acronym title="Joint Photographics Experts Group">JPEG</acronym>, <acronym title="Portable Network Graphics">PNG</acronym>, and <acronym title="Graphics Interchange Format">GIF</acronym> can be resized, cropped, rotated and sharpened.
+</p>
+
+<p>
+All image manipulations are applied to a <strong>temporary</strong> image. Only the <code>save()</code> method is permanent, the temporary image being written to a specified image file.
+</p>
+
+
+<div class="box blue">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+  <div class="xbox">
+<div class="box_content"><p>
+Image manipulation methods can be chained efficiently. Recommended order: <code>resize</code>, <code>crop</code>, <code>sharpen</code>, <code>quality</code> and <code>rotate</code> or <code>flip</code> 
+</p></div>
+  </div>
+  <b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+
+
+</div>
+
+<h2><a name="loading_the_image_library" id="loading_the_image_library">Loading the Image library</a></h2>
+<div class="level2">
+
+<p>
+
+Uses a driver, configured in <code>config/image.php</code>. The default driver uses the GD2 library, bundled with <acronym title="Hypertext Preprocessor">PHP</acronym>. ImageMagick may be used if available.
+</p>
+
+<p>
+When loading the library, a path to the image file, (relative or absolute) must be passed as a parameter.
+</p>
+
+<p>
+Load the Image Library in your controller using the <strong>new</strong> keyword:
+
+</p>
+<pre class="code php"><span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span> <span class="sy0">=</span> <span class="kw2">new</span> Image<span class="br0">(</span><span class="st0">'./photo.jpg'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+<p>
+Access to the library is available through <code>$this→image</code> Some methods are chainable.
+</p>
+
+</div>
+
+<h2><a name="configuring_the_library" id="configuring_the_library">Configuring the library</a></h2>
+<div class="level2">
+
+<p>
+
+To change default settings, edit <code>application/config/image.php</code>
+</p>
+
+<p>
+Drivers available:
+
+</p>
+<ul><li class="level1"><div class="li"> <strong>GD</strong> - The default driver, requires GD2 version &gt;= 2.0.34 (Debian / Ubuntu users note: Some functions, eg. <code>sharpen</code> may not be available)</div>
+</li>
+<li class="level1"><div class="li"> <strong>ImageMagick</strong> - Windows users <strong>must</strong> specify a path to the binary. Unix versions will attempt to auto-locate.</div>
+</li>
+</ul><pre class="code php"><span class="re1">$config</span><span class="br0">[</span><span class="st0">'driver'</span><span class="br0">]</span> <span class="sy0">=</span> <span class="st0">'GD'</span><span class="sy0">;</span>
+<span class="co1">// For Windows</span>
+<span class="re1">$config</span><span class="br0">[</span><span class="st0">'params'</span><span class="br0">]</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'directory'</span> <span class="sy0">=&gt;</span> <span class="st0">'C:/ImageMagick'</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// For Un*x assuming the binary is in usr/local/bin</span>
+<span class="re1">$config</span><span class="br0">[</span><span class="st0">'params'</span><span class="br0">]</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">(</span><span class="st0">'directory'</span> <span class="sy0">=&gt;</span> <span class="st0">'/usr/local/bin'</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<h2><a name="methods" id="methods">Methods</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a name="resize" id="resize">resize()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>resize()</code> is used to resize an image. This method is chainable. By default, the aspect ratio will be maintained automatically. 
+
+</p>
+<ul><li class="level1"><div class="li">[integer] Width in pixels of the resized image.</div>
+</li>
+<li class="level1"><div class="li">[integer] Height in pixels of the resized image.</div>
+</li>
+<li class="level1"><div class="li">[integer] Master dimension, default is Auto.  Options : Image::NONE, Image::AUTO, Image::HEIGHT, Image::WIDTH</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="co1">// Resize original image to width of 400 and height of 200 pixels without maintaining the aspect ratio.</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">resize</span><span class="br0">(</span><span class="nu0">400</span><span class="sy0">,</span> <span class="nu0">200</span><span class="sy0">,</span> Image<span class="sy0">::</span><span class="me2">NONE</span><span class="br0">)</span>
+<span class="co1">//Note: The output image is resized to width of 400 and height of 200, without maintaining the aspect ratio</span>
+ 
+<span class="co1">// Resize original image to Height of 200 pixels, using height to maintain aspect ratio.</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">resize</span><span class="br0">(</span><span class="nu0">400</span><span class="sy0">,</span> <span class="nu0">200</span><span class="sy0">,</span> Image<span class="sy0">::</span><span class="me2">HEIGHT</span><span class="br0">)</span>
+<span class="co1">// Note: Passing width = 400 has no effect on the resized width, which is controlled by the 3rd argument, maintain aspect ratio on height</span>
+ 
+<span class="co1">// Resize original image (800x600) using automatic aspect ratio calculation</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">resize</span><span class="br0">(</span><span class="nu0">740</span><span class="sy0">,</span><span class="nu0">400</span><span class="sy0">,</span>Image<span class="sy0">::</span><span class="me2">AUTO</span><span class="br0">)</span>
+<span class="co1">// the resulting resized image is 533x400 because Kohana determines the master dimension to be height 800/740 &lt; 600/400</span></pre>
+</div>
+
+<h3><a name="crop" id="crop">crop()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>crop()</code> is used to crop an image to a specific width and height. This method is chainable. 
+</p>
+
+<p>
+The <strong>top</strong> and <strong>left</strong> offsets may be specified. By default 'top' and 'left' use the 'center' offset. 
+
+</p>
+<ul><li class="level1"><div class="li">[integer] Width in pixels of the cropped image.</div>
+</li>
+<li class="level1"><div class="li">[integer] Height in pixels of the cropped image.</div>
+</li>
+<li class="level1"><div class="li">[integer] Top offset of input image, pixel value or one of 'top', 'center', 'bottom'.</div>
+</li>
+<li class="level1"><div class="li">[integer] Left offset of input image, pixel value or one of 'left', 'center', 'right'.</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="co1">// Crop from the original image, starting from the 'center' of the image from the 'top' and the 'center' of the image from the 'left'</span>
+<span class="co1">// to a width of 400 and height of 350.</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">crop</span><span class="br0">(</span><span class="nu0">400</span><span class="sy0">,</span> <span class="nu0">350</span><span class="br0">)</span></pre>
+</div>
+
+<h3><a name="rotate" id="rotate">rotate()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>rotate()</code> is used to rotate an image by a specified number of degrees. This method is chainable. The image may be rotated clockwise or anti-clockwise, by a maximum of 180 degrees.
+
+</p>
+<ul><li class="level1"><div class="li">[integer] Degrees to rotate. (negative rotates anti-clockwise) There is no default.</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="co1">// Rotate the image by 45 degrees to the 'left' or anti-clockwise.</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">rotate</span><span class="br0">(</span><span class="nu0">-45</span><span class="br0">)</span></pre>
+</div>
+
+<h3><a name="flip" id="flip">flip()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>flip()</code> is used to rotate an image along the horizontal or vertical axis. The method is chainable.
+
+</p>
+<ul><li class="level1"><div class="li">[integer] Direction. Horizontal = 5, Vertical = 6</div>
+</li>
+</ul><p>
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="co1">// Rotate the image along the vertical access.</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">flip</span><span class="br0">(</span><span class="nu0">6</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<h3><a name="sharpen" id="sharpen">sharpen()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>sharpen()</code> Is used to sharpen an image by a specified amount. This method is chainable. 
+
+</p>
+<ul><li class="level1"><div class="li">[integer] Sharpen amount to apply to image. Range is between 1 and 100. Optimal amount is about 20. There is no default.</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="co1">// Sharpen the image by an amount of 15.</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">sharpen</span><span class="br0">(</span><span class="nu0">15</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<h3><a name="quality" id="quality">quality()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>quality()</code> Is used to adjust the image quality by a specified percentage.  This method is chainable. 
+</p>
+
+<p>
+Note: The method is for reducing the quality of an image, in order to reduce the file size of the image, saving bandwidth and load time. It cannot be used to actually improve the quality of an input image. 
+
+</p>
+<ul><li class="level1"><div class="li">[integer] Percentage amount to adjust quality. Range is between 1 and 100. Optimal percentage is from 75 to 85. There is no default.</div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="co1">// Reduce image quality to 75 percent of original</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">quality</span><span class="br0">(</span><span class="nu0">75</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<h3><a name="save" id="save">save()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>save()</code> Is used to save the image to a file on disk.  This method is NOT chainable. The default is to overwrite the input image file. Accepts a relative or absolute file path. 
+</p>
+<ul><li class="level1"><div class="li">[string] The file path and output image file name. Default is to overwrite input file. </div>
+</li>
+</ul><p>
+
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="co1">// Save image and overwrite the input image file</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">save</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">//</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">save</span><span class="br0">(</span><span class="st0">'./new-image.jpg'</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Save image to a new file.</span></pre>
+</div>
+
+<h3><a name="render" id="render">render()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>render()</code> is used to output the image to the browser. This method is NOT chainable. It means that the headers corresponding to the image format are sent and the raw image stream with manipulation applied will be outputted directly to the browser. Returns TRUE on success or FALSE on failure. 
+</p>
+
+<p>
+<strong>Example:</strong>
+
+</p>
+<pre class="code php"><span class="re1">$image</span> <span class="sy0">=</span> <span class="kw2">new</span> Image<span class="br0">(</span><span class="re1">$dir</span><span class="sy0">.</span><span class="st0">'moo.jpg'</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Instantiate the library</span>
+<span class="re1">$image</span><span class="sy0">-&gt;</span><span class="me1">resize</span><span class="br0">(</span><span class="nu0">400</span><span class="sy0">,</span> <span class="kw2">NULL</span><span class="br0">)</span><span class="sy0">-&gt;</span><span class="me1">crop</span><span class="br0">(</span><span class="nu0">400</span><span class="sy0">,</span> <span class="nu0">350</span><span class="sy0">,</span> <span class="st0">'top'</span><span class="br0">)</span><span class="sy0">-&gt;</span><span class="me1">sharpen</span><span class="br0">(</span><span class="nu0">20</span><span class="br0">)</span><span class="sy0">-&gt;</span><span class="me1">quality</span><span class="br0">(</span><span class="nu0">75</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// apply image manipulations</span>
+ 
+<span class="co1">// Output the image directly to the browser</span>
+<span class="re1">$this</span><span class="sy0">-&gt;</span><span class="me1">image</span><span class="sy0">-&gt;</span><span class="me1">render</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span></pre>
+</div>
+
+<h3><a name="get" id="get">__get()</a></h3>
+<div class="level3">
+
+<p>
+
+<code>__get()</code> is used to handle retrieval of pre-save image properties. Properties available are:
+
+</p>
+<ul><li class="level1"><div class="li"> 'file'</div>
+</li>
+<li class="level1"><div class="li"> 'width'</div>
+</li>
+<li class="level1"><div class="li"> 'height'</div>
+</li>
+<li class="level1"><div class="li"> 'type'</div>
+</li>
+<li class="level1"><div class="li"> 'ext'</div>
+</li>
+<li class="level1"><div class="li"> 'mime'</div>
+</li>
+</ul></div>
+
+<h2><a name="full_example" id="full_example">Full Example</a></h2>
+<div class="level2">
+
+<p>
+
+Place this code into a controller
+</p>
+<pre class="code php"><span class="co1">// The original image is located in folder /application/upload.</span>
+<span class="re1">$dir</span> <span class="sy0">=</span> <a href="http://www.php.net/str_replace"><span class="kw3">str_replace</span></a><span class="br0">(</span><span class="st0">'<span class="es0">\\</span>'</span><span class="sy0">,</span> <span class="st0">'/'</span><span class="sy0">,</span> <a href="http://www.php.net/realpath"><span class="kw3">realpath</span></a><span class="br0">(</span><a href="http://www.php.net/dirname"><span class="kw3">dirname</span></a><span class="br0">(</span><span class="kw2">__FILE__</span><span class="br0">)</span><span class="sy0">.</span><span class="st0">'/../upload'</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">.</span><span class="st0">'/'</span><span class="sy0">;</span>
+ 
+<span class="re1">$image</span> <span class="sy0">=</span> <span class="kw2">new</span> Image<span class="br0">(</span><span class="re1">$dir</span><span class="sy0">.</span><span class="st0">'moo.jpg'</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Instantiate the library</span>
+ 
+<span class="re1">$image</span><span class="sy0">-&gt;</span><span class="me1">resize</span><span class="br0">(</span><span class="nu0">400</span><span class="sy0">,</span> <span class="kw2">NULL</span><span class="br0">)</span><span class="sy0">-&gt;</span><span class="me1">crop</span><span class="br0">(</span><span class="nu0">400</span><span class="sy0">,</span> <span class="nu0">350</span><span class="sy0">,</span> <span class="st0">'top'</span><span class="br0">)</span><span class="sy0">-&gt;</span><span class="me1">sharpen</span><span class="br0">(</span><span class="nu0">20</span><span class="br0">)</span><span class="sy0">-&gt;</span><span class="me1">quality</span><span class="br0">(</span><span class="nu0">75</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// apply image manipulations</span>
+ 
+<span class="re1">$image</span><span class="sy0">-&gt;</span><span class="me1">save</span><span class="br0">(</span><span class="re1">$dir</span><span class="sy0">.</span><span class="st0">'super-cow-crop.jpg'</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Write the changed image to a new file in the original input folder</span>
+ 
+<a href="http://www.php.net/echo"><span class="kw3">echo</span></a> Kohana<span class="sy0">::</span><span class="me2">debug</span><span class="br0">(</span><span class="re1">$image</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Display some useful info about the operation **for debugging only**.</span></pre>
+</div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+			libraries/image.txt · Last modified: 2008/09/04 05:35 by oscarb			 
+		</div>
+	</div>
+
+	</div>
+
+<div id="footer"><strong>©2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+
+<div class="no"><img src="/lib/exe/indexer.php?id=libraries%3Aimage&amp;1229411571" width="1" height="1" alt=""></div>
+</body></html>

@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Image_Driver</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Image_Driver</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Image API driver.</p>
+<p class="description"><p>$Id: Image.php 3700 2008-11-22 20:35:48Z Shadowhand $</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Kohana Team</li>
+				<li><span class="field">copyright:</span> (c) 2007-2008 Kohana Team</li>
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">license:</span> <a href="http://kohanaphp.com/license.html">http://kohanaphp.com/license.html</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_drivers---Image.php.html">/drivers/Image.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Image/Image_GD_Driver.html">Image_GD_Driver</a></td>
+					<td>
+											GD Image Driver.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Image/Image_GraphicsMagick_Driver.html">Image_GraphicsMagick_Driver</a></td>
+					<td>
+											GraphicsMagick Image Driver.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Image/Image_ImageMagick_Driver.html">Image_ImageMagick_Driver</a></td>
+					<td>
+											ImageMagick Image Driver.
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$errors" title="details" class="var-name">$errors</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$image" title="details" class="var-name">$image</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$tmp_image" title="details" class="var-name">$tmp_image</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																												
+												<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#crop" title="details" class="method-name">crop</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$properties</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#execute" title="details" class="method-name">execute</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$actions</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#flip" title="details" class="method-name">flip</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$direction</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#process" title="details" class="method-name">process</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$image</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$actions</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#properties" title="details" class="method-name">properties</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#resize" title="details" class="method-name">resize</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$properties</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#rotate" title="details" class="method-name">rotate</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$amount</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#sanitize_geometry" title="details" class="method-name">sanitize_geometry</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">&$geometry</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#sharpen" title="details" class="method-name">sharpen</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$amount</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$errors" id="$errors"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$errors</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">21</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$image" id="$image"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$image</span>
+						(line <span class="line-number">15</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tmp_image" id="$tmp_image"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$tmp_image</span>
+						(line <span class="line-number">18</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Image/Image_GraphicsMagick_Driver.html#var$tmp_image">Image_GraphicsMagick_Driver::$tmp_image</a>
+							</li>
+					<li>
+				<a href="../Image/Image_ImageMagick_Driver.html#var$tmp_image">Image_ImageMagick_Driver::$tmp_image</a>
+							</li>
+				</ul>
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodcrop" id="crop"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">crop</span> (line <span class="line-number">123</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Crop an image. Valid properties are: width, height, top, left.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			crop
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$properties</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$properties</span><span class="var-description">: new properties</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Image/Image_GD_Driver.html#methodcrop">Image_GD_Driver::crop()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_GraphicsMagick_Driver.html#methodcrop">Image_GraphicsMagick_Driver::crop()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_ImageMagick_Driver.html#methodcrop">Image_ImageMagick_Driver::crop()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodexecute" id="execute"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">execute</span> (line <span class="line-number">29</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Executes a set of actions, defined in pairs.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			execute
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$actions</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$actions</span><span class="var-description">: actions</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodflip" id="flip"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">flip</span> (line <span class="line-number">115</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flip an image. Valid directions are horizontal and vertical.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			flip
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$direction</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$direction</span><span class="var-description">: direction to flip</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Image/Image_GD_Driver.html#methodflip">Image_GD_Driver::flip()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_GraphicsMagick_Driver.html#methodflip">Image_GraphicsMagick_Driver::flip()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_ImageMagick_Driver.html#methodflip">Image_ImageMagick_Driver::flip()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodprocess" id="process"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">process</span> (line <span class="line-number">107</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Process an image with a set of actions.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			process
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$image</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$actions</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$image</span><span class="var-description">: image filename</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$actions</span><span class="var-description">: actions to execute</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dir</span><span class="var-description">: destination directory path</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: destination filename</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Image/Image_GD_Driver.html#methodprocess">Image_GD_Driver::process()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_GraphicsMagick_Driver.html#methodprocess">Image_GraphicsMagick_Driver::process()</a>
+								: Creates a temporary image and executes the given actions. By creating a  temporary copy of the image before manipulating it, this process is atomic.
+							</li>
+					<li>
+				<a href="../Image/Image_ImageMagick_Driver.html#methodprocess">Image_ImageMagick_Driver::process()</a>
+								: Creates a temporary image and executes the given actions. By creating a  temporary copy of the image before manipulating it, this process is atomic.
+							</li>
+				</ul>
+	</div>
+<a name="methodproperties" id="properties"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">properties</span> (line <span class="line-number">96</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the current width and height of the temporary image. This is mainly  needed for sanitizing the geometry.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> width, height</li>
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			properties
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Image/Image_GD_Driver.html#methodproperties">Image_GD_Driver::properties()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_GraphicsMagick_Driver.html#methodproperties">Image_GraphicsMagick_Driver::properties()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_ImageMagick_Driver.html#methodproperties">Image_ImageMagick_Driver::properties()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodresize" id="resize"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">resize</span> (line <span class="line-number">131</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Resize an image. Valid properties are: width, height, and master.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			resize
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$properties</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$properties</span><span class="var-description">: new properties</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Image/Image_GD_Driver.html#methodresize">Image_GD_Driver::resize()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_GraphicsMagick_Driver.html#methodresize">Image_GraphicsMagick_Driver::resize()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_ImageMagick_Driver.html#methodresize">Image_ImageMagick_Driver::resize()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodrotate" id="rotate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">rotate</span> (line <span class="line-number">139</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Rotate an image. Valid amounts are -180 to 180.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			rotate
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$amount</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$amount</span><span class="var-description">: amount to rotate</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Image/Image_GD_Driver.html#methodrotate">Image_GD_Driver::rotate()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_GraphicsMagick_Driver.html#methodrotate">Image_GraphicsMagick_Driver::rotate()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_ImageMagick_Driver.html#methodrotate">Image_ImageMagick_Driver::rotate()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodsanitize_geometry" id="sanitize_geometry"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">sanitize_geometry</span> (line <span class="line-number">47</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sanitize and normalize a geometry array based on the temporary image  width and height. Valid properties are: width, height, top, left.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			sanitize_geometry
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">&$geometry</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$geometry</span><span class="var-description">: geometry properties</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsharpen" id="sharpen"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">sharpen</span> (line <span class="line-number">147</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sharpen and image. Valid amounts are 1 to 100.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			sharpen
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$amount</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$amount</span><span class="var-description">: amount to sharpen</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Image/Image_GD_Driver.html#methodsharpen">Image_GD_Driver::sharpen()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_GraphicsMagick_Driver.html#methodsharpen">Image_GraphicsMagick_Driver::sharpen()</a>
+							</li>
+					<li>
+				<a href="../Image/Image_ImageMagick_Driver.html#methodsharpen">Image_ImageMagick_Driver::sharpen()</a>
+							</li>
+				</ul>
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 16 Dec 2008 16:40:22 +0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

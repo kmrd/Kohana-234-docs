@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Database_Mysqli_Driver</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Database_Mysqli_Driver</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">MySQLi Database Driver</p>
+<p class="description"><p>$Id: Mysqli.php 3700 2008-11-22 20:35:48Z Shadowhand $</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Kohana Team</li>
+				<li><span class="field">copyright:</span> (c) 2007-2008 Kohana Team</li>
+				<li><span class="field">license:</span> <a href="http://kohanaphp.com/license.html">http://kohanaphp.com/license.html</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_drivers---Database---Mysqli.php.html">/drivers/Database/Mysqli.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre><a href="../Core/Database_Driver.html">Database_Driver</a>
+   |
+   --<a href="../Core/Database_Mysql_Driver.html">Database_Mysql_Driver</a>
+      |
+      --Database_Mysqli_Driver</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$db_config" title="details" class="var-name">$db_config</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$link" title="details" class="var-name">$link</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$statements" title="details" class="var-name">$statements</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																												
+												<div class="method-definition">
+											<span class="method-result">Database_Mysqli_Driver</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__destruct" title="details" class="method-name">__destruct</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#escape_str" title="details" class="method-name">escape_str</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#field_data" title="details" class="method-name">field_data</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#query" title="details" class="method-name">query</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$sql</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_charset" title="details" class="method-name">set_charset</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$charset</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#show_error" title="details" class="method-name">show_error</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#stmt_prepare" title="details" class="method-name">stmt_prepare</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$sql</span> = <span class="var-default">''</span>])
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$db_config" id="$db_config"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$db_config</span>
+						(line <span class="line-number">16</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Mysql_Driver.html#var$db_config">Database_Mysql_Driver::$db_config</a></dt>
+						<dd>Database configuration</dd>
+					</dl>
+		
+		
+
+</div>
+<a name="var$link" id="$link"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$link</span>
+						(line <span class="line-number">15</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Mysql_Driver.html#var$link">Database_Mysql_Driver::$link</a></dt>
+						<dd>Database connection link</dd>
+					</dl>
+		
+		
+
+</div>
+<a name="var$statements" id="$statements"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$statements</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">17</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Core/Database_Driver.html">Database_Driver</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../Core/Database_Driver.html#var$query_cache">Database_Driver::$query_cache</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">24</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the config for the class.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Database_Mysqli_Driver</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$config</span><span class="var-description">: database configuration</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Mysql_Driver.html#method__construct">Database_Mysql_Driver::__construct()</a></dt>
+						<dd>Sets the config for the class.</dd>
+					</dl>
+			
+	</div>
+<a name="method__destruct" id="__destruct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Destructor __destruct</span> (line <span class="line-number">34</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Closes the database connection.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__destruct
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Mysql_Driver.html#method__destruct">Database_Mysql_Driver::__destruct()</a></dt>
+						<dd>Closes the database connection.</dd>
+					</dl>
+			
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">connect</span> (line <span class="line-number">39</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			connect
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Mysql_Driver.html#methodconnect">Database_Mysql_Driver::connect()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodescape_str" id="escape_str"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">escape_str</span> (line <span class="line-number">100</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			escape_str
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Mysql_Driver.html#methodescape_str">Database_Mysql_Driver::escape_str()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodfield_data" id="field_data"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">field_data</span> (line <span class="line-number">115</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			field_data
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Mysql_Driver.html#methodfield_data">Database_Mysql_Driver::field_data()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodquery" id="query"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">query</span> (line <span class="line-number">68</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			query
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$sql</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sql</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Mysql_Driver.html#methodquery">Database_Mysql_Driver::query()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodset_charset" id="set_charset"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_charset</span> (line <span class="line-number">88</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_charset
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$charset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$charset</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Mysql_Driver.html#methodset_charset">Database_Mysql_Driver::set_charset()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodshow_error" id="show_error"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_error</span> (line <span class="line-number">110</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			show_error
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Mysql_Driver.html#methodshow_error">Database_Mysql_Driver::show_error()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodstmt_prepare" id="stmt_prepare"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">stmt_prepare</span> (line <span class="line-number">94</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			stmt_prepare
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$sql</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sql</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Driver.html#methodstmt_prepare">Database_Driver::stmt_prepare()</a></dt>
+						<dd>Creates a prepared statement.</dd>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Core/Database_Mysql_Driver.html">Database_Mysql_Driver</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#method__construct">Database_Mysql_Driver::__construct()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodcompile_select">Database_Mysql_Driver::compile_select()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodconnect">Database_Mysql_Driver::connect()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodescape_column">Database_Mysql_Driver::escape_column()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodescape_str">Database_Mysql_Driver::escape_str()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodescape_table">Database_Mysql_Driver::escape_table()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodfield_data">Database_Mysql_Driver::field_data()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodlimit">Database_Mysql_Driver::limit()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodlist_fields">Database_Mysql_Driver::list_fields()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodlist_tables">Database_Mysql_Driver::list_tables()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodmerge">Database_Mysql_Driver::merge()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodnotregex">Database_Mysql_Driver::notregex()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodquery">Database_Mysql_Driver::query()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodregex">Database_Mysql_Driver::regex()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodset_charset">Database_Mysql_Driver::set_charset()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#methodshow_error">Database_Mysql_Driver::show_error()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Mysql_Driver.html#method__destruct">Database_Mysql_Driver::__destruct()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Core/Database_Driver.html">Database_Driver</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodclear_cache">Database_Driver::clear_cache()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodcompile_select">Database_Driver::compile_select()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodconnect">Database_Driver::connect()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methoddelete">Database_Driver::delete()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodescape">Database_Driver::escape()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodescape_column">Database_Driver::escape_column()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodescape_str">Database_Driver::escape_str()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodescape_table">Database_Driver::escape_table()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodfield_data">Database_Driver::field_data()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodhas_operator">Database_Driver::has_operator()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodinsert">Database_Driver::insert()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodlike">Database_Driver::like()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodlimit">Database_Driver::limit()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodlist_fields">Database_Driver::list_fields()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodlist_tables">Database_Driver::list_tables()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodmerge">Database_Driver::merge()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodnotlike">Database_Driver::notlike()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodnotregex">Database_Driver::notregex()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodquery">Database_Driver::query()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodquery_hash">Database_Driver::query_hash()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodregex">Database_Driver::regex()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodset_charset">Database_Driver::set_charset()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodshow_error">Database_Driver::show_error()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodsql_type">Database_Driver::sql_type()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodstmt_prepare">Database_Driver::stmt_prepare()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodupdate">Database_Driver::update()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Driver.html#methodwhere">Database_Driver::where()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 16 Dec 2008 16:40:24 +0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class valid_Core</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class valid_Core</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validation helper class.</p>
+<p class="description"><p>$Id: valid.php 3753 2008-12-04 13:10:30Z Shadowhand $</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Kohana Team</li>
+				<li><span class="field">copyright:</span> (c) 2007-2008 Kohana Team</li>
+				<li><span class="field">license:</span> <a href="http://kohanaphp.com/license.html">http://kohanaphp.com/license.html</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_valid.php.html">/valid.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#alpha" title="details" class="method-name">alpha</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$utf8</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#alpha_dash" title="details" class="method-name">alpha_dash</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$utf8</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#alpha_numeric" title="details" class="method-name">alpha_numeric</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$utf8</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#credit_card" title="details" class="method-name">credit_card</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$number</span>, [<span class="var-type">string|array</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">NULL</span>])
+									</div>
+																								<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#decimal" title="details" class="method-name">decimal</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$format</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#digit" title="details" class="method-name">digit</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$utf8</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#email" title="details" class="method-name">email</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#email_domain" title="details" class="method-name">email_domain</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#email_rfc" title="details" class="method-name">email_rfc</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#ip" title="details" class="method-name">ip</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$ip</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ipv6</span> = <span class="var-default">FALSE</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#numeric" title="details" class="method-name">numeric</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#phone" title="details" class="method-name">phone</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$number</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$lengths</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#standard_text" title="details" class="method-name">standard_text</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					static 						<span class="method-result">boolean</span>
+										<a href="#url" title="details" class="method-name">url</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+								
+																																												<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#date" title="details" class="method-name">date</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																																																																																								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodalpha" id="alpha"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method alpha</span> (line <span class="line-number">215</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether a string consists of alphabetical characters only.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			alpha
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$utf8</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: input string</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$utf8</span><span class="var-description">: trigger UTF-8 compatibility</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodalpha_dash" id="alpha_dash"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method alpha_dash</span> (line <span class="line-number">243</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether a string consists of alphabetical characters, numbers, underscores and dashes only.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			alpha_dash
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$utf8</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: input string</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$utf8</span><span class="var-description">: trigger UTF-8 compatibility</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodalpha_numeric" id="alpha_numeric"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method alpha_numeric</span> (line <span class="line-number">229</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether a string consists of alphabetical characters and numbers only.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			alpha_numeric
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$utf8</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: input string</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$utf8</span><span class="var-description">: trigger UTF-8 compatibility</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcredit_card" id="credit_card"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method credit_card</span> (line <span class="line-number">109</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validates a credit card number using the Luhn (mod10) formula.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="http://en.wikipedia.org/wiki/Luhn_algorithm">http://en.wikipedia.org/wiki/Luhn_algorithm</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			credit_card
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$number</span>, [<span class="var-type">string|array</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$number</span><span class="var-description">: credit card number</span>			</li>
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$type</span><span class="var-description">: card type, or an array of card types</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddecimal" id="decimal"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method decimal</span> (line <span class="line-number">303</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if a string is a proper decimal format. The format array can be  used to specify a decimal length, or a number and decimal length, eg:  array(2) would force the number to have 2 decimal places, array(4,2)  would force the number to have 4 digits and 2 decimal places.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			decimal
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$format</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: input string</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$format</span><span class="var-description">: decimal format: y or x,y</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddigit" id="digit"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method digit</span> (line <span class="line-number">257</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether a string consists of digits only (no dots or dashes).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			digit
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$utf8</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: input string</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$utf8</span><span class="var-description">: trigger UTF-8 compatibility</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodemail" id="email"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method email</span> (line <span class="line-number">20</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate email, commonly used characters only</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			email
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: email address</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodemail_domain" id="email_domain"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method email_domain</span> (line <span class="line-number">32</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate the domain of an email address by checking if the domain has a  valid MX record.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			email_domain
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: email address</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodemail_rfc" id="email_rfc"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method email_rfc</span> (line <span class="line-number">54</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate email, RFC compliant version  Note: This function is LESS strict than valid_email. Choose carefully.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> Originally by Cal Henderson, modified to fit Kohana syntax standards:</li>
+				<li><span class="field">see:</span> <a href="http://www.w3.org/Protocols/rfc822/">http://www.w3.org/Protocols/rfc822/</a></li>
+				<li><span class="field">see:</span> <a href="http://www.iamcal.com/publish/articles/php/parsing_email/">http://www.iamcal.com/publish/articles/php/parsing_email/</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			email_rfc
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: email address</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodip" id="ip"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method ip</span> (line <span class="line-number">90</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate IP</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			ip
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$ip</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ipv6</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ip</span><span class="var-description">: IP address</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$ipv6</span><span class="var-description">: allow IPv6 addresses</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnumeric" id="numeric"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method numeric</span> (line <span class="line-number">270</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether a string is a valid number (negative and decimal numbers allowed).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			numeric
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: input string</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodphone" id="phone"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method phone</span> (line <span class="line-number">183</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if a phone number is valid.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			phone
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$number</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$lengths</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$number</span><span class="var-description">: phone number to check</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$lengths</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstandard_text" id="standard_text"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method standard_text</span> (line <span class="line-number">282</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether a string is a valid text. Letters, numbers, whitespace,  dashes, periods, and underscores are allowed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			standard_text
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: text to check</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodurl" id="url"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method url</span> (line <span class="line-number">78</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate URL</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			url
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: URL</span>			</li>
+				</ul>
+		
+			
+	</div>
+
+<a name="methoddate" id="date"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">date</span> (line <span class="line-number">203</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Tests if a string is a valid date string.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			date
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: date to check</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 16 Dec 2008 16:40:05 +0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>

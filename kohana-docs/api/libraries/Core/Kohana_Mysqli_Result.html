@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Kohana_Mysqli_Result</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Kohana_Mysqli_Result</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">MySQLi Result</p>
+		<p class="notes">
+			Located in <a class="field" href="_drivers---Database---Mysqli.php.html">/drivers/Database/Mysqli.php</a> (line <span class="field">133</span>)
+		</p>
+		
+				
+		<pre><a href="../Core/Database_Result.html">Database_Result</a>
+   |
+   --Kohana_Mysqli_Result</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$fetch_type" title="details" class="var-name">$fetch_type</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$link" title="details" class="var-name">$link</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$return_type" title="details" class="var-name">$return_type</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																				
+												<div class="method-definition">
+											<span class="method-result">Kohana_Mysqli_Result</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">object database</span>&nbsp;<span class="var-name">$link</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$object</span> = <span class="var-default">TRUE</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__destruct" title="details" class="method-name">__destruct</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#as_array" title="details" class="method-name">as_array</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$object</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">MYSQLI_ASSOC</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#list_fields" title="details" class="method-name">list_fields</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#offsetGet" title="details" class="method-name">offsetGet</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$offset</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#result" title="details" class="method-name">result</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$object</span> = <span class="var-default">TRUE</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">MYSQLI_ASSOC</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#result_array" title="details" class="method-name">result_array</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$object</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">MYSQLI_ASSOC</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#seek" title="details" class="method-name">seek</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$offset</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$fetch_type" id="$fetch_type"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$fetch_type</span>
+			 = <span class="var-default"> 'mysqli_fetch_object'</span>			(line <span class="line-number">139</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Result.html#var$fetch_type">Database_Result::$fetch_type</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$link" id="$link"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$link</span>
+						(line <span class="line-number">136</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$return_type" id="$return_type"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$return_type</span>
+			 = <span class="var-default"> MYSQLI_ASSOC</span>			(line <span class="line-number">140</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Result.html#var$return_type">Database_Result::$return_type</a></dt>
+					</dl>
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Core/Database_Result.html">Database_Result</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../Core/Database_Result.html#var$current_row">Database_Result::$current_row</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../Core/Database_Result.html#var$insert_id">Database_Result::$insert_id</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../Core/Database_Result.html#var$result">Database_Result::$result</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../Core/Database_Result.html#var$sql">Database_Result::$sql</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../Core/Database_Result.html#var$total_rows">Database_Result::$total_rows</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">149</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets up the result variables.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Kohana_Mysqli_Result</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">object database</span>&nbsp;<span class="var-name">$link</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$object</span> = <span class="var-default">TRUE</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object database</span>
+				<span class="var-name">$link</span><span class="var-description">: link</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$object</span><span class="var-description">: return objects or arrays</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sql</span><span class="var-description">: SQL query that was run</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__destruct" id="__destruct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Destructor __destruct</span> (line <span class="line-number">192</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Magic __destruct function, frees the result.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__destruct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodas_array" id="as_array"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">as_array</span> (line <span class="line-number">234</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			as_array
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$object</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">MYSQLI_ASSOC</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$object</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$type</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlist_fields" id="list_fields"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">list_fields</span> (line <span class="line-number">287</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			list_fields
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Result.html#methodlist_fields">Database_Result::list_fields()</a></dt>
+						<dd>Gets the fields of an already run query.</dd>
+					</dl>
+			
+	</div>
+<a name="methodoffsetGet" id="offsetGet"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">offsetGet</span> (line <span class="line-number">308</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			offsetGet
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$offset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$offset</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Result.html#methodoffsetGet">Database_Result::offsetGet()</a></dt>
+						<dd>ArrayAccess: offsetGet</dd>
+					</dl>
+			
+	</div>
+<a name="methodresult" id="result"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">result</span> (line <span class="line-number">214</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			result
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$object</span> = <span class="var-default">TRUE</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">MYSQLI_ASSOC</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$object</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$type</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Result.html#methodresult">Database_Result::result()</a></dt>
+						<dd>Prepares the query result.</dd>
+					</dl>
+			
+	</div>
+<a name="methodresult_array" id="result_array"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">result_array</span> (line <span class="line-number">239</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			result_array
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$object</span> = <span class="var-default">NULL</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">MYSQLI_ASSOC</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$object</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$type</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Result.html#methodresult_array">Database_Result::result_array()</a></dt>
+						<dd>Builds an array of query results.</dd>
+					</dl>
+			
+	</div>
+<a name="methodseek" id="seek"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">seek</span> (line <span class="line-number">298</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			seek
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$offset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$offset</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Core/Database_Result.html#methodseek">Database_Result::seek()</a></dt>
+						<dd>Seek to an offset in the results.</dd>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Core/Database_Result.html">Database_Result</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodcount">Database_Result::count()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodcurrent">Database_Result::current()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodinsert_id">Database_Result::insert_id()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodkey">Database_Result::key()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodlist_fields">Database_Result::list_fields()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodnext">Database_Result::next()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodoffsetExists">Database_Result::offsetExists()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodoffsetGet">Database_Result::offsetGet()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodoffsetSet">Database_Result::offsetSet()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodoffsetUnset">Database_Result::offsetUnset()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodprev">Database_Result::prev()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodresult">Database_Result::result()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodresult_array">Database_Result::result_array()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodrewind">Database_Result::rewind()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodseek">Database_Result::seek()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodsql">Database_Result::sql()</a></span><br>
+													<span class="method-name"><a href="../Core/Database_Result.html#methodvalid">Database_Result::valid()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 16 Dec 2008 16:40:24 +0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>
